@@ -39,7 +39,7 @@
 </v>
 </v>
 </v>
-<v t="zoomq.20130925103854.4957"><vh>@nosent CLI.py</vh>
+<v t="zoomq.20130925103854.4957" a="E"><vh>@nosent CLI.py</vh>
 <v t="zoomq.20130925103854.4958"><vh>&lt;&lt;docopt&gt;&gt;</vh></v>
 <v t="zoomq.20130925103854.4959"><vh>&lt;&lt;declarations&gt;&gt;</vh></v>
 <v t="zoomq.20131223160728.4902"><vh>_https_get()</vh></v>
@@ -99,10 +99,10 @@
 <v t="zoomq.20150202122015.9"><vh>&lt;&lt;自制模块&gt;&gt;</vh></v>
 <v t="zoomq.20150202122015.8"><vh>build-in</vh></v>
 </v>
-<v t="zoomq.20130925103854.5007"><vh>CLI 远程管理&gt;&gt;&gt;</vh>
-<v t="zoomq.20131007093121.5601"><vh>文章管理</vh>
+<v t="zoomq.20130925103854.5007" a="E"><vh>CLI 远程管理&gt;&gt;&gt;</vh>
+<v t="zoomq.20131007093121.5601" a="E"><vh>文章管理</vh>
 <v t="zoomq.20150202122015.15"><vh>_load_news(,, multi=False)</vh></v>
-<v t="zoomq.20130929203117.3712"><vh>POST push/p</vh>
+<v t="zoomq.20130929203117.3712" a="E"><vh>POST push/p</vh>
 <v t="zoomq.20150202122015.19"><vh>&lt;&lt;reset_old&gt;&gt;</vh></v>
 <v t="zoomq.20150202122015.14"><vh>&lt;&lt;flush_in&gt;&gt;</vh></v>
 </v>
@@ -2957,9 +2957,15 @@ for k in set_var[_tg].keys():
         pass
 feed_back['msg'] += "reloaded %s POSTs. \nin CLASS %s"% (count, _tg)
 feed_back['data'].append(KV.get_info())
+
+_append = []
 for i in KV.get(CFG.K4D[_tg]):
     #print ['%s-&gt;%s'%(i,j['title']) for j in KV.get(i)['news']]
-    feed_back['data'].append(['%s-&gt;%s'%(i,j['title']) for j in KV.get(i)['news']])
+    _append.append('%s-&gt;%s'%(i
+        , ",".join([j['title'] for j in KV.get(i)['news']])
+        ))
+
+feed_back['data'] = _append
 
 
 

@@ -149,9 +149,15 @@ def push_papers(qstr):
                 pass
         feed_back['msg'] += "reloaded %s POSTs. \nin CLASS %s"% (count, _tg)
         feed_back['data'].append(KV.get_info())
+
+        _append = []
         for i in KV.get(CFG.K4D[_tg]):
             #print ['%s->%s'%(i,j['title']) for j in KV.get(i)['news']]
-            feed_back['data'].append(['%s->%s'%(i,j['title']) for j in KV.get(i)['news']])
+            _append.append('%s->%s'%(i
+                , ",".join([j['title'] for j in KV.get(i)['news']])
+                ))
+
+        feed_back['data'] = _append
 
 
 
