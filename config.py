@@ -63,11 +63,11 @@ class Borg():
         ,'his':"SYS_node_HIS"   # [] 所有 节点的K索引 (包含已经 del/覆盖 的)
     }
 
-    GOBJMAP = {'his':'_%(timestamp)s_his%(tot)d'
+    GOBJMAP = {'his':'_{timestamp}_his{tot}'
         #,'tag':'t_%(timestamp)s_TAG%(tot)d'
-        ,'bk':'bk_%(timestamp)s_ST%(tot)d_%(name)s'
+        ,'bk':'bk_{timestamp}_ST{tot}_{name}'
         #,'p':'p_%(timestamp)s_PUB%(tot)d'
-        ,'menu':'%s(menu)_%(timestamp)s_PUB%(tot)d'
+        ,'menu':'{menu}_{timestamp}_PUB{tot}'
         #,'fw':'fw_%(timestamp)s_PUB%(tot)d'
         }
     # for show in wx echo
@@ -214,6 +214,12 @@ class Borg():
     PAPER_TAGS = ESSAY_TAG.keys()
     TXT_TAG_DEFINE = "    ".join([u"%s %s\n"%(k, ESSAY_TAG[k]) for k in ESSAY_TAG_KEYS])
 
+    TXT_PUB_WAIT = u'''对不起亲!
+    过往文章的信息,大妈们还没来的及增补进来,
+    放轻松,等等先... (~.~)
+
+    更多细节,请惯性地输入 h 继续吧 :)
+    '''
     TXT_PLS_TAG = u'''亲! 请输入文章类别编码(类似 dm 的2字母):
     然后,俺才能给出该类别的文章索引...
 
@@ -258,12 +264,6 @@ class Borg():
     更多细节,请惯性地输入 h 继续吧 :)
     '''
 
-    TXT_PUB_WAIT = u'''对不起亲!
-    过往文章的信息,大妈们还没来的及增补进来,
-    放轻松,等等先... (~.~)
-
-    更多细节,请惯性地输入 h 继续吧 :)
-    '''
 
 
     # for CLI local usage

@@ -1,0 +1,20 @@
+'11':
+    '1':
+        - type: news
+          title: 关于女导演（答《看世界》杂志问）
+          uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000004&itemidx=1&sign=552ca459444cb1ef7391a014fd5dda4c#wechat_redirect
+          img: http://mmsns.qpic.cn/mmsns/jsFJEErL30ia7sRe6WQEaCVnzaQTiakl5j9iaL6DyiaTq0Tf9R1IHPpr0A/0
+        - type: news
+          title: 薛晓璐：《北京遇上西雅图》
+          uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000004&itemidx=2&sign=5c563f1c599bc925be1da062a8bf6788#wechat_redirect
+          img: http://mmsns.qpic.cn/mmsns/jsFJEErL30ia7sRe6WQEaCVnzaQTiakl5jZX0lb1bkDgXddNdlG9byEg/0
+        - type: news
+          title: 杨采妮：《圣诞玫瑰》
+          uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000004&itemidx=3&sign=adafa2a4c36395ab9a639f9953751324#wechat_redirect
+          img: http://mmsns.qpic.cn/mmsns/jsFJEErL30ia7sRe6WQEaCVnzaQTiakl5j4CdINB9hPfrgIJD3HYnB1g/0
+    '2':
+        type: news
+        title: 演讲之禅
+        uri: http://blog.zhgdg.org/2013-10/gb9-zen4talk/
+        img: http://img3.douban.com/lpic/s4279952.jpg
+

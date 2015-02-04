@@ -48,7 +48,7 @@ def ADD4SYS(k4sys, uuid):
     only dm|m|p means dama|member|paper
     '''
     uuid_idx = KV.get(CFG.K4D[k4sys])
-    print "listobj:\t", uuid_idx
+    #print "listobj:\t", uuid_idx
     if None == uuid:
         appended = uuid_idx
     elif uuid in uuid_idx:
@@ -83,16 +83,19 @@ def GENID(obj, name="NIL"):
             - dd_ 前缀就是分类 tag
             - __** 后缀就是指定的文章编号
     '''
-    timestamp = TSTAMP()
-    tot = INCR4KV()
+    #timestamp = TSTAMP()
+    #tot = INCR4KV()
     #sha1name = hashlib.sha1(name).hexdigest()
-    if obj in CFG.GOBJMAP.keys():
-        if "NIL" == name:
-            return CFG.GOBJMAP[obj]% locals()
-        elif "menu" == name:
-            # '%s(menu)_%(timestamp)s_PUB%(tot)d'
-            menu = obj
-            return CFG.GOBJMAP[obj]% locals()
+    if "NIL" == name:
+        return CFG.GOBJMAP[obj].format(tot = INCR4KV()
+            , timestamp = TSTAMP()
+            , name = name)
+    elif "menu" == name:
+        # '%s(menu)_%(timestamp)s_PUB%(tot)d'
+        #print obj, name
+        return CFG.GOBJMAP['menu'].format(tot = INCR4KV()
+            , timestamp = TSTAMP()
+            , menu = obj)
     else:
         return None
 

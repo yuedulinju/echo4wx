@@ -1,4 +1,12 @@
 # -*- coding: utf-8 -*-
+TPL_IDX_CLASS = u'''{tag_info}
+请输入文章索引号 (类似 151 的纯数字):
+然后,俺就告诉您文章链接呢...
+
+{idx_news}
+
+更多细节,请惯性地输入 h 继续吧 :)
+'''
 import os
 #关闭fetchurl，让httplib直接使用socket服务来连接
 os.environ['disable_fetchurl'] = "1" 
@@ -69,24 +77,25 @@ APP = Bottle()
 '''
 '''
 def _load_news(crt_tag, crt_key, crt_var, multi=False):
-    uuid = GENID(crt_tag, name=crt_tag)
-    print uuid
-    return None
+    uuid = GENID(crt_tag, name='menu')
+    #print uuid
+    #return None
     new_paper = deepcopy(CFG.K4WD)
     new_paper['uuid'] = uuid # 对象创建时, 变更时间戳同 UUID
     new_paper['his_id'] = uuid
     new_paper['lasttm'] = time.time()
     new_paper['tag'] = crt_tag
-    new_paper['code'] = CFG.ESSAY_TAG_ID[crt_tag]+crt_key
+    new_paper['code'] = crt_tag+crt_key
+    #CFG.ESSAY_TAG_ID[crt_tag]+crt_key
     #print new_paper['code']
     if multi:
         # mulit news
-        print crt_var
+        #print crt_var
         new_paper['news'] = [{'title':i['title']
             , 'uri':i['uri']
             , 'pic':i['img']
             } for i in crt_var]
-        print new_paper['news']
+        #print new_paper['news']
     else:
         # sinle news
         #print crt_var
@@ -97,6 +106,8 @@ def _load_news(crt_tag, crt_key, crt_var, multi=False):
     KV.add(new_paper['code'], new_paper)
     ADD4SYS(crt_tag, new_paper['code'])
     return uuid
+
+
 @APP.post('/cli/push/p/<qstr>')
 def push_papers(qstr):
     q_dict = _query2dict(qstr)
@@ -109,8 +120,8 @@ def push_papers(qstr):
         set_var = yaml.load(_yaml) #q_file.file.read()
         _tg = set_var.keys()[0]        
         for i in KV.get(CFG.K4D[_tg]):
-            #print i
-            print KV.delete(i)
+            #print 
+            KV.delete(i)
 
         KV.set(CFG.K4D[_tg],[])
 
@@ -134,6 +145,9 @@ def push_papers(qstr):
         for i in KV.get(CFG.K4D[_tg]):
             #print ['%s->%s'%(i,j['title']) for j in KV.get(i)['news']]
             feed_back['data'].append(['%s->%s'%(i,j['title']) for j in KV.get(i)['news']])
+
+
+
         return feed_back
     else:
         return "alert quary!-("
@@ -147,7 +161,7 @@ def st_p_tag(tag, qstr):
         feed_back = {'data':[]}
         #print tag
         all_papers = KV.get(CFG.K4D[tag])
-        print all_papers
+        #print all_papers
         for i in all_papers:
             #print ['%s->%s'%(i,j['title']) for j in KV.get(i)['news']]
             _node = KV.get(i)
@@ -232,23 +246,18 @@ def wechat_post():
     ## 注意! 从公众号来的消息和订阅号完全不同的,需要另外解析!
     #print "request.forms.keys()[0]\t\n", request.forms.keys()[0]
     wxreq = WxRequest(request.forms.keys()[0])
-    
     if 'text' == wxreq.MsgType:
-        #_wx = WxApp()
-        #result = _wx.process(request.forms, xml=request.body.read())
-        #print "WxApp", result
-        #print request.forms.keys()
-        #print request.body.read()
         cmd = wxreq.Content
         if cmd.isdigit():
             #print cmd
-            return _wx_echo_cnt(wxreq, cmd)
+            if cmd in CFG.ESSAY_TAG_KEYS:
+                #print "ESSAY_TAG_KEYS", cmd
+                return _wx_echo_idx(wxreq, cmd)
+            else:
+                return _wx_echo_cnt(wxreq, cmd)
         else:
             if cmd in CFG.CMD_ALIAS:
                 return _wx_echo_cmd(wxreq, cmd)
-            elif cmd in CFG.ESSAY_TAG_KEYS:
-                print "ESSAY_TAG_KEYS", cmd
-                return _wx_echo_idx(wxreq, cmd)
             else:
                 return WxTextResponse(CFG.TXT_HELP, wxreq).as_xml()
                 #print cmd
@@ -256,10 +265,12 @@ def wechat_post():
             #if 8 > len(crt_usr['msg']):
             #print cmd
 
+
     elif 'event' == wxreq.MsgType:
         print wxreq.Event
         return None
         #WxTextResponse(CFG.TXT_HELP, wxreq).as_xml()
+
 
     elif 'CLICK' == wxreq.MsgType:
         _TAG_PAPERS = '''%s :
@@ -268,37 +279,10 @@ def wechat_post():
         return WxTextResponse(_TAG_PAPERS%( 'tag'
                 ,'LIST' )
             , wxreq).as_xml()
+
                 
-    
     return None
     
-    G_CRT_USR = __chkRegUsr(wxreq.FromUserName)
-    wxreq.crt_usr = G_CRT_USR
-    # usage pyfsm as FSM echo all kinds of usr ask
-    weknow = pyfsm.Registry.get_task('weknow')
-    #print G_CRT_USR
-    wxreq.FSM = "start2" # 使用对象加载状态区分后续处理
-    # 恢复用户 FSM 状态
-    if G_CRT_USR['fsm']:
-        #print "if G_CRT_USR"
-        weknow.start2(G_CRT_USR['fsm'], wxreq)
-    else:
-        #print "else G_CRT_USR"
-        weknow.start2('setup', wxreq)
-        G_CRT_USR['fsm'] = "setup"
-        __update_usr(G_CRT_USR)
-    #return None
-    # 执行用户 FSM 业务
-    wxreq.FSM = "send2"
-    return weknow.send2(wxreq.Content.strip(), wxreq)
-
-
-
-
-
-
-
-
 
 
 
@@ -319,17 +303,26 @@ def _wx_echo_cnt(wxreq, cmd):
 def _wx_echo_idx(wxreq, cmd):
     print "_wx_echo_idx", cmd
     all_papers = KV.get(CFG.K4D[cmd])
-    print all_papers
-    _exp = ""
+    #print all_papers.sort()
+    #print len(all_papers)
+    #print CFG.ESSAY_TAG[cmd]
+    if 0 == len(all_papers):
+        _exp = u"但是...历史文章还未整理索引起来,敬请期待 눈_눈"
+    else:
+        _exp = ""
     for i in all_papers:
         #print ['%s->%s'%(i,j['title']) for j in KV.get(i)['news']]
         _node = KV.get(i)
         _exp += "%s: %s \n"%(_node['code']
                 , '\n\t+'.join([j['title'] for j  in _node['news']])
                 )
-    print _exp
+    #print _exp
     #return None
-    return WxTextResponse(_exp, wxreq).as_xml()
+    return WxTextResponse(TPL_IDX_CLASS.format(idx_news = _exp
+                , tag_info = CFG.ESSAY_TAG[cmd]
+            ), wxreq).as_xml()
+
+
 def _wx_echo_cmd(wxreq, cmd):
     for k in CFG.CMD_TPLS.keys():
         if cmd in k:

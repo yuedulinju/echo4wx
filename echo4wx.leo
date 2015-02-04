@@ -60,7 +60,7 @@
 </v>
 </v>
 </v>
-<v t="zoomq.20120723102156.5541" a="E"><vh>module</vh>
+<v t="zoomq.20120723102156.5541"><vh>module</vh>
 <v t="zoomq.20130925103854.6406"><vh>@nosent __init__.py</vh></v>
 <v t="zoomq.20120820121523.7422"><vh>@nosent auth.py</vh>
 <v t="zoomq.20120820121523.7423"><vh>&lt;&lt;declarations&gt;&gt;</vh></v>
@@ -94,7 +94,8 @@
 <v t="zoomq.20120727213305.14707"><vh>404+各种默认处理</vh></v>
 </v>
 <v t="zoomq.20120723102156.5561" a="E"><vh>@nosent mana4api.py</vh>
-<v t="zoomq.20120723102156.5562"><vh>&lt;&lt;declarations&gt;&gt;</vh>
+<v t="zoomq.20120723102156.5562" a="E"><vh>&lt;&lt;declarations&gt;&gt;</vh>
+<v t="zoomq.20150203153224.9"><vh>输出模板</vh></v>
 <v t="zoomq.20150202122015.9"><vh>&lt;&lt;自制模块&gt;&gt;</vh></v>
 <v t="zoomq.20150202122015.8"><vh>build-in</vh></v>
 </v>
@@ -1012,16 +1013,19 @@ JINJA2TPL_PATH = os.path.abspath(
             - dd_ 前缀就是分类 tag
             - __** 后缀就是指定的文章编号
     '''
-    timestamp = TSTAMP()
-    tot = INCR4KV()
+    #timestamp = TSTAMP()
+    #tot = INCR4KV()
     #sha1name = hashlib.sha1(name).hexdigest()
-    if obj in CFG.GOBJMAP.keys():
-        if "NIL" == name:
-            return CFG.GOBJMAP[obj]% locals()
-        elif "menu" == name:
-            # '%s(menu)_%(timestamp)s_PUB%(tot)d'
-            menu = obj
-            return CFG.GOBJMAP[obj]% locals()
+    if "NIL" == name:
+        return CFG.GOBJMAP[obj].format(tot = INCR4KV()
+            , timestamp = TSTAMP()
+            , name = name)
+    elif "menu" == name:
+        # '%s(menu)_%(timestamp)s_PUB%(tot)d'
+        #print obj, name
+        return CFG.GOBJMAP['menu'].format(tot = INCR4KV()
+            , timestamp = TSTAMP()
+            , menu = obj)
     else:
         return None
 
@@ -1316,43 +1320,14 @@ def wechat_post():
     ## 注意! 从公众号来的消息和订阅号完全不同的,需要另外解析!
     #print "request.forms.keys()[0]\t\n", request.forms.keys()[0]
     wxreq = WxRequest(request.forms.keys()[0])
-    
     if 'text' == wxreq.MsgType:
         &lt;&lt;echo TEXT&gt;&gt;
     elif 'event' == wxreq.MsgType:
         &lt;&lt;echo event&gt;&gt;
     elif 'CLICK' == wxreq.MsgType:
         &lt;&lt;echo CLICK&gt;&gt;
-    
     return None
     
-    G_CRT_USR = __chkRegUsr(wxreq.FromUserName)
-    wxreq.crt_usr = G_CRT_USR
-    # usage pyfsm as FSM echo all kinds of usr ask
-    weknow = pyfsm.Registry.get_task('weknow')
-    #print G_CRT_USR
-    wxreq.FSM = "start2" # 使用对象加载状态区分后续处理
-    # 恢复用户 FSM 状态
-    if G_CRT_USR['fsm']:
-        #print "if G_CRT_USR"
-        weknow.start2(G_CRT_USR['fsm'], wxreq)
-    else:
-        #print "else G_CRT_USR"
-        weknow.start2('setup', wxreq)
-        G_CRT_USR['fsm'] = "setup"
-        __update_usr(G_CRT_USR)
-    #return None
-    # 执行用户 FSM 业务
-    wxreq.FSM = "send2"
-    return weknow.send2(wxreq.Content.strip(), wxreq)
-
-
-
-
-
-
-
-
 
 
 
@@ -1877,7 +1852,7 @@ return None
     only dm|m|p means dama|member|paper
     '''
     uuid_idx = KV.get(CFG.K4D[k4sys])
-    print "listobj:\t", uuid_idx
+    #print "listobj:\t", uuid_idx
     if None == uuid:
         appended = uuid_idx
     elif uuid in uuid_idx:
@@ -2095,6 +2070,12 @@ TXT_THANX = u'''亲! 感谢反馈信息, 大妈们得空就回复 ;-)
 <t tx="zoomq.20130925103854.6458">PAPER_TAGS = ESSAY_TAG.keys()
 TXT_TAG_DEFINE = "    ".join([u"%s %s\n"%(k, ESSAY_TAG[k]) for k in ESSAY_TAG_KEYS])
 
+TXT_PUB_WAIT = u'''对不起亲!
+过往文章的信息,大妈们还没来的及增补进来,
+放轻松,等等先... (~.~)
+
+更多细节,请惯性地输入 h 继续吧 :)
+'''
 TXT_PLS_TAG = u'''亲! 请输入文章类别编码(类似 dm 的2字母):
 然后,俺才能给出该类别的文章索引...
 
@@ -2139,12 +2120,6 @@ TXT_PUB_LIST = u'''%s ::
 更多细节,请惯性地输入 h 继续吧 :)
 '''
 
-TXT_PUB_WAIT = u'''对不起亲!
-过往文章的信息,大妈们还没来的及增补进来,
-放轻松,等等先... (~.~)
-
-更多细节,请惯性地输入 h 继续吧 :)
-'''
 
 </t>
 <t tx="zoomq.20130925103854.6463">def DAMAID(name):
@@ -2423,7 +2398,7 @@ def st_p_tag(tag, qstr):
         feed_back = {'data':[]}
         #print tag
         all_papers = KV.get(CFG.K4D[tag])
-        print all_papers
+        #print all_papers
         for i in all_papers:
             #print ['%s-&gt;%s'%(i,j['title']) for j in KV.get(i)['news']]
             _node = KV.get(i)
@@ -2875,22 +2850,32 @@ TPL_ITEM='''&lt;item&gt;
 <t tx="zoomq.20150202122015.12">def _wx_echo_idx(wxreq, cmd):
     print "_wx_echo_idx", cmd
     all_papers = KV.get(CFG.K4D[cmd])
-    print all_papers
-    _exp = ""
+    #print all_papers.sort()
+    #print len(all_papers)
+    #print CFG.ESSAY_TAG[cmd]
+    if 0 == len(all_papers):
+        _exp = u"但是...历史文章还未整理索引起来,敬请期待 눈_눈"
+    else:
+        _exp = ""
     for i in all_papers:
         #print ['%s-&gt;%s'%(i,j['title']) for j in KV.get(i)['news']]
         _node = KV.get(i)
         _exp += "%s: %s \n"%(_node['code']
                 , '\n\t+'.join([j['title'] for j  in _node['news']])
                 )
-    print _exp
+    #print _exp
     #return None
-    return WxTextResponse(_exp, wxreq).as_xml()</t>
-<t tx="zoomq.20150202122015.13">GOBJMAP = {'his':'_%(timestamp)s_his%(tot)d'
+    return WxTextResponse(TPL_IDX_CLASS.format(idx_news = _exp
+                , tag_info = CFG.ESSAY_TAG[cmd]
+            ), wxreq).as_xml()
+
+
+</t>
+<t tx="zoomq.20150202122015.13">GOBJMAP = {'his':'_{timestamp}_his{tot}'
     #,'tag':'t_%(timestamp)s_TAG%(tot)d'
-    ,'bk':'bk_%(timestamp)s_ST%(tot)d_%(name)s'
+    ,'bk':'bk_{timestamp}_ST{tot}_{name}'
     #,'p':'p_%(timestamp)s_PUB%(tot)d'
-    ,'menu':'%s(menu)_%(timestamp)s_PUB%(tot)d'
+    ,'menu':'{menu}_{timestamp}_PUB{tot}'
     #,'fw':'fw_%(timestamp)s_PUB%(tot)d'
     }
 # for show in wx echo
@@ -2967,26 +2952,30 @@ feed_back['data'].append(KV.get_info())
 for i in KV.get(CFG.K4D[_tg]):
     #print ['%s-&gt;%s'%(i,j['title']) for j in KV.get(i)['news']]
     feed_back['data'].append(['%s-&gt;%s'%(i,j['title']) for j in KV.get(i)['news']])
+
+
+
 </t>
 <t tx="zoomq.20150202122015.15">def _load_news(crt_tag, crt_key, crt_var, multi=False):
-    uuid = GENID(crt_tag, name=crt_tag)
-    print uuid
-    return None
+    uuid = GENID(crt_tag, name='menu')
+    #print uuid
+    #return None
     new_paper = deepcopy(CFG.K4WD)
     new_paper['uuid'] = uuid # 对象创建时, 变更时间戳同 UUID
     new_paper['his_id'] = uuid
     new_paper['lasttm'] = time.time()
     new_paper['tag'] = crt_tag
-    new_paper['code'] = CFG.ESSAY_TAG_ID[crt_tag]+crt_key
+    new_paper['code'] = crt_tag+crt_key
+    #CFG.ESSAY_TAG_ID[crt_tag]+crt_key
     #print new_paper['code']
     if multi:
         # mulit news
-        print crt_var
+        #print crt_var
         new_paper['news'] = [{'title':i['title']
             , 'uri':i['uri']
             , 'pic':i['img']
             } for i in crt_var]
-        print new_paper['news']
+        #print new_paper['news']
     else:
         # sinle news
         #print crt_var
@@ -2996,7 +2985,10 @@ for i in KV.get(CFG.K4D[_tg]):
             }]
     KV.add(new_paper['code'], new_paper)
     ADD4SYS(crt_tag, new_paper['code'])
-    return uuid</t>
+    return uuid
+
+
+</t>
 <t tx="zoomq.20150202122015.17">toUser = XCFG.AS_SRV
 fromUser = XCFG.AS_USR
 tStamp = int(time())
@@ -3020,8 +3012,8 @@ cmd = "curl -d '%s' %s/%s "% (xml, AS_LOCAL, 'echo')
 
 </t>
 <t tx="zoomq.20150202122015.19">for i in KV.get(CFG.K4D[_tg]):
-    #print i
-    print KV.delete(i)
+    #print 
+    KV.delete(i)
 
 KV.set(CFG.K4D[_tg],[])
 
@@ -3030,6 +3022,7 @@ KV.set(CFG.K4D[_tg],[])
 return None
 #WxTextResponse(CFG.TXT_HELP, wxreq).as_xml()
 
+
 </t>
 <t tx="zoomq.20150202122015.23">_TAG_PAPERS = '''%s :
 %s
@@ -3037,6 +3030,7 @@ return None
 return WxTextResponse(_TAG_PAPERS%( 'tag'
         ,'LIST' )
     , wxreq).as_xml()
+
         </t>
 <t tx="zoomq.20150202122015.5">#   150201 usage sub-class from jeff
 from wechat.official import WxApplication
@@ -3056,27 +3050,24 @@ class WxApp(WxApplication):
 <t tx="zoomq.20150202122015.6">def on_text(self, wxreq):
     return WxTextResponse(wxreq.Content, wxreq)
 </t>
-<t tx="zoomq.20150202122015.7">#_wx = WxApp()
-#result = _wx.process(request.forms, xml=request.body.read())
-#print "WxApp", result
-#print request.forms.keys()
-#print request.body.read()
-cmd = wxreq.Content
+<t tx="zoomq.20150202122015.7">cmd = wxreq.Content
 if cmd.isdigit():
     #print cmd
-    return _wx_echo_cnt(wxreq, cmd)
+    if cmd in CFG.ESSAY_TAG_KEYS:
+        #print "ESSAY_TAG_KEYS", cmd
+        return _wx_echo_idx(wxreq, cmd)
+    else:
+        return _wx_echo_cnt(wxreq, cmd)
 else:
     if cmd in CFG.CMD_ALIAS:
         return _wx_echo_cmd(wxreq, cmd)
-    elif cmd in CFG.ESSAY_TAG_KEYS:
-        print "ESSAY_TAG_KEYS", cmd
-        return _wx_echo_idx(wxreq, cmd)
     else:
         return WxTextResponse(CFG.TXT_HELP, wxreq).as_xml()
         #print cmd
 
     #if 8 &gt; len(crt_usr['msg']):
     #print cmd
+
 
 </t>
 <t tx="zoomq.20150202122015.8">import os
@@ -3113,6 +3104,15 @@ from utility import ADD4SYS
 from utility import PUT2SS
 
 from utility import WxApp
+</t>
+<t tx="zoomq.20150203153224.9">TPL_IDX_CLASS = u'''{tag_info}
+请输入文章索引号 (类似 151 的纯数字):
+然后,俺就告诉您文章链接呢...
+
+{idx_news}
+
+更多细节,请惯性地输入 h 继续吧 :)
+'''
 </t>
 </tnodes>
 </leo_file>
