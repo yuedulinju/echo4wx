@@ -2783,7 +2783,7 @@ conn = httplib.HTTPSConnection(host='www.site.com', port=443, cert_file=_certfil
 , "fw/aa":  "PUT"     # 转复 订户 消息
 
 </t>
-<t tx="zoomq.20131226095232.5938">VERSION = "echo4wx v15.2.4.2104"</t>
+<t tx="zoomq.20131226095232.5938">VERSION = "echo4wx v15.2.4.2308"</t>
 <t tx="zoomq.20150123094404.30">TPL_SUBS='''&lt;xml&gt;
 &lt;ToUserName&gt;&lt;![CDATA[%(toUser)s]]&gt;&lt;/ToUserName&gt;
 &lt;FromUserName&gt;&lt;![CDATA[%(fromUser)s]]&gt;&lt;/FromUserName&gt;
