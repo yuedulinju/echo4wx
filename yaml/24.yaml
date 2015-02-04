@@ -1,21 +1,20 @@
-'24:
-    '2014':
+'24':
+    '1':
         type: news
-        title: 2014 年度最赞 
-        uri: http://weekly.pychina.org/issue/issue-147-top2014.html
-        img: https://gallery.mailchimp.com/9735795484d2e4c204da82a29/images/Image_202014_01_22_20at_2010.45.04_20AM9789bf.png
-    '2013':
+        title: 嘴上的盛宴
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000126&itemidx=1&sign=ec85f01e6a54eb931526a42aac0d5167#wechat_redirect
+        img: http://mmsns.qpic.cn/mmsns/jsFJEErL30iaf5ZAE1gE97Ttvtz8iaFtwoZVEcdwFIFXOvT7hM7WZIEA/0
+    '2':
+        - type: news
+          title: 早说电影（2）烂片时代
+          uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000099&itemidx=1&sign=d79a7513cce9989bf0f3383ba19b26ff#wechat_redirect
+          img: http://mmsns.qpic.cn/mmsns/jsFJEErL30hb6aWgicmJ5wpI0OYY6COdOhWepGsEFBTzchAb8XLp5Kg/0
+        - type: news
+          title: 欧洲躯壳下一颗好莱坞心
+          uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000289&itemidx=1&sign=3b454f77f0fe8c202f720aa1263009ed#wechat_redirect
+          img: http://mmsns.qpic.cn/mmsns/jsFJEErL30ghiaqm3iapLahhMWZ9pd4O4ibsaqzP89bUMDAPTyA8bLbXA/0
+    '3':
         type: news
-        title: 2013 年度最赞 
-        uri: http://weekly.pychina.org/issue/issue-top2013.html
-        img: https://gallery.mailchimp.com/9735795484d2e4c204da82a29/images/Image_202014_01_22_20at_2010.45.04_20AM9789bf.png
-    '151':
-        - type: news
-          title: 蠎周刊 151; 一五一
-          uri: http://weekly.pychina.org/issue/issue-151.html
-          img: https://gallery.mailchimp.com/9735795484d2e4c204da82a29/images/Image_202014_01_22_20at_2010.45.04_20AM9789bf.png
-        - type: news
-          title: 蠎加载 19  
-          uri: http://weekly.pychina.org/importpython/importpython-19.html
-          img: http://zoomq.qiniudn.com/ZQCollection/snap/importpython-barnner.png?imageView2/2/h/210
-
+        title: 早答问题（3）《侨杂志》问民国
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000286&itemidx=1&sign=ac990997eee1e90e2226c188320303e0#wechat_redirect
+        img: http://mmsns.qpic.cn/mmsns/jsFJEErL30ia5IZlF2oxVKiac5snxH7UlFLljjFibQ8mCPpw4DLywFiaeQ/0

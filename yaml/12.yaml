@@ -1,13 +1,45 @@
 '12':
     '1':
-        type: news
-        title: 自在的行者社区
-        uri: http://wiki.pychina.org/doc/CpyUgHistoric.html
-        img: http://zoomquiet.org/res/m/i/logo/CPUGloglo.png
+        - type: news
+          title: 早选文章（1）郭德纲一直在前进
+          uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000171&itemidx=1&sign=1e43e1f5f5f8772561aa43ba206ec644#wechat_redirect
+          img: http://mmsns.qpic.cn/mmsns/jsFJEErL30j7Qb9IdicKpAyk583wMenT4jTOuZ6PvicbjKV2FQHIgtLw/0
+        - type: news
+          title: 郭德纲为什么这样红
+          uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000173&itemidx=1&sign=28e1f59742d2ea6d96613a669af9f213#wechat_redirect
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30iaYBwLAsicpWSjKrDVhcEGcb7JyU979kIZuIerdcqmkGTMmRqOIcicdtG5zZqeDq9Mou525hXiaG9BGA/0?tp=webp
     '2':
         type: news
-        title: 如何掺合 PyChina 志愿事务?
-        uri: http://wiki.pychina.org/doc/HowToJoin.html
-        img: http://pyconcn.qiniudn.com/zoomquiet/res/icon/PyChinaOrg-qrcode_for_gh_7e3afa7d29d8_258.jpg
-
-
+        title: 早说过了（2）为了怀旧的网恋
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000197&itemidx=1&sign=4a357a9c8ebb611ecf86859a825c3f21#wechat_redirect
+        img: http://mmsns.qpic.cn/mmsns/jsFJEErL30iaL84DnmW6iaHqoXpqanricLQVIdDAfambm5rOPOgAhWD6Q/0
+    '3':
+        type: news
+        title: 早说过了（3）你没有理由不疯
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000216&itemidx=1&sign=56da289d7d41d1a5edd075397df39985#wechat_redirect
+        img: http://mmsns.qpic.cn/mmsns/jsFJEErL30iaL84DnmW6iaHqoXpqanricLQMmzgeU04icatEpgPvGmFzVQ/0
+    '4':
+        type: news
+        title: 早说过了（4）假如五四有了网络
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000231&itemidx=1&sign=4531d1f48250a2b8e176eff2a9d738e0#wechat_redirect
+        img: http://mmsns.qpic.cn/mmsns/jsFJEErL30iaJadKCFicKCM3zL0eibp8JVM3RtWlc3ecP50bfIuMnLSnA/0
+    '5':
+        type: news
+        title: 早说过了（5）他们说年华并不花样
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000251&itemidx=1&sign=ed4b5413e2b776411d03a67c8e335d0a#wechat_redirect
+        img: http://mmsns.qpic.cn/mmsns/jsFJEErL30iaxQiastBQEkeygp0kUIibeq89LCONabFFrL3ypjBrjLvPQ/0
+    '6':
+        type: news
+        title: 早说过了（6）知识竞赛结硕果
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000266&itemidx=1&sign=4b9619ed3800309bb38d6d3893460b9d#wechat_redirect
+        img: http://mmsns.qpic.cn/mmsns/jsFJEErL30jhDMPJvFphnRrWibzUpTGT9iciaHHm8UaHr19Hic9SGLneiaw/0
+    '7':
+        type: news
+        title: 早说过了（7）网络时代的教育
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000281&itemidx=1&sign=bfdfb6600ffdae05e9021c881e2023c7#wechat_redirect
+        img: http://mmsns.qpic.cn/mmsns/jsFJEErL30jicqLykSW6766H2xqewjpmNaasuXWH3ibib9ic4W8S4ksKaA/0
+    '8':
+        type: news
+        title: 早说过了（8）替汤姆刷墙
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000293&itemidx=1&sign=1d086b5a359077118b48e0b3fce0e677#wechat_redirect
+        img: http://mmsns.qpic.cn/mmsns/jsFJEErL30iaFeuJ3UiaZgGvcb5sqicSibpHXpP7KOGHOv0g5TJXFfF9Fw/0

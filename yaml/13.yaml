@@ -1,8 +1,51 @@
 '13':
+    '0':
+        type: news
+        title: 为什么发旧稿
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000165&itemidx=1&sign=26a85a63f911d411b985ec223fcbfb1c#wechat_redirect
+        img: http://mmsns.qpic.cn/mmsns/jsFJEErL30g8FZ9pGGLIC2lmiaH59WoYAvExKHXaiakicKQ1eAFTCwrfQ/0
     '1':
         type: news
-        title: Pythonic口号的Pivot 
-        uri: http://pychina.org/imho/140916-pycon-slogen.html
-        img: http://zoomq.qiniudn.com/CPyUG/PyCon2013China/140106-@gvanrossum-BdUGedICAAAzki7.jpg-large.jpg?imageView2/2/w/320
-
-
+        title: 早讲历史（1）蔡元培为何以“私德”为由辞退陈独秀
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000239&itemidx=1&sign=66b3384c9416e69cfec4bc84d776b879#wechat_redirect
+        img: http://mmsns.qpic.cn/mmsns/jsFJEErL30jWrhHM8XZTkiasibwKe9CF3GO91WxORpjh0vQT2lzVFXHQ/0
+    '2':
+        type: news
+        title: 早讲历史（2）林琴南要稿费
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000249&itemidx=1&sign=2c007ba0443a63ed22e6d8b81f9ef226#wechat_redirect
+        img: http://mmsns.qpic.cn/mmsns/jsFJEErL30jWrhHM8XZTkiasibwKe9CF3GBa1TmmbfUL3ricmqDftWDAg/0
+    '3':
+        type: news
+        title: 早写历史（3）看报
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000264&itemidx=1&sign=0bc3e103207ea193cbf4ea2d4279ea58#wechat_redirect
+        img: http://mmsns.qpic.cn/mmsns/jsFJEErL30jhDMPJvFphnRrWibzUpTGT9n71PWfayQ4MnoUWW5ATFmw/0
+    '4':
+        type: news
+        title: 早讲历史（4）中国人飞行史
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000279&itemidx=1&sign=68b3be051bdc80054e94cf881bc197ec#wechat_redirect
+        img: http://mmsns.qpic.cn/mmsns/jsFJEErL30jicqLykSW6766H2xqewjpmNOhJIQcVzWIBfcYEYLRHRBQ/0
+    '5':
+        type: news
+        title: 早讲历史（5）扬州闲话
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000291&itemidx=1&sign=be0441fcf6e08844b759d8e5314741bb#wechat_redirect
+        img: http://mmsns.qpic.cn/mmsns/jsFJEErL30ghiaqm3iapLahhMWZ9pd4O4ib0kfLxDOJmbvDw5OYFuZuHA/0
+    '6':
+        type: news
+        title: 早讲历史（6）白话究竟有多大用
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000304&itemidx=1&sign=b8d4372c7ce5c4b090cbd169a1efc287#wechat_redirect
+        img: http://mmsns.qpic.cn/mmsns/jsFJEErL30iaHEibzLbcKngA4TdBU4iabMRmIibXh71eYYicru8MAQQBueQ/0
+    '7':
+        type: news
+        title: 早讲历史（7）叫我如何再想他
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000321&itemidx=1&sign=df7db0e5406048d94d4905a04c9ca0c8#wechat_redirect
+        img: http://mmsns.qpic.cn/mmsns/jsFJEErL30jrYibickJLFwjxaibdHLjOEpMrTurxvJCsv1LqaAkJmqNIQ/0
+    '8':
+        type: news
+        title: 早讲历史（8）无妻之累
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000337&itemidx=1&sign=e81e9b218dbaa440783e258a4055c422#wechat_redirect
+        img: http://mmsns.qpic.cn/mmsns/jsFJEErL30jeyhJqXibkjPDhKyNIq4ny9XiaOuw1aoT0gs1xoTibwluiaw/0
+    '9':
+        type: news
+        title: 早讲历史（9）坐北朝南
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000355&itemidx=1&sign=a234cb7e2b2401b4ea65772c6c9bf291#wechat_redirect
+        img: http://mmsns.qpic.cn/mmsns/jsFJEErL30iam0ltgZD9A7PJQ0kE4XUWWTM0lH5w1c53lcGWxpwFI9w/0

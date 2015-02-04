@@ -1,21 +1,21 @@
 '31':
-    '2014':
+    '161':
         type: news
-        title: 2014 年度最赞 
-        uri: http://weekly.pychina.org/issue/issue-147-top2014.html
-        img: https://gallery.mailchimp.com/9735795484d2e4c204da82a29/images/Image_202014_01_22_20at_2010.45.04_20AM9789bf.png
-    '2013':
+        title: 阅读邻居第16期·洪业传是什么东西
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000048&itemidx=1&sign=2f59e1b3f0c25cebb06e715c0ffbb07b#wechat_redirect
+        img: http://mmsns.qpic.cn/mmsns/jsFJEErL30iaicqFcBU2saicayxjKmhxwUXlXQd9dJuhHLGWllBIYGd4Q/0
+    '162':
         type: news
-        title: 2013 年度最赞 
-        uri: http://weekly.pychina.org/issue/issue-top2013.html
-        img: https://gallery.mailchimp.com/9735795484d2e4c204da82a29/images/Image_202014_01_22_20at_2010.45.04_20AM9789bf.png
-    '151':
-        - type: news
-          title: 蠎周刊 151; 一五一
-          uri: http://weekly.pychina.org/issue/issue-151.html
-          img: https://gallery.mailchimp.com/9735795484d2e4c204da82a29/images/Image_202014_01_22_20at_2010.45.04_20AM9789bf.png
-        - type: news
-          title: 蠎加载 19  
-          uri: http://weekly.pychina.org/importpython/importpython-19.html
-          img: http://zoomq.qiniudn.com/ZQCollection/snap/importpython-barnner.png?imageView2/2/h/210
-
+        title: 阅读邻居第16期：为什么要寻找苏慧廉
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000051&itemidx=1&sign=d331c4dafaf3559a0f7dfaa26b7f5051#wechat_redirect
+        img: http://mmsns.qpic.cn/mmsns/jsFJEErL30jhicvEia5v6HC6BNPmmQjeiazpSmg9t1TOfHrZwJ8zEdzwA/0
+    '163':
+        type: news
+        title: 阅读邻居第16期：中国当下是什么样子
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000054&itemidx=1&sign=d26902f658e638ab615b424ea0c51678#wechat_redirect
+        img: http://mmsns.qpic.cn/mmsns/jsFJEErL30jddU5bVMicvcFAveGQtnsA91XjyEnJ7cQib2pfLrZaC1hQ/0
+    '171':
+        type: news
+        title: 阅邻十七：你我瞬眼抗战二十年
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000103&itemidx=1&sign=22e2ff3b0ee10326b3b14e257ca65ea7#wechat_redirect
+        img: http://mmsns.qpic.cn/mmsns/jsFJEErL30gAokUBad7j6vQa3QQgeXyicddULgnzU2JXLVicW7swcPicw/0

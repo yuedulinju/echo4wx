@@ -1,8 +1,60 @@
 '14':
     '1':
         type: news
-        title: 为毛要这样发布文章?
-        uri: http://wiki.pychina.org/ot/2012-12-13-hello-world.html
-        img: http://img3.douban.com/view/group_topic/large/public/34894826-1.jpg
-
-
+        title: 早的故事（1）四十为什么要自述
+        uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=10000168&idx=1&sn=3707e966007317ac8dded2aa83ce5890#rd
+        img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30ghzLzicq6yLDdUR0U8LsunrPlCeicNBluwJALhuObbqfWm0YR8MJDZ98AQzreCTZa6gULVzdgtZlxg/0?tp=webp
+    '2':
+        type: news
+        title: 早的故事（2）下江人进川
+        uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=10000187&idx=1&sn=b1d0c517a45f0ebfecce217f435d352a#rd
+        img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30ghzLzicq6yLDdUR0U8Lsunr37qQibz9Zgxk9icNyFa86vCBhCqMvHAtIHoUQ7QTs1aYnKa528uxsfIQ/0?tp=webp
+    '3':
+        type: news
+        title: 早的故事（3）两个省的血液
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000201&itemidx=1&sign=9dce9ef75ca5231a18668d0afede3f0a#wechat_redirect
+        img: http://mmsns.qpic.cn/mmsns/jsFJEErL30jM8PLHicSgbjcsTSTSsbPGToOl7MegB8IDw2UClrNAZqA/0
+    '4':
+        type: news
+        title: 早的故事（4）妈妈家
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000221&itemidx=1&sign=042fc11db848ad76ac70bc8d0ce5f4cd#wechat_redirect
+        img: http://mmsns.qpic.cn/mmsns/jsFJEErL30iau5PNWicEqH2pNf0Yqdbk3FZz1wxRay5TTWBwh0vYkfWA/0
+    '5':
+        - type: news
+          title: 早的故事（5）爸妈讲的故事
+          uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000235&itemidx=1&sign=553550d9349637a06f910bfd0ed172cc#wechat_redirect
+          img: http://mmsns.qpic.cn/mmsns/jsFJEErL30iaJadKCFicKCM3zL0eibp8JVME9wHbOrNxbTU5dGiaft5rjg/0
+        - type: news
+          title: 絅弟周年祭文
+          uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000235&itemidx=2&sign=b17e341410f2554369c446d4f36ab395#wechat_redirect
+          img: http://mmsns.qpic.cn/mmsns/jsFJEErL30iaJadKCFicKCM3zL0eibp8JVM3W6ww1VjotYe6nspHQsCGA/0
+    '6':
+        type: news
+        title: 早的故事（6）武斗回忆
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000255&itemidx=1&sign=fbd86bb1ea8d2c9827c96ac21c6e6c2d#wechat_redirect
+        img: http://mmsns.qpic.cn/mmsns/jsFJEErL30iaxQiastBQEkeygp0kUIibeq8Jiad2Ndz8m5xo3sxnWeuZicw/0
+    '7':
+        type: news
+        title: 早的故事（7）起名考
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000268&itemidx=1&sign=baa4ece8ec839c3e4d88749be8fe84a8#wechat_redirect
+        img: http://mmsns.qpic.cn/mmsns/jsFJEErL30jhDMPJvFphnRrWibzUpTGT9Blgx5ibvIVlc5qvE1ATxNOg/0
+    '8':
+        type: news
+        title: 早的故事（8）青神县来了个普通人
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000298&itemidx=1&sign=519ddc6350df6c65ace1675deaab4253#wechat_redirect
+        img: http://mmsns.qpic.cn/mmsns/jsFJEErL30hR3Wzrib520fwOUrfTWk2G1qXEyKxGNhNaOteMlia6OsVw/0
+    '9':
+        type: news
+        title: 早的故事（9）辗转于蜀水之间
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000310&itemidx=1&sign=a5e1633a89e7b7532abbeda13146e839#wechat_redirect
+        img: http://mmsns.qpic.cn/mmsns/jsFJEErL30jHBZGhVbzsBFZONMF28JmBJpTqnTuKXPnGWX7f6peDaQ/0
+    '10':
+        type: news
+        title: 早的故事（10）县城长大的孩子
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000328&itemidx=1&sign=862ddad4e30685a3c60b4fc24481dbae#wechat_redirect
+        img: http://mmsns.qpic.cn/mmsns/jsFJEErL30hp4qnSpNSzmj6Ig82abbPficUK7icv5hu8d8a0SXF3icSrg/0
+    '11':
+        type: news
+        title: 早的故事（11）富顺小史
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000344&itemidx=1&sign=afe6353d1d4a1bc5be75f1f8b50510ec#wechat_redirect
+        img: http://mmsns.qpic.cn/mmsns/jsFJEErL30jeyhJqXibkjPDhKyNIq4ny9a3CgvcCvYuDZfTMsovVc5A/0

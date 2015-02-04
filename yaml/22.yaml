@@ -1,21 +1,86 @@
 '22':
-    '2014':
+    '0':
         type: news
-        title: 2014 年度最赞 
-        uri: http://weekly.pychina.org/issue/issue-147-top2014.html
-        img: https://gallery.mailchimp.com/9735795484d2e4c204da82a29/images/Image_202014_01_22_20at_2010.45.04_20AM9789bf.png
-    '2013':
+        title: 上海！上海！
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000147&itemidx=1&sign=9b3f12cd2ed26d46c53c6e5108151071#wechat_redirect
+        img: http://mmsns.qpic.cn/mmsns/jsFJEErL30h6HqAJxatLY9fqRxJztrRGzYbPGVEryU86hQFxkktSng/0
+    '1':
         type: news
-        title: 2013 年度最赞 
-        uri: http://weekly.pychina.org/issue/issue-top2013.html
-        img: https://gallery.mailchimp.com/9735795484d2e4c204da82a29/images/Image_202014_01_22_20at_2010.45.04_20AM9789bf.png
-    '151':
+        title: 早说早了（1）大话网络
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000182&itemidx=1&sign=14ecaa3359c5df81e23218d28608dca8#wechat_redirect
+        img: http://mmsns.qpic.cn/mmsns/jsFJEErL30iaFPnfcwlJNsx8REibn55SsBibffF1YRlXicxbachfWx2rjg/0
+    '2':
+        type: news
+        title: 早选文章（2）一个上海人眼里的周立波
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000189&itemidx=1&sign=4622f2e1b0e10cbc60fa9ce7ef60bf6c#wechat_redirect
+        img: http://mmsns.qpic.cn/mmsns/jsFJEErL30iaL84DnmW6iaHqoXpqanricLQMmzgeU04icatEpgPvGmFzVQ/0
+    '3':
         - type: news
-          title: 蠎周刊 151; 一五一
-          uri: http://weekly.pychina.org/issue/issue-151.html
-          img: https://gallery.mailchimp.com/9735795484d2e4c204da82a29/images/Image_202014_01_22_20at_2010.45.04_20AM9789bf.png
+          title: 早选文章（3）杜子美错嫁伍子胥
+          uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000203&itemidx=1&sign=244a58872d3c07df4ca7e37d4e30e2d8#wechat_redirect
+          img: http://mmsns.qpic.cn/mmsns/jsFJEErL30iaaCL07icwcWFwwS6IdQicEHQYMfKPtYXVqMneP8FW8jNVQ/0
         - type: news
-          title: 蠎加载 19  
-          uri: http://weekly.pychina.org/importpython/importpython-19.html
-          img: http://zoomq.qiniudn.com/ZQCollection/snap/importpython-barnner.png?imageView2/2/h/210
-
+          title: 十姨庙
+          uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000205&itemidx=1&sign=44eda2ff83c48d2565ec43e870de14a4#wechat_redirect
+          img: http://mmsns.qpic.cn/mmsns/jsFJEErL30iaaCL07icwcWFwwS6IdQicEHQg4Fk9ib0L847Ric2AbAM6Ytw/0
+    '4':
+        type: news
+        title: 早选文章（4）蓝苹曾为蒋介石祝寿？
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000223&itemidx=1&sign=15199730f9e8b7ab7cbb44762b1fe92c#wechat_redirect
+        img: http://mmsns.qpic.cn/mmsns/jsFJEErL30iaJadKCFicKCM3zL0eibp8JVMLIjP5OOsuvjxhQyADM58gg/0
+    '5':
+        type: news
+        title: 早选文章（5）吃一客西方，蘸点儿中国
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000223&itemidx=1&sign=15199730f9e8b7ab7cbb44762b1fe92c#wechat_redirect
+        img: http://mmsns.qpic.cn/mmsns/jsFJEErL30jWrhHM8XZTkiasibwKe9CF3G6OkttFCPalaXCBQFqe8UZw/0
+    '6':
+        type: news
+        title: 早选文章（6）钟山碑文事件
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000258&itemidx=1&sign=db638a0e581b2c1a765b94e8b4af5472#wechat_redirect
+        img: http://mmsns.qpic.cn/mmsns/jsFJEErL30jhDMPJvFphnRrWibzUpTGT9mQUxYMs9sqbUYVQkm0Sv0Q/0
+    '7':
+        type: news
+        title: 早选文章（7）“他们最终是不讨巧的”
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000270&itemidx=1&sign=bc085f9d60e4356f9e15ccbdc42b436d#wechat_redirect
+        img: http://mmsns.qpic.cn/mmsns/jsFJEErL30jhDMPJvFphnRrWibzUpTGT9U04ljA5QPTfV2pko4MC9fw/0
+    '8':
+        type: news
+        title: 早选文章（8）胡适就站在那里
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000300&itemidx=1&sign=bc20247600f3ae25a8cbed507a3bdff5#wechat_redirect
+        img: http://mmsns.qpic.cn/mmsns/jsFJEErL30jicRN22QrlnsVsgdx8bdVnybgwVcBmS7C7TickQatlYgKA/0
+    '9':
+        - type: news
+          title: 早说过了（9）该死一闭眼
+          uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000306&itemidx=1&sign=80fe3ea24a5b037b69e88e3a88591cb5#wechat_redirect
+          img: http://mmsns.qpic.cn/mmsns/jsFJEErL30iaHEibzLbcKngA4TdBU4iabMRq8TQBoPUnemVdfIY7qaCaw/0
+        - type: news
+          title: 早选文章（9）谁在民国关注诺贝尔文学奖
+          uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000313&itemidx=1&sign=934ea3f4bdce7ae749e7d8f93f703c2e#wechat_redirect
+          img: http://mmsns.qpic.cn/mmsns/jsFJEErL30jicRN22QrlnsVsgdx8bdVnycHkYW6HSpM9sd1F40A2lqQ/0
+    '10':
+        - type: news
+          title: 早选文章（10）民国时期诺奖作家的汉译与出版
+          uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000316&itemidx=1&sign=fed0275e80aa42735d4d33839d605ec3#wechat_redirect
+          img: http://mmsns.qpic.cn/mmsns/jsFJEErL30jrYibickJLFwjxaibdHLjOEpMqiaqdjhMQGRQj8wrNEkkcpQ/0
+        - type: news
+          title: 早说过了（10）才子卖肉与博士做鸭
+          uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000323&itemidx=1&sign=13a2d7aa726662220e781d982ece3fd7#wechat_redirect
+          img: http://mmsns.qpic.cn/mmsns/jsFJEErL30jrYibickJLFwjxaibdHLjOEpMu5RhjvvN7W1BicRTvO0RgEA/0
+    '11':
+        - type: news
+          title: 早选文章（11）臭不要脸的“历史真实”
+          uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000331&itemidx=1&sign=6834ee25add76c83f45f75c033d10a88#wechat_redirect
+          img: http://mmsns.qpic.cn/mmsns/jsFJEErL30hnzSlua3DouqVWNopQREZgxk5m2YmwNzM3SN5JAIM9pw/0
+        - type: news
+          title: 早说过了（11）太阳之下无新词
+          uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000339&itemidx=1&sign=2441189097aee30844307de28af55581#wechat_redirect
+          img: http://mmsns.qpic.cn/mmsns/jsFJEErL30jeyhJqXibkjPDhKyNIq4ny94BeohYiaYzvEniaeSga1IFYA/0
+    '12':
+        - type: news
+          title: 早选文章（12）小剧场，双城记
+          uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000347&itemidx=1&sign=01e1b9c04b9b0549841a2674e90960d1#wechat_redirect
+          img: http://mmsns.qpic.cn/mmsns/jsFJEErL30gGEf9G4DmmaFvEZDICnR2p7qyS1kDILib4RkkyicLTQgJg/0
+        - type: news
+          title: 早说过了（12）才子加流氓
+          uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000357&itemidx=1&sign=aadd0eca2b3da68b3cf62c822e2bbb56#wechat_redirect
+          img: http://mmsns.qpic.cn/mmsns/jsFJEErL30iam0ltgZD9A7PJQ0kE4XUWWIsjz76y4R4iboJBhxB00jgw/0
