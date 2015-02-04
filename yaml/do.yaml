@@ -1,0 +1,13 @@
+do:
+    '1':
+        type: news
+        title: 自在的行者社区
+        uri: http://wiki.pychina.org/doc/CpyUgHistoric.html
+        img: http://zoomquiet.org/res/m/i/logo/CPUGloglo.png
+    '2':
+        type: news
+        title: 如何掺合 PyChina 志愿事务?
+        uri: http://wiki.pychina.org/doc/HowToJoin.html
+        img: http://pyconcn.qiniudn.com/zoomquiet/res/icon/PyChinaOrg-qrcode_for_gh_7e3afa7d29d8_258.jpg
+
+

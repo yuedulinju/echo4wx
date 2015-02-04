@@ -1,3 +1,8 @@
+logs/
+xsettings.py
+
+.python-version
+
 *.py[cod]
 
 # C extensions

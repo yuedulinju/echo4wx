@@ -1,0 +1,7 @@
+pc:
+    '1':
+        type: news
+        title: Unpythonic
+        uri: http://blog.zhgdg.org/2014-04/dd19-pythonic/
+        img: https://gallery.mailchimp.com/9735795484d2e4c204da82a29/images/Image_202014_01_22_20at_2010.45.04_20AM9789bf.png
+

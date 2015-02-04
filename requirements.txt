@@ -1,0 +1,6 @@
+docopt
+httpie
+PyYAML
+requests
+sae-python-dev
+saedeploy

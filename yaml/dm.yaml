@@ -1,0 +1,8 @@
+dm:
+    '1':
+        type: news
+        title: 为什么 PyChina.org ?
+        uri: http://wiki.pychina.org/IMHO/2014-12-31-why-pychina.html
+        img: http://pyconcn.qiniudn.com/zoomquiet/res/logo/PyChina_logo_H_131217_zq_w80.png
+
+
