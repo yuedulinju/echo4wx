@@ -99,7 +99,7 @@
 <v t="zoomq.20150202122015.9"><vh>&lt;&lt;自制模块&gt;&gt;</vh></v>
 <v t="zoomq.20150202122015.8"><vh>build-in</vh></v>
 </v>
-<v t="zoomq.20130925103854.5007" a="E"><vh>CLI 远程管理&gt;&gt;&gt;</vh>
+<v t="zoomq.20130925103854.5007"><vh>CLI 远程管理&gt;&gt;&gt;</vh>
 <v t="zoomq.20131007093121.5601" a="E"><vh>文章管理</vh>
 <v t="zoomq.20150202122015.15"><vh>_load_news(,, multi=False)</vh></v>
 <v t="zoomq.20130929203117.3712" a="E"><vh>POST push/p</vh>
@@ -2783,7 +2783,7 @@ conn = httplib.HTTPSConnection(host='www.site.com', port=443, cert_file=_certfil
 , "fw/aa":  "PUT"     # 转复 订户 消息
 
 </t>
-<t tx="zoomq.20131226095232.5938">VERSION = "echo4wx v15.2.4.2308"</t>
+<t tx="zoomq.20131226095232.5938">VERSION = "echo4wx v15.2.4.2323"</t>
 <t tx="zoomq.20150123094404.30">TPL_SUBS='''&lt;xml&gt;
 &lt;ToUserName&gt;&lt;![CDATA[%(toUser)s]]&gt;&lt;/ToUserName&gt;
 &lt;FromUserName&gt;&lt;![CDATA[%(fromUser)s]]&gt;&lt;/FromUserName&gt;
@@ -2855,7 +2855,8 @@ TPL_ITEM='''&lt;item&gt;
 <t tx="zoomq.20150202122015.12">def _wx_echo_idx(wxreq, cmd):
     print "_wx_echo_idx", cmd
     all_papers = KV.get(CFG.K4D[cmd])
-    #print all_papers.sort()
+    #print 
+    all_papers.sort()
     #print len(all_papers)
     #print CFG.ESSAY_TAG[cmd]
     if 0 == len(all_papers):

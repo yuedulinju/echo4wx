@@ -338,7 +338,8 @@ def _wx_echo_cnt(wxreq, cmd):
 def _wx_echo_idx(wxreq, cmd):
     print "_wx_echo_idx", cmd
     all_papers = KV.get(CFG.K4D[cmd])
-    #print all_papers.sort()
+    #print 
+    all_papers.sort()
     #print len(all_papers)
     #print CFG.ESSAY_TAG[cmd]
     if 0 == len(all_papers):
