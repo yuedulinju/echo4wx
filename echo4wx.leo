@@ -100,9 +100,9 @@
 <v t="zoomq.20150202122015.8"><vh>build-in</vh></v>
 </v>
 <v t="zoomq.20130925103854.5007"><vh>CLI 远程管理&gt;&gt;&gt;</vh>
-<v t="zoomq.20131007093121.5601" a="E"><vh>文章管理</vh>
+<v t="zoomq.20131007093121.5601"><vh>文章管理</vh>
 <v t="zoomq.20150202122015.15"><vh>_load_news(,, multi=False)</vh></v>
-<v t="zoomq.20130929203117.3712" a="E"><vh>POST push/p</vh>
+<v t="zoomq.20130929203117.3712"><vh>POST push/p</vh>
 <v t="zoomq.20150202122015.19"><vh>&lt;&lt;reset_old&gt;&gt;</vh></v>
 <v t="zoomq.20150202122015.14"><vh>&lt;&lt;flush_in&gt;&gt;</vh></v>
 </v>
@@ -2783,7 +2783,7 @@ conn = httplib.HTTPSConnection(host='www.site.com', port=443, cert_file=_certfil
 , "fw/aa":  "PUT"     # 转复 订户 消息
 
 </t>
-<t tx="zoomq.20131226095232.5938">VERSION = "echo4wx v15.2.4.22"</t>
+<t tx="zoomq.20131226095232.5938">VERSION = "echo4wx v15.2.4.2104"</t>
 <t tx="zoomq.20150123094404.30">TPL_SUBS='''&lt;xml&gt;
 &lt;ToUserName&gt;&lt;![CDATA[%(toUser)s]]&gt;&lt;/ToUserName&gt;
 &lt;FromUserName&gt;&lt;![CDATA[%(fromUser)s]]&gt;&lt;/FromUserName&gt;
@@ -3028,7 +3028,10 @@ KV.set(CFG.K4D[_tg],[])
 </t>
 <t tx="zoomq.20150202122015.22">#print wxreq.Event
 print wxreq.EventKey
-return None
+
+return _wx_echo_idx(wxreq, wxreq.EventKey)
+
+#return None
 #WxTextResponse(CFG.TXT_HELP, wxreq).as_xml()
 
 

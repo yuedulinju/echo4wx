@@ -294,7 +294,10 @@ def wechat_post():
     elif 'event' == wxreq.MsgType:
         #print wxreq.Event
         print wxreq.EventKey
-        return None
+
+        return _wx_echo_idx(wxreq, wxreq.EventKey)
+
+        #return None
         #WxTextResponse(CFG.TXT_HELP, wxreq).as_xml()
 
 
