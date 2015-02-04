@@ -1,9 +1,16 @@
 # -*- coding: utf-8 -*-
 TPL_IDX_CLASS = u'''{tag_info}
 请输入文章索引号 (类似 151 的纯数字):
-然后,俺就告诉您文章链接呢...
+然后,俺就能告诉您文章链接呢...
 
 {idx_news}
+
+更多细节,请惯性地输入 h 继续吧 :)
+'''
+TPL_IDX_LOST = u'''{tag_info}
+但是...
+历史文章还未整理好
+傻z 受命折腾中,敬请期待 눈_눈
 
 更多细节,请惯性地输入 h 继续吧 :)
 '''
@@ -208,6 +215,24 @@ def st_kv(qstr):
     else:
         return "alert quary!-("
 
+@APP.get('/cli/get/acc/<qstr>')
+def get_acc(qstr):
+    '''定期获得 access_token
+    '''
+    q_dict = _query2dict(qstr)
+    if _chkQueryArgs("/cli/get/acc", q_dict, "GET"):
+        print XCFG.access
+        import requests
+        r = requests.get(XCFG.access)
+        _json = json.loads(r.text)
+        _acc = {}
+        _acc['access_token'] = _json['access_token']
+        _acc['expires_in'] = time.time()+int(_json['expires_in'])
+        KV.set(CFG.K4D['acc'],_acc)
+        return KV.get(CFG.K4D['acc'])
+    else:
+        return "alert quary!-("
+    
 @APP.get('/echo')
 @APP.get('/echo/')
 def echo_wechat():
@@ -267,7 +292,8 @@ def wechat_post():
 
 
     elif 'event' == wxreq.MsgType:
-        print wxreq.Event
+        #print wxreq.Event
+        print wxreq.EventKey
         return None
         #WxTextResponse(CFG.TXT_HELP, wxreq).as_xml()
 
@@ -307,20 +333,23 @@ def _wx_echo_idx(wxreq, cmd):
     #print len(all_papers)
     #print CFG.ESSAY_TAG[cmd]
     if 0 == len(all_papers):
-        _exp = u"但是...历史文章还未整理索引起来,敬请期待 눈_눈"
+        #_exp = TPL_IDX_LOST.format( tag_info = CFG.ESSAY_TAG[cmd])
+        #u"但是...历史文章还未整理索引起来,敬请期待 눈_눈"
+        return WxTextResponse(TPL_IDX_LOST.format( tag_info = CFG.ESSAY_TAG[cmd])
+                , wxreq).as_xml()
     else:
         _exp = ""
-    for i in all_papers:
-        #print ['%s->%s'%(i,j['title']) for j in KV.get(i)['news']]
-        _node = KV.get(i)
-        _exp += "%s: %s \n"%(_node['code']
-                , '\n\t+'.join([j['title'] for j  in _node['news']])
-                )
-    #print _exp
-    #return None
-    return WxTextResponse(TPL_IDX_CLASS.format(idx_news = _exp
-                , tag_info = CFG.ESSAY_TAG[cmd]
-            ), wxreq).as_xml()
+        for i in all_papers:
+            #print ['%s->%s'%(i,j['title']) for j in KV.get(i)['news']]
+            _node = KV.get(i)
+            _exp += "%s: %s \n"%(_node['code']
+                    , '\n\t+'.join([j['title'] for j  in _node['news']])
+                    )
+        #print _exp
+        #return None
+        return WxTextResponse(TPL_IDX_CLASS.format(idx_news = _exp
+                    , tag_info = CFG.ESSAY_TAG[cmd]
+                ), wxreq).as_xml()
 
 
 def _wx_echo_cmd(wxreq, cmd):

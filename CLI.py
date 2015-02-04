@@ -22,6 +22,7 @@ e.g:
   info/:UUID                查阅指定 信息
   st/kv     查询 KVDB 整体现状
   sum/p/:TAG 综合 分类文章 信息现状
+  get/acc     查询 access_token
   
   !!! 小心:大规模数据I/O操作 !!!
   push/p yaml=path/2/x.yaml 提交文章数据

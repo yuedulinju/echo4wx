@@ -45,7 +45,9 @@ class Borg():
     KV = sae.kvdb.KVClient()
     #   系统索引名-UUID 字典; KVDB 无法Mongo 样搜索,只能人工建立索引
     K4D = {'incr':"SYS_TOT"     # int
-        #,'p':"SYS_pubs_ALL"     # [] 所有 文章 (包含已经 del 的)
+        ,'acc':"SYS_wx_token"   # {"access_token":"ACCESS_TOKEN"
+                                #  ,"expires_in":time.time()+有效时间 }
+        #,'p':"SYS_pubs_ALL"    # [] 所有 文章 (包含已经 del 的)
         ,'11':"SYS_11_ALL"     # [] 有效栏目文章 (不含已经 del 的)
         ,'12':"SYS_12_ALL"     # [] 有效栏目文章 (不含已经 del 的)
         ,'13':"SYS_13_ALL"     # [] 有效栏目文章 (不含已经 del 的)
@@ -320,7 +322,8 @@ class Borg():
         , "echo":       "GET"       # 模拟wechat 问答
         , "subs":       "GET"       # 模拟wechat 关注
         , "clic":       "GET"       # 模拟wechat 菜单
-        , "info":   "GET"          # 查阅 指定 信息
+        , "info":       "GET"       # 查阅 指定 信息
+        , "get/acc":    "GET"       # 查阅 指定 信息
         , "find/m":     "GET"       # 搜索用户
         , "del/usr":    "DELETE"    # 软删除所有用户 (包含tag 信息)
         , "reliv/usr":  "PUT"       # 恢复指定用户

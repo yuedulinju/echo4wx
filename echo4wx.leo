@@ -14,10 +14,10 @@
 <v t="zoomq.20120710140424.5454"><vh>@nosent config.yaml</vh></v>
 <v t="zoomq.20120710140424.5455"><vh>@nosent index.wsgi</vh></v>
 <v t="zoomq.20131226095232.5938"><vh>&lt;&lt;VERSION&gt;&gt;</vh></v>
-<v t="zoomq.20120723102156.5544" a="E"><vh>@nosent config.py</vh>
+<v t="zoomq.20120723102156.5544"><vh>@nosent config.py</vh>
 <v t="zoomq.20131226095232.5938"></v>
 <v t="zoomq.20120727213305.14750"><vh>&lt;&lt;declarations&gt;&gt;</vh></v>
-<v t="zoomq.20120710140424.5456" a="E"><vh>&lt;&lt;cfg4Borg&gt;&gt;</vh>
+<v t="zoomq.20120710140424.5456"><vh>&lt;&lt;cfg4Borg&gt;&gt;</vh>
 <v t="zoomq.20130926092950.5432"><vh>环境切换</vh></v>
 <v t="zoomq.20130927104354.5456"><vh>storage</vh></v>
 <v t="zoomq.20130923093950.3647" a="E"><vh>KVDB</vh>
@@ -31,7 +31,7 @@
 <v t="zoomq.20130925103854.6455"><vh>帮助.系统</vh></v>
 <v t="zoomq.20130925103854.6458"><vh>文章查询</vh></v>
 </v>
-<v t="zoomq.20130925103854.4951"><vh>RESTful</vh>
+<v t="zoomq.20130925103854.4951" a="E"><vh>RESTful</vh>
 <v t="zoomq.20131226095232.5937"><vh>&lt;&lt;CLI4wx&gt;&gt;</vh></v>
 <v t="zoomq.20131226095232.5936"><vh>&lt;&lt;CLI4sys&gt;&gt;</vh></v>
 <v t="zoomq.20131226095232.5935"><vh>&lt;&lt;CLI4pub&gt;&gt;</vh></v>
@@ -94,7 +94,7 @@
 <v t="zoomq.20120727213305.14707"><vh>404+各种默认处理</vh></v>
 </v>
 <v t="zoomq.20120723102156.5561" a="E"><vh>@nosent mana4api.py</vh>
-<v t="zoomq.20120723102156.5562" a="E"><vh>&lt;&lt;declarations&gt;&gt;</vh>
+<v t="zoomq.20120723102156.5562"><vh>&lt;&lt;declarations&gt;&gt;</vh>
 <v t="zoomq.20150203153224.9"><vh>输出模板</vh></v>
 <v t="zoomq.20150202122015.9"><vh>&lt;&lt;自制模块&gt;&gt;</vh></v>
 <v t="zoomq.20150202122015.8"><vh>build-in</vh></v>
@@ -110,9 +110,10 @@
 </v>
 <v t="zoomq.20131223160728.4904"><vh>GET info/:UUID</vh></v>
 <v t="zoomq.20130927104354.6049"><vh>GET st/kv</vh></v>
+<v t="zoomq.20150203153224.10"><vh>GET get/acc</vh></v>
 </v>
 <v t="zoomq.20130918155053.5760"><vh>GET  /echo</vh></v>
-<v t="zoomq.20130918155053.7083"><vh>POST /echo 认证接口</vh>
+<v t="zoomq.20130918155053.7083" a="E"><vh>POST /echo 认证接口</vh>
 <v t="zoomq.20150202122015.23"><vh>&lt;&lt;echo CLICK&gt;&gt;</vh></v>
 <v t="zoomq.20150202122015.22"><vh>&lt;&lt;echo event&gt;&gt;</vh></v>
 <v t="zoomq.20150202122015.7"><vh>&lt;&lt;echo TEXT&gt;&gt;</vh></v>
@@ -1350,7 +1351,9 @@ def wechat_post():
 KV = sae.kvdb.KVClient()
 #   系统索引名-UUID 字典; KVDB 无法Mongo 样搜索,只能人工建立索引
 K4D = {'incr':"SYS_TOT"     # int
-    #,'p':"SYS_pubs_ALL"     # [] 所有 文章 (包含已经 del 的)
+    ,'acc':"SYS_wx_token"   # {"access_token":"ACCESS_TOKEN"
+                            #  ,"expires_in":time.time()+有效时间 }
+    #,'p':"SYS_pubs_ALL"    # [] 所有 文章 (包含已经 del 的)
     ,'11':"SYS_11_ALL"     # [] 有效栏目文章 (不含已经 del 的)
     ,'12':"SYS_12_ALL"     # [] 有效栏目文章 (不含已经 del 的)
     ,'13':"SYS_13_ALL"     # [] 有效栏目文章 (不含已经 del 的)
@@ -1510,7 +1513,8 @@ CLI_MATTERS = {     # 命令行响应方式速查字典
     , "echo":       "GET"       # 模拟wechat 问答
     , "subs":       "GET"       # 模拟wechat 关注
     , "clic":       "GET"       # 模拟wechat 菜单
-    , "info":   "GET"          # 查阅 指定 信息
+    , "info":       "GET"       # 查阅 指定 信息
+    , "get/acc":    "GET"       # 查阅 指定 信息
     &lt;&lt;CLI4usr&gt;&gt;
     &lt;&lt;CLI4pub&gt;&gt;
     
@@ -1592,6 +1596,7 @@ e.g:
   info/:UUID                查阅指定 信息
   st/kv     查询 KVDB 整体现状
   sum/p/:TAG 综合 分类文章 信息现状
+  get/acc     查询 access_token
   
   !!! 小心:大规模数据I/O操作 !!!
   push/p yaml=path/2/x.yaml 提交文章数据
@@ -2854,20 +2859,23 @@ TPL_ITEM='''&lt;item&gt;
     #print len(all_papers)
     #print CFG.ESSAY_TAG[cmd]
     if 0 == len(all_papers):
-        _exp = u"但是...历史文章还未整理索引起来,敬请期待 눈_눈"
+        #_exp = TPL_IDX_LOST.format( tag_info = CFG.ESSAY_TAG[cmd])
+        #u"但是...历史文章还未整理索引起来,敬请期待 눈_눈"
+        return WxTextResponse(TPL_IDX_LOST.format( tag_info = CFG.ESSAY_TAG[cmd])
+                , wxreq).as_xml()
     else:
         _exp = ""
-    for i in all_papers:
-        #print ['%s-&gt;%s'%(i,j['title']) for j in KV.get(i)['news']]
-        _node = KV.get(i)
-        _exp += "%s: %s \n"%(_node['code']
-                , '\n\t+'.join([j['title'] for j  in _node['news']])
-                )
-    #print _exp
-    #return None
-    return WxTextResponse(TPL_IDX_CLASS.format(idx_news = _exp
-                , tag_info = CFG.ESSAY_TAG[cmd]
-            ), wxreq).as_xml()
+        for i in all_papers:
+            #print ['%s-&gt;%s'%(i,j['title']) for j in KV.get(i)['news']]
+            _node = KV.get(i)
+            _exp += "%s: %s \n"%(_node['code']
+                    , '\n\t+'.join([j['title'] for j  in _node['news']])
+                    )
+        #print _exp
+        #return None
+        return WxTextResponse(TPL_IDX_CLASS.format(idx_news = _exp
+                    , tag_info = CFG.ESSAY_TAG[cmd]
+                ), wxreq).as_xml()
 
 
 </t>
@@ -3018,7 +3026,8 @@ cmd = "curl -d '%s' %s/%s "% (xml, AS_LOCAL, 'echo')
 KV.set(CFG.K4D[_tg],[])
 
 </t>
-<t tx="zoomq.20150202122015.22">print wxreq.Event
+<t tx="zoomq.20150202122015.22">#print wxreq.Event
+print wxreq.EventKey
 return None
 #WxTextResponse(CFG.TXT_HELP, wxreq).as_xml()
 
@@ -3105,11 +3114,36 @@ from utility import PUT2SS
 
 from utility import WxApp
 </t>
+<t tx="zoomq.20150203153224.10">@APP.get('/cli/get/acc/&lt;qstr&gt;')
+def get_acc(qstr):
+    '''定期获得 access_token
+    '''
+    q_dict = _query2dict(qstr)
+    if _chkQueryArgs("/cli/get/acc", q_dict, "GET"):
+        print XCFG.access
+        import requests
+        r = requests.get(XCFG.access)
+        _json = json.loads(r.text)
+        _acc = {}
+        _acc['access_token'] = _json['access_token']
+        _acc['expires_in'] = time.time()+int(_json['expires_in'])
+        KV.set(CFG.K4D['acc'],_acc)
+        return KV.get(CFG.K4D['acc'])
+    else:
+        return "alert quary!-("
+    </t>
 <t tx="zoomq.20150203153224.9">TPL_IDX_CLASS = u'''{tag_info}
 请输入文章索引号 (类似 151 的纯数字):
-然后,俺就告诉您文章链接呢...
+然后,俺就能告诉您文章链接呢...
 
 {idx_news}
+
+更多细节,请惯性地输入 h 继续吧 :)
+'''
+TPL_IDX_LOST = u'''{tag_info}
+但是...
+历史文章还未整理好
+傻z 受命折腾中,敬请期待 눈_눈
 
 更多细节,请惯性地输入 h 继续吧 :)
 '''
