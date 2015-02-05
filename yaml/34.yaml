@@ -1,22 +1,30 @@
 '34':
-    '2014':
+    '1':
         type: news
-        title: 2014 年度最赞 
-        uri: http://weekly.pychina.org/issue/issue-147-top2014.html
-        img: https://gallery.mailchimp.com/9735795484d2e4c204da82a29/images/Image_202014_01_22_20at_2010.45.04_20AM9789bf.png
-    '2013':
+        title: 一个人守了七年
+        uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=200345513&idx=2&sn=0dbad865132c66bd453572a09f4816c5#rd
+        img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30h11qic0icCNtlcE1ibOZgZb6icK6b6jclj0p8EvtdA63aKHaibs4skUIpictJwcJ2aKOEs7QkeN6endq4w/0?tp=webp&wxfrom=5
+    '2':
         type: news
-        title: 2013 年度最赞 
-        uri: http://weekly.pychina.org/issue/issue-top2013.html
-        img: https://gallery.mailchimp.com/9735795484d2e4c204da82a29/images/Image_202014_01_22_20at_2010.45.04_20AM9789bf.png
-    '151':
+        title: 我们慢慢地向前走去
+        uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=200654324&idx=1&sn=d8e3bded809586d93ab58ff1f9862d7f#rd
+        img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30g2qia9ia32atRjYWhI2nbtDIuc4VzWUv4Eu5PRD6ZUXEkLWIlvktH7bmdcX2Gqib4vf0iakZ07ibeXibdA/0?tp=webp&wxfrom=5
+    '3':
+        type: news
+        title: 与一位邻居的微博争论
+        uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=200762908&idx=1&sn=af7712efed7004727b8ca0b5dd5c5c9b#rd
+        img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30h5Sv8VlP3rUialId0JPG8nbGMn7kFKNbAMQbWj9t3xdUHBDicswr78h5loUDjIh6UDhTI0ZEJKmgOQ/0?tp=webp&wxfrom=5
+    '4':
         - type: news
-          title: 蠎周刊 151; 一五一
-          uri: http://weekly.pychina.org/issue/issue-151.html
-          img: https://gallery.mailchimp.com/9735795484d2e4c204da82a29/images/Image_202014_01_22_20at_2010.45.04_20AM9789bf.png
+          title: 天晓得是怎么来的
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=202788460&idx=1&sn=322ad56f7e8179a10ed5cdbd7266892e#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30jB8HYf0l1nu1qM6gicJDuXf8GnqOX2WC7ic0YAOGbQl977s6USAh8BRxLCBRJpodCApSBnaibic9szMw/0?tp=webp&wxfrom=5
         - type: news
-          title: 蠎加载 19  
-          uri: http://weekly.pychina.org/importpython/importpython-19.html
-          img: http://zoomq.qiniudn.com/ZQCollection/snap/importpython-barnner.png?imageView2/2/h/210
-
-
+          title: 人人家里都有史
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=202788460&idx=2&sn=b05a55bfc5f8ce901f22936980a44a94#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30jB8HYf0l1nu1qM6gicJDuXflESRV0GL2QyiaYo9X0WVgDSA9EicqCP1IyYhmFKrUoaoUMnIX4sSe3xQ/0?tp=webp&wxfrom=5
+    '4':
+        type: news
+        title: 一起读书吧？来这十个读书会吧
+        uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=203127645&idx=1&sn=c0bc8ce5081e22555601f5b59e49d949#rd
+        img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30iasVflPBm2q36O2qFPcZQAP9GJFfOV5iarVmXzk4AickzE2zCFY02PuLOSLVsPNWbx6tnmoeiaXspZ7w/0?tp=webp&wxfrom=5

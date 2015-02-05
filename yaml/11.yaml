@@ -174,3 +174,53 @@
         title: 早写书评（29）虚构，也是纪实
         uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000353&itemidx=1&sign=b7737a826f138f76626e42710b69b0a4#wechat_redirect
         img: http://mmsns.qpic.cn/mmsns/jsFJEErL30iam0ltgZD9A7PJQ0kE4XUWW5WG7RJPC9OdibVaQ4BjQCZw/0
+    '30':
+        type: news
+        title: 早写书评（30）倘若我来选鲁迅……
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000370&itemidx=1&sign=3f1f645eef5eb570a62ab19e80a30225#wechat_redirect
+        img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30gYicFdkib1KkAqXib8zmOS6nHxW5TxCngVxPU5xhzJHVkzJHIEckgxNAIatfN9WuYRtdelOvhXMHwPQ/0?tp=webp
+    '31':
+        type: news
+        title: 早写书评（31）吴福辉“暗算”现代文学史
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000384&itemidx=1&sign=4dcafc16a825cfb3ab454d1eab30ab00#wechat_redirect
+        img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30gQBmRzLW1fgcI2jFcV8s7Y6duibPTgQweoupFvTFB68icoBmk0RxrBdOuc1k0qEXrTichbEWbL5N5AQ/0?tp=webp
+    '32':
+        type: news
+        title: 早写书评（32）好小说的三个特性
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000399&itemidx=1&sign=7ebae851d0b1a93a8e59d766d8c01e03#wechat_redirect
+        img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30h3vcFe3Qrc4CSd2libxE4G0Qv3Rsg8T32hvffaQzwSwYbRB9mR9h9HySSe0FcYsNSn4ACNE3gNjXQ/0?tp=webp
+    '33':
+        type: news
+        title: 早写书评（33）官场小说的新变
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10001405&itemidx=1&sign=6fb3133dbf6941645582aa7daf47d934#wechat_redirect
+        img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30hq2nyDb2Bhwu0SIIKo7pcZWFbicRrq1jOjw2qB0xLW2iaib9q61WYiavZ3Vaz8obg1UmxZlPlCCJCy0A/0?tp=webp
+    '34':
+        type: news
+        title: 早写书评（34）学问还可以这样表述
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10012691&itemidx=1&sign=c924714a35bda532d363f5cdfb195511#wechat_redirect
+        img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30ia1IcLAzVy6B6J4jw46MTia4NSdbB43p85dIF7ptyR3k23hJ7A3c0xoNaeTkCWM0wsFzdrjP62uqkA/0?tp=webp&wxfrom=5
+    '35':
+        type: news
+        title: 早写书评（35）左史右图说晚清
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10012872&itemidx=1&sign=2241d2ffb9639ed82dee920cfaeef2fc#wechat_redirect
+        img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30ia1IcLAzVy6B6J4jw46MTia4ibxUuoVGS9bW0UEQjBx9OA0EUv75ANKttQTKbmxgK9eiaFnf7OGSl98w/0?tp=webp&wxfrom=5
+    '36':
+        type: news
+        title: 最畅销的书为什么绝不是最好的书
+        uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=10013774&idx=1&sn=f5b3be7de8acdda6269cdef6c776f0f5#rd
+        img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30iauCiaPZG7vfqgDak3pknPTHtCzXWicGvicRT0eRCia2o1dDfmD6Gxg1uQuHYKT2fVj8yjaQSWuuSAib0w/0?tp=webp&wxfrom=5
+    '37':
+        type: news
+        title: 你之所谓读者，我之所谓炮灰
+        uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=200015479&idx=1&sn=cd469b43d2ae0642464ea9b3f79beae2#rd
+        img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30ghUmmeu5jW81O9wMlNPgaMQzbFqOB4XxBRpiab6rsOyBtTQQWlba5AqWOgmfK4X2iawmqwVAtVUTicQ/0?tp=webp&wxfrom=5
+    '38':
+        type: news
+        title: 如果世上只有英文——评《遗失在西方的中国史》
+        uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=200950747&idx=1&sn=d7ba33cf3bb38942aacf7c56d8eb1b91#rd
+        img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30gdlkJUBm8p5th5ibU7eDvicoNVCQtoXfwiaeBaJDyQicBgE8ML57cmiaGPampMXkZcvbVxtIUorjPr1Vw/0?tp=webp&wxfrom=5
+    '39':
+        type: news
+        title: 推荐《童年的消逝》
+        uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=203200174&idx=1&sn=10ffa7b6130a64000a9666c917f69ee9#rd
+        img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30g1G9Th23O6CEBgvxFYYwq1tLyVCZfibvOaiayqmAQTck32BzSvxYA8Rsu2hnmibxQ5kUDIictn64Kwog/0?tp=webp&wxfrom=5

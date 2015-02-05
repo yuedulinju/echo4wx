@@ -49,3 +49,33 @@
         title: 早讲历史（9）坐北朝南
         uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000355&itemidx=1&sign=a234cb7e2b2401b4ea65772c6c9bf291#wechat_redirect
         img: http://mmsns.qpic.cn/mmsns/jsFJEErL30iam0ltgZD9A7PJQ0kE4XUWWTM0lH5w1c53lcGWxpwFI9w/0
+    '10':
+        type: news
+        title: 早讲历史（10）车站风云
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000372&itemidx=1&sign=e5ab923462f156a10d283e473f061233#wechat_redirect
+        img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30gYicFdkib1KkAqXib8zmOS6nHDfaibhCmcBUicOZaHHj3ia5zSC02tAnRJ5h8lOd3yLhomZaanvRS43kNQ/0?tp=webp
+    '11':
+        type: news
+        title: 早讲历史（11）那个逃席的人
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000386&itemidx=1&sign=fe3f10d69fb7aecc714a57a068126488#wechat_redirect
+        img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30gQBmRzLW1fgcI2jFcV8s7YoCBbyFhrvOxUXMog9rPLJH2EhYyyZabukDzr8dl3k4gpHwGMxyA36w/0?tp=webp
+    '12':
+        type: news
+        title: 早讲历史（12）现代启示录
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000401&itemidx=1&sign=3aa4a9c233fef84bd2c3b569bea08596#wechat_redirect
+        img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30iafFicoJBQXTjvKJ31JhEbEXhZ5DMySFial4WR4zuBiaYnGscU5ljboEdHEfZEueMtn0dkYNy6q6CT0A/0?tp=webp
+    '13':
+        type: news
+        title: 早讲历史（13）翁某今日洗脚
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10001408&itemidx=1&sign=b51e4b274e4fef85e996f3796220d089#wechat_redirect
+        img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30hq2nyDb2Bhwu0SIIKo7pcZmgvkvP3Nyo5ABp0u5FPiaaUO0RvPzy1XWib7KsiaibxHkk7R6r9NZ69xqA/0?tp=webp&wxfrom=5
+    '14':
+        type: news
+        title: 早讲历史（14）康祖诒中举
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10012695&itemidx=1&sign=2c5cab898ac43a2f3f12ba16d2aee4f8#wechat_redirect
+        img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30hpoRWFwF5vDia21ddiceGtjB3GRbexSUAFLJFbx7pKFljPF9Svkp7DCicicZG1S1PPfNPPqQOay4ayicg/0?tp=webp&wxfrom=5
+    '15':
+        type: news
+        title: 早讲历史（15）一个状元的诞生
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10012876&itemidx=1&sign=f31846954f2275f6129bdfde402bac4f#wechat_redirect
+        img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30hbicsIgmk2JXD2IY5trAtjoaXCWTqtvJvBJ552v2k8LH8mMVFktnicVjEmgs7icoDf6XlDZaic19hu1w/0?tp=webp&wxfrom=5

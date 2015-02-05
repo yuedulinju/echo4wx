@@ -49,38 +49,42 @@
         uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000300&itemidx=1&sign=bc20247600f3ae25a8cbed507a3bdff5#wechat_redirect
         img: http://mmsns.qpic.cn/mmsns/jsFJEErL30jicRN22QrlnsVsgdx8bdVnybgwVcBmS7C7TickQatlYgKA/0
     '9':
-        - type: news
-          title: 早说过了（9）该死一闭眼
-          uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000306&itemidx=1&sign=80fe3ea24a5b037b69e88e3a88591cb5#wechat_redirect
-          img: http://mmsns.qpic.cn/mmsns/jsFJEErL30iaHEibzLbcKngA4TdBU4iabMRq8TQBoPUnemVdfIY7qaCaw/0
-        - type: news
-          title: 早选文章（9）谁在民国关注诺贝尔文学奖
-          uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000313&itemidx=1&sign=934ea3f4bdce7ae749e7d8f93f703c2e#wechat_redirect
-          img: http://mmsns.qpic.cn/mmsns/jsFJEErL30jicRN22QrlnsVsgdx8bdVnycHkYW6HSpM9sd1F40A2lqQ/0
+        type: news
+        title: 早选文章（9）谁在民国关注诺贝尔文学奖
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000313&itemidx=1&sign=934ea3f4bdce7ae749e7d8f93f703c2e#wechat_redirect
+        img: http://mmsns.qpic.cn/mmsns/jsFJEErL30jicRN22QrlnsVsgdx8bdVnycHkYW6HSpM9sd1F40A2lqQ/0
     '10':
-        - type: news
-          title: 早选文章（10）民国时期诺奖作家的汉译与出版
-          uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000316&itemidx=1&sign=fed0275e80aa42735d4d33839d605ec3#wechat_redirect
-          img: http://mmsns.qpic.cn/mmsns/jsFJEErL30jrYibickJLFwjxaibdHLjOEpMqiaqdjhMQGRQj8wrNEkkcpQ/0
-        - type: news
-          title: 早说过了（10）才子卖肉与博士做鸭
-          uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000323&itemidx=1&sign=13a2d7aa726662220e781d982ece3fd7#wechat_redirect
-          img: http://mmsns.qpic.cn/mmsns/jsFJEErL30jrYibickJLFwjxaibdHLjOEpMu5RhjvvN7W1BicRTvO0RgEA/0
+        type: news
+        title: 早选文章（10）民国时期诺奖作家的汉译与出版
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000316&itemidx=1&sign=fed0275e80aa42735d4d33839d605ec3#wechat_redirect
+        img: http://mmsns.qpic.cn/mmsns/jsFJEErL30jrYibickJLFwjxaibdHLjOEpMqiaqdjhMQGRQj8wrNEkkcpQ/0
     '11':
-        - type: news
-          title: 早选文章（11）臭不要脸的“历史真实”
-          uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000331&itemidx=1&sign=6834ee25add76c83f45f75c033d10a88#wechat_redirect
-          img: http://mmsns.qpic.cn/mmsns/jsFJEErL30hnzSlua3DouqVWNopQREZgxk5m2YmwNzM3SN5JAIM9pw/0
-        - type: news
-          title: 早说过了（11）太阳之下无新词
-          uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000339&itemidx=1&sign=2441189097aee30844307de28af55581#wechat_redirect
-          img: http://mmsns.qpic.cn/mmsns/jsFJEErL30jeyhJqXibkjPDhKyNIq4ny94BeohYiaYzvEniaeSga1IFYA/0
+        type: news
+        title: 早选文章（11）臭不要脸的“历史真实”
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000331&itemidx=1&sign=6834ee25add76c83f45f75c033d10a88#wechat_redirect
+        img: http://mmsns.qpic.cn/mmsns/jsFJEErL30hnzSlua3DouqVWNopQREZgxk5m2YmwNzM3SN5JAIM9pw/0
     '12':
-        - type: news
-          title: 早选文章（12）小剧场，双城记
-          uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000347&itemidx=1&sign=01e1b9c04b9b0549841a2674e90960d1#wechat_redirect
-          img: http://mmsns.qpic.cn/mmsns/jsFJEErL30gGEf9G4DmmaFvEZDICnR2p7qyS1kDILib4RkkyicLTQgJg/0
-        - type: news
-          title: 早说过了（12）才子加流氓
-          uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000357&itemidx=1&sign=aadd0eca2b3da68b3cf62c822e2bbb56#wechat_redirect
-          img: http://mmsns.qpic.cn/mmsns/jsFJEErL30iam0ltgZD9A7PJQ0kE4XUWWIsjz76y4R4iboJBhxB00jgw/0
+        type: news
+        title: 早选文章（12）小剧场，双城记
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000347&itemidx=1&sign=01e1b9c04b9b0549841a2674e90960d1#wechat_redirect
+        img: http://mmsns.qpic.cn/mmsns/jsFJEErL30gGEf9G4DmmaFvEZDICnR2p7qyS1kDILib4RkkyicLTQgJg/0
+    '13':
+        type: news
+        title: 早选文章（13）唐太宗的佛寺（二题）
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000597&itemidx=1&sign=72e778779bee241b12aa64e6c75a966f#wechat_redirect
+        img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30iaYBwLAsicpWSjKrDVhcEGcbOH9WFPdye3ibRoze8duKbUXeVsfQqzUFdfVD70se5gK0YMUfrrqO7tw/0?tp=webp
+    '14':
+        type: news
+        title: 早选文章（14）日本：世界的孤儿
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10001414&itemidx=1&sign=b6c949a0f0e2dd257b1519f51564ba87#wechat_redirect
+        img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30h1zLgK1FISJKp7dsOLticQsWPUVG5L4RqT14jVn796JU03SibPxl5zruib21cCakpMAECsOHoCGwoVw/0?tp=webp&wxfrom=5
+    '15':
+        type: news
+        title: 早选文章（15）红军长征的衣食住行
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10012807&itemidx=1&sign=6a51ff1994a93e70fb2db5b1e6694039#wechat_redirect
+        img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30h1zLgK1FISJKp7dsOLticQsoAZGBh3qCS6MmQLbpfvfdlomWnexRS6uwnwcUicwDW1HewoPmiatFEhg/0?tp=webp&wxfrom=5
+    '16':
+        type: news
+        title: 早选文章（16）那年那人腊肉
+        uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=201160281&idx=1&sn=d66430bd219bb6c5702f1dc9d3172126#rd
+        img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30jY9fYuI5Qyiaw6NNBNVwhaHg7Zb8TNQ4kARky9foNH8LChUluicIZ0WTwHgtoHZaibCSbZicQlOaQ54A/0?tp=webp&wxfrom=5

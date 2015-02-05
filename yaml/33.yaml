@@ -1,22 +1,137 @@
 '33':
-    '2014':
+    '0':
         type: news
-        title: 2014 年度最赞 
-        uri: http://weekly.pychina.org/issue/issue-147-top2014.html
-        img: https://gallery.mailchimp.com/9735795484d2e4c204da82a29/images/Image_202014_01_22_20at_2010.45.04_20AM9789bf.png
-    '2013':
+        title: 读读DIAO，才能DIAO
+        uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=204252339&idx=1&sn=edff4601ec37bd7aadd6c7dd9da5da4c#rd
+        img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30goJmMtUKWah1iaNUMNuJs31qGqgIDwkAZ0C1BmxPl3YmsSY2SfibL5XnFkk2fodJicLejqiaOtiabCMag/0?tp=webp&wxfrom=5
+    '1':
+        - type: news
+          title: DIAO荐2014（1）猜想之书
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=204543552&idx=1&sn=c8f40d58d87b541105baf67c3227e13d#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30hcFRlxdyFtiaN5B1Em6xcotyC5YicoHpibIMXKWMfwaXIaCRE4zmMtEyTd6Rer8vYcj4QwiajUoMWicIQ/0?tp=webp&wxfrom=5
+        - type: news
+          title: 邱小石：2014的阅读修养
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=204543552&idx=3&sn=5fce0310334c8a84d1e3619d53123da1#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30hcFRlxdyFtiaN5B1Em6xcot3qb2wrZ5k6nDZ1QzVXDQLAwqZ1OGoRrcguF2AsYRoibCEF9Oewc4Pnw/0?tp=webp&wxfrom=5
+        - type: news
+          title: 绿茶：我和他的关系
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=204543552&idx=2&sn=0a061f6f05ec9111b6cef4df31ba0c49#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30hcFRlxdyFtiaN5B1Em6xcotm8Y3jcYfVtKTrgXAHzCLE3Qc0j0BhIsHQjolcCeeNibnssMyeWibicR0w/0?tp=webp&wxfrom=5
+    '2':
+        - type: news
+          title: DIAO荐2014（2）怎样推荐一本书
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=200399377&idx=1&sn=ed325b4aa71f140e6114d54381c08dd6#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30goJmMtUKWah1iaNUMNuJs31hQRWPfQ2Y8GCzJIicEf4B6TaFKzdkCSyC15xg1cH0MficsNicibKJMr0qQ/0?tp=webp&wxfrom=5
+        - type: news
+          title: 邱小石：信仰是如何放弃的
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=204544008&idx=3&sn=8339d8b6c1b80653358ad2bd63d75493#rd58ad2bd63d75493#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30gdTGzAoPuwauBh6hpNmcjC3HuCuXT59PBZeWKX1Tr0echtztYx0NV8Zf6mXEibeF6WM1ExwsTz5qA/0?tp=webp&wxfrom=5
+        - type: news
+          title: 绿茶：我们的生活里一直都有一个读书会
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=204544008&idx=2&sn=c3f4217fb0efe760b5aa78f5343b61a1#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30gdTGzAoPuwauBh6hpNmcjCFMjpetZiceqEOIJEZuPyCBPrcPDaWZWjvHib7MsEXEEufo3roAPOibIPQ/0?tp=webp&wxfrom=5
+    '3':
+        - type: news
+          title: DIAO荐2014（3）生活与艺术的分离
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=204544457&idx=1&sn=fa98ee1b9a4bdf8568a558912af0df5d#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30j4qFjyjrgUibKtfhRKdW3rTpYG2sAaDE7JPkEHOiaLShTN2bsvb2Tb0cOcj0j2qJiaE7BHzBeKB9NLg/0?tp=webp&wxfrom=5
+        - type: news
+          title: 绿茶：好编辑的见识与品位
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=204544457&idx=2&sn=abfb69560e6af417724a54ab35e42ad0#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30j4qFjyjrgUibKtfhRKdW3rTdK6GxVStDlJdLcaNgA5Hiaicu3Dhddn9jfRahB7v4IIgkcy0MOtZA3UA/0?tp=webp&wxfrom=5
+        - type: news
+          title: 邱小石：观点对，不一定表达就对
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=204544457&idx=3&sn=fadbe70e56a373c497e0c421dc740f5e#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30j4qFjyjrgUibKtfhRKdW3rTGlicFjjYLwvwUKMqkQsk4eOjnpfFF5ic9c6icoNPJUZlyticFjvQKT0s4A/0?tp=webp&wxfrom=5
+    '4':
+        - type: news
+          title: DIAO荐2014（4）彼时尚不耻以日为师
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=201418745&idx=1&sn=49b6defcd9092b3284acaa151952192e#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30goJmMtUKWah1iaNUMNuJs31v9KbGfDhMzqFVZ1WkkzmsLK6NWUWRkbOvFSm1Rick1B1dErYncsCcvA/0?tp=webp&wxfrom=5
+        - type: news
+          title: 绿茶：无聊至极的好玩
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=204544889&idx=2&sn=bd6f9730fdad0d8731df66cf72d27f60#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30goJmMtUKWah1iaNUMNuJs31XEwUnhJYtTUNia3hElycibVIdNFhOtIyABWby76CU5ksO52XRbjnBpMQ/0?tp=webp&wxfrom=5
+        - type: news
+          title: 邱小石：为什么要读一点建筑书
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=204544889&idx=3&sn=26e8f077cbc333e689eb58ec2e3e83a1#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30goJmMtUKWah1iaNUMNuJs31eBxKMe9VG3tc26ODwWtLD7dCiayGiaibOe05JY5BWr5IP8ZzWicmTnVVvA/0?tp=webp&wxfrom=5
+    '5':
+        - type: news
+          title: DIAO荐2014（5）王明是谁？
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=204547200&idx=1&sn=d705e63b2b790e45926480e1a7640dd8#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30j4qFjyjrgUibKtfhRKdW3rTniaxI0tSlwxJJo4fbm8SE1kmyBicibGGmWA0ZEYezI37kZeAWRTYgGLtw/0?tp=webp&wxfrom=5
+        - type: news
+          title: 邱小石：做一个城市农民
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=204547200&idx=2&sn=6a07d7698b807450c0f56778c7ab15b9#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30j4qFjyjrgUibKtfhRKdW3rT3TvWgnptpHlCmJjxsVwJBrs8UaU3iaR6lnbzRdMaQOaFIhbxU9mWccg/0?tp=webp&wxfrom=5
+    '6':
+        - type: news
+          title: DIAO荐2014（6）“龙”是救亡撒的谎
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=202566764&idx=1&sn=d0e14fe31f8b198d5a7af883cf194f9a#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30goJmMtUKWah1iaNUMNuJs31FpM50IicmsszVb6YEUsaUoHjhXAcjIXpjye14IkXY6ZKyickaAYasJPQ/0?tp=webp&wxfrom=5
+        - type: news
+          title: 绿茶： 苇岸的自然深情
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=204547845&idx=2&sn=e7ed3fa9637af5ea0e9a22085f7c148e#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30goJmMtUKWah1iaNUMNuJs31Lyibeb2rCWd9Wib4z6bEmKXum9ic9TkFQN4dl62RfrFugp465ZZ24Gfsg/0?tp=webp&wxfrom=5
+        - type: news
+          title: 邱小石：猜想创造答案
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=204547845&idx=3&sn=ab04f467634dab80fca35b2a18660df4#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30goJmMtUKWah1iaNUMNuJs31WglM0ouaKBWuCCFjgOc5Z8E0SicIfVVicYZfOpXH0nibNIn7tibyarjXcw/0?tp=webp&wxfrom=5
+    '7':
+        - type: news
+          title: DIAO荐2014（7）农耕在我们的血里
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=204548204&idx=1&sn=7e263cce40f84c1b57ce9ab1815f6c07#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30hL6ZjibpiamV4wdawOokxscqUNmrANL1aAs0KHqCVjIKotibmjeAnUphGaQqpsEGnUaRiaLhRbh69ickQ/0?tp=webp&wxfrom=5
+        - type: news
+          title: 绿茶： 阅读就是成长
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=204548204&idx=2&sn=c75e0bdd61dacd1db0e983f5f28c8328#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30hL6ZjibpiamV4wdawOokxscqcnkuMMSXt49V2vpOjCA9NicjwaJGIREfQ1r5ibgznMm0KIwEIBgtScIg/0?tp=webp&wxfrom=5
+        - type: news
+          title: 邱小石：人们住在同一个地方是因为想要一起做些事情
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=204548204&idx=3&sn=2e6dec3f540c66584ca1d3ddde827925#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30hL6ZjibpiamV4wdawOokxscqOJdysiaQOzSAS4rXOvtxxVwgurHTMLvcS3xjqTYl1rIyTk0Ug3CicIRg/0?tp=webp&wxfrom=5
+    '8':
+        - type: news
+          title: DIAO荐2014（8）当大门口站着陌生人
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=204548512&idx=1&sn=14b0b7df007c1df656931ba1fe650497#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30hL6ZjibpiamV4wdawOokxscq62ZtNTNibduMIZpTnQWKibjeyibhcWIw5lv1M139QjVF0koNsfSDALkKg/0?tp=webp&wxfrom=5
+        - type: news
+          title: 邱小石：设计的第二层皮肤
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=204548512&idx=2&sn=3f968dc0232179c298007ff274bfc274#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30hL6ZjibpiamV4wdawOokxscqlVUTg2GMGz3PfLFQgviaCI95M4Th4uicqkunB0twktJkViaHNZ0c8pTkg/0?tp=webp&wxfrom=5
+        - type: news
+          title: 绿茶：惦念夜晚那一首诗以及动听的朗读
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=204548512&idx=3&sn=ea1f9f1ff775ed0f58d13219a94cc0c9#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30hL6ZjibpiamV4wdawOokxscqibcX6ibfUbxQLZPCcWgzQpT8ibo2UND535a0KjXdg8xDm5bAicnN1xFcFA/0?tp=webp&wxfrom=5
+    '9':
+        - type: news
+          title: DIAO荐2014（9） 中国变得越来越像美国
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=204548986&idx=1&sn=27f9f898ec6a55fc712d8ce99cdd3416#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30goJmMtUKWah1iaNUMNuJs31Iicna8YfEtIScvCk0Kov9ARfpzkb7vib4qfbLTsxazTyIeIg9kf1J0dg/0?tp=webp&wxfrom=5
+        - type: news
+          title: 绿茶：最后的过时的浪漫
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=204548986&idx=2&sn=e195d05446e50ea177c61746633765af#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30goJmMtUKWah1iaNUMNuJs3169uY1WlQicic1z4jAz5HorLPCOfxsV0lh9YQBbibvUr1yibtOON5U8tMvA/0?tp=webp&wxfrom=5
+        - type: news
+          title: 邱小石：我就看着
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=204548986&idx=3&sn=f9a00506e09c8f6f2a3246a31802e45b#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30goJmMtUKWah1iaNUMNuJs319pHibORwd38VBN4Kib9JFT7ZwBaXIHZTraoLIcNNiajxLjo0HOszKxP9Q/0?tp=webp&wxfrom=5
+    '10':
+        - type: news
+          title: DIAO荐2014（10）读日记法
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=204549303&idx=1&sn=f78ce9132cd7c923c924edd82b1d7342#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30hL6ZjibpiamV4wdawOokxscqziabZgWPB4llo75KheLLpwbe92W9Rx91apxWjDb6pWPgaTqib2Xf7UdA/0?tp=webp&wxfrom=5
+        - type: news
+          title: 邱小石：宇宙为什么难于理解
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=204549303&idx=2&sn=8688e32639dcc9122164b5d49198d239#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30hL6ZjibpiamV4wdawOokxscqibFwXBiagDDuFtHBkLpMk5LS5e3kLYxib9NJia8dcTejuia3y7OOljWkXqA/0?tp=webp&wxfrom=5
+        - type: news
+          title: 绿茶：了不起的年轻人
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=204549303&idx=3&sn=d25cff836392c5f60f99bdb1dbc77769#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30hL6ZjibpiamV4wdawOokxscqJ3eaE7FpYlAk4bOvqcexrFPLQeAlKIzZlbcNBibDfcTpvLQ1T3JprZQ/0?tp=webp&wxfrom=5
+    '11':
         type: news
-        title: 2013 年度最赞 
-        uri: http://weekly.pychina.org/issue/issue-top2013.html
-        img: https://gallery.mailchimp.com/9735795484d2e4c204da82a29/images/Image_202014_01_22_20at_2010.45.04_20AM9789bf.png
-    '151':
-        - type: news
-          title: 蠎周刊 151; 一五一
-          uri: http://weekly.pychina.org/issue/issue-151.html
-          img: https://gallery.mailchimp.com/9735795484d2e4c204da82a29/images/Image_202014_01_22_20at_2010.45.04_20AM9789bf.png
-        - type: news
-          title: 蠎加载 19  
-          uri: http://weekly.pychina.org/importpython/importpython-19.html
-          img: http://zoomq.qiniudn.com/ZQCollection/snap/importpython-barnner.png?imageView2/2/h/210
-
-
+        title: 年度五书，就在明天！
+        uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=205380070&idx=1&sn=bbfbf7e7f69f5d09a727316c703cc0ba#rd
+        img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30hg3WH5aHqR5NxachQ8wq4WOs3BKNo1qHP9fVSrichs0RDH3o2tibwZ0tvV0tsdKjIsbtFfFZs0NCzA/0?tp=webp&wxfrom=5

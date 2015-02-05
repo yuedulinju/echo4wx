@@ -1,21 +1,139 @@
 '31':
-    '161':
-        type: news
-        title: 阅读邻居第16期·洪业传是什么东西
-        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000048&itemidx=1&sign=2f59e1b3f0c25cebb06e715c0ffbb07b#wechat_redirect
-        img: http://mmsns.qpic.cn/mmsns/jsFJEErL30iaicqFcBU2saicayxjKmhxwUXlXQd9dJuhHLGWllBIYGd4Q/0
-    '162':
-        type: news
-        title: 阅读邻居第16期：为什么要寻找苏慧廉
-        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000051&itemidx=1&sign=d331c4dafaf3559a0f7dfaa26b7f5051#wechat_redirect
-        img: http://mmsns.qpic.cn/mmsns/jsFJEErL30jhicvEia5v6HC6BNPmmQjeiazpSmg9t1TOfHrZwJ8zEdzwA/0
-    '163':
-        type: news
-        title: 阅读邻居第16期：中国当下是什么样子
-        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000054&itemidx=1&sign=d26902f658e638ab615b424ea0c51678#wechat_redirect
-        img: http://mmsns.qpic.cn/mmsns/jsFJEErL30jddU5bVMicvcFAveGQtnsA91XjyEnJ7cQib2pfLrZaC1hQ/0
-    '171':
+    '16':
+        - type: news
+          title: 阅读邻居第16期·洪业传是什么东西
+          uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000048&itemidx=1&sign=2f59e1b3f0c25cebb06e715c0ffbb07b#wechat_redirect
+          img: http://mmsns.qpic.cn/mmsns/jsFJEErL30iaicqFcBU2saicayxjKmhxwUXlXQd9dJuhHLGWllBIYGd4Q/0
+        - type: news
+          title: 阅读邻居第16期：为什么要寻找苏慧廉
+          uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000051&itemidx=1&sign=d331c4dafaf3559a0f7dfaa26b7f5051#wechat_redirect
+          img: http://mmsns.qpic.cn/mmsns/jsFJEErL30jhicvEia5v6HC6BNPmmQjeiazpSmg9t1TOfHrZwJ8zEdzwA/0
+        - type: news
+          title: 阅读邻居第16期：中国当下是什么样子
+          uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000054&itemidx=1&sign=d26902f658e638ab615b424ea0c51678#wechat_redirect
+          img: http://mmsns.qpic.cn/mmsns/jsFJEErL30jddU5bVMicvcFAveGQtnsA91XjyEnJ7cQib2pfLrZaC1hQ/0
+    '17':
         type: news
         title: 阅邻十七：你我瞬眼抗战二十年
         uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000103&itemidx=1&sign=22e2ff3b0ee10326b3b14e257ca65ea7#wechat_redirect
         img: http://mmsns.qpic.cn/mmsns/jsFJEErL30gAokUBad7j6vQa3QQgeXyicddULgnzU2JXLVicW7swcPicw/0
+    '2013':
+        - type: news
+          title: 阅读邻居2013年度书选进行中……
+          uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10013587&itemidx=1&sign=8602223e5de313e8171c38c3041ca9d5#wechat_redirect
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30jaM8pjdKj08IaFBehPu7N4NbLHOBAl5f5qksbb7AFGibH4wAic7PgpdKEe666TDGtr5FDFMDaRu7qw/0?tp=webp&wxfrom=5
+        - type: news
+          title: 阅读邻居2013年度荐书选目（1）
+          uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10013599&itemidx=1&sign=7c1435ac34b659157279a93d0b20f5e5#wechat_redirect
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30hJ0ZI7RaBfo96Tg0j8VWXxHsJfJSuaZcjF5gJe24RUMCWlibIbnuUB0bGZAK3cRHUJbzEica0pUOXQ/0?tp=webp&wxfrom=5
+        - type: news
+          title: 阅读邻居2013年度荐书选目（2）
+          uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10013609&itemidx=1&sign=5f81091d9490a2eaec85c328ac392413#wechat_redirect
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30jkIRGiaWNAib0g4PBKDzBtQIJfOaDlheuIJcjGLhULZ8j2eiaIk1uWkFAxJ5FqjrasZhibZJjWr2vhLg/0?tp=webp&wxfrom=5
+        - type: news
+          title: 阅读邻居2013年度荐书选目（3）
+          uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10013619&itemidx=1&sign=1eadae90be669eee4e12b8ebc30d550c#wechat_redirect
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30iapVWEMOQV18lOicnKTfRfyfVndqFPAoPJEj5LWFmLUicAgicKq9cxA2mOMRUtSwoTBib2TumR6PZe6DQ/0?tp=webp&wxfrom=5
+        - type: news
+          title: 阅读邻居2013年度荐书选目（4）
+          uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10013623&itemidx=1&sign=745bcb4d27f20e54e273c898d697b327#wechat_redirect
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30iacUopLmQddY9xec8OxZDibZxpxNkN8XdkLYYwIHzysYkTKGyJbouYSP6IicWq3nCd9ExwWeKASp0uw/0?tp=webp&wxfrom=5
+        - type: news
+          title: 阅读邻居2013年度荐书选目（5）
+          uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10013632&itemidx=1&sign=00a0096f6190b299d55b7fb58f38ad68#wechat_redirect
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30iaHrXbiaS5s1XG76cm0bA0jv0IwEV7tLs2icE6PZaoIsicWFDzNKc2nhPNFxzfcY4AQkDE37hqVZMA4w/0
+        - type: news
+          title: 阅读邻居2013年度荐书选目（6）
+          uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10013646&itemidx=1&sign=457d891d55720429e90a8c1b792b83c1#wechat_redirect
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30iaokicsDjRad5V4TkoUtlcf3KQdj9KE29YW7urJ7N5n2IFs0icric0BNHWwymaAkJBIriaVs4S9TnbVDg/0?tp=webp&wxfrom=5
+        - type: news
+          title: 阅读邻居2013年度荐书选目（7）大结局
+          uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10013649&itemidx=1&sign=c16ed92b0371d96c60ac042f77b66cbf#wechat_redirect
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30hTWibAqqAxG3Po8QBvANw6VU04xxnNqv9JeL13ICOKdGAiaMBpp7G63efb6fwKK6EM8ibPzMpeX0UGA/0?tp=webp&wxfrom=5
+    '22':
+        - type: news
+          title: 阅读邻居22期荐书
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=200281202&idx=1&sn=fa3cdadf9f762fa9b2425337daedb07c#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30iaCwxpbuIAKvGCRYhOyxVlOsyGnkmaCb1gL4qhWiauCOJpywCDg3ZrK9H9jAzYIsEx1B18RaGQUWnw/0?tp=webp&wxfrom=5
+        - type: news
+          title: 无往不复（关于回复的争论）
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=200281202&idx=2&sn=abd3522ba74b315e6a804ebc64ef2048#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30iaCwxpbuIAKvGCRYhOyxVlOibNcbez5UicCKRmk9P2auAOeT6xibljEnwibcdH81zcwwUrnLkod4KbEhA/0?tp=webp&wxfrom=5
+    '23':
+        - type: news
+          title: 阅读邻居第23期“误解与错位”荐书（1）
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=200406178&idx=1&sn=2ac61da24d5b56387c33229225629b5f#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30iakY18ibV4F44Kg1LWeljjY7OGXdQdnKaicurgm5OvDsDQp0PzO7nDl5Hxxc84fSzic1Y5eUW1QYSADg/0?tp=webp&wxfrom=5
+        - type: news
+          title: 阅读邻居第23期“错位与误解”荐书（2）
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=200413479&idx=1&sn=3e9331cc179f1e5191fcd676ec7afc1b#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30hFkVZRXewAYs5DHMGiacAfnz6CRzMCPOBBcoPafAUiaEnFj2dJPrqoVC5d6eoOIG0zRjX635pGXdCA/0?tp=webp&wxfrom=5
+        - type: news
+          title: 阅读邻居第23期“错位与误解”荐书（3）
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=200416450&idx=1&sn=d2ec975ceabf825f0e608b1f4ad7d19e#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30hO8evAbu1ibfUMg1YcRgmdEAFJbiaK4YplIJvNWxqibahCO5NSTEhV7e4VEY6icaJcRjPVrUxePHLgXw/0?tp=webp&wxfrom=5
+    '24':
+        type: news
+        title: 阅读邻居第24期荐书：侯世达与中国的往事
+        uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=200950163&idx=1&sn=3d3403c35befaa0301fe3c2846738a65#rd
+        img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30ias4AicX9yIibSZWOYOXUeib50J8RZhML5WrCgccAdIPpjcaLgzG7BbicjIJBanjYY7OJPQ3nHGMrEsJQ/0?tp=webp&wxfrom=5
+    '25':
+        - type: news
+          title: 读邻25荐书（1）敢爷初推荐
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=201468913&idx=1&sn=f6a69ad8dce9e66ca20348c879e093b3#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30j6CWdefxqtjDAQHJksPujHvHkIOoanFt8hatJYsW7zHUIfIG81GFPQEx8ZRAdVVufwW3pkUHIPiaQ/0?tp=webp&wxfrom=5
+        - type: news
+          title: 读邻25荐书（2）汽车的尺度与人的尺度
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=201469139&idx=1&sn=ad201f06c6862a892f65ed0cfa1d6f28#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30hHZZiaoSgFsamPoVqVKAFibJVkVHcAOoAIqvbFuztWZ6u5vibzhkZ7RBibFOaDN6ZXYN5W7jzgcjhlOA/0?tp=webp&wxfrom=5
+        - type: news
+          title: 读邻25荐书（3）中国人善于破坏不善重建
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=201473407&idx=1&sn=49061e9f325627c80e35aadc5aef0e55#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30j6CWdefxqtjDAQHJksPujHxEOBOickxmVNuOj5KpvStibMtPCmMGCmQP8M6YIxPYFs1LJwXtRWm3Sw/0?tp=webp&wxfrom=5
+        - type: news
+          title: 读邻25荐书（4）在中国想象力是缺门
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=201473811&idx=1&sn=90ac99461be251a4dc4ac660219e4b46#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30j6CWdefxqtjDAQHJksPujHbwM1mia3PtzvvO25H3cVvaCuuhJ6CVkHV7uzMHYtkH9CuSKYNwGb74Q/0?tp=webp&wxfrom=5
+    '26':
+        - type: news
+          title: 读邻廿六荐书（1）小津传记与黄金十年
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=202532264&idx=1&sn=c0ac3cc1d08e4ad2854046bf7167e51b#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30iaTsLSxGzGX5aXFjx77ib8pbhqkKbC8QLsDSpX1GTP5owLgHoTA3384S9uN6Pr7p8jF8qe9vT7XfJg/0?tp=webp&wxfrom=5
+        - type: news
+          title: 读邻廿六荐书（2）红娘是莺莺的饶头
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=202532360&idx=1&sn=1d76430afa5ce475e6e6eb8749d587c2#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30j5KcCNtQcicHRn4XxgWye1ibFmZDltFvjXMvApH86wf2mob2FWyCrwtsgxjdA9xPov8tLd4CyLq9eQ/0?tp=webp&wxfrom=5
+    '27':
+        - type: news
+          title: 读邻廿七荐书（1）泰坦尼克上的中国人
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=202898207&idx=1&sn=6f1f0cd21694f82d2cbc33334444ce8c#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30hN15Tbkt8NUpwHUntp1CMZia2cr1ZibxvlmDkVbgLRlhloBib30VzptJu9qSSCD2VI25kYIkyQLTs4A/0?tp=webp&wxfrom=5
+        - type: news
+          title: 读邻廿六荐书（2）广禄回忆录与伊斯兰历史
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=202898294&idx=1&sn=f0f77d557ec78c2dd0e2711ea4164820#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30hW0RunyhH2UzIe62RwzJnlRcjfQ2jzMlOhvRFzibnibGEUknR9Rj1HwiarBdk1ibkO1dhsggqBOQADNg/0?tp=webp&wxfrom=5
+        - type: news
+          title: 读邻廿六荐书（3）初版书·情与色
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=202898353&idx=1&sn=cfd1b06c137b2791fd6a7d3f3c11f4db#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30iaAwLj1rM3RjFQicW5icDSmumEbe0VJey5IicYoCF1HSs0biaqhtJWSqynQHsqicGhnmjSWPMQfHeBwCoA/0?tp=webp&wxfrom=5
+        - type: news
+          title: 【正误】重发施爱东在读邻廿七的荐书
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=202900530&idx=1&sn=88e2bcf670497c2ba8c1bd34d360c35c#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30hN15Tbkt8NUpwHUntp1CMZPicIK5P1u2AJ4z3UrznhHtvToGfopMLrWF8mJR7t4NfeIRj8nwicBL3A/0?tp=webp&wxfrom=5
+    '28':
+        - type: news
+          title: 读邻廿八荐书（1）台湾：大门口的陌生人
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=204124514&idx=1&sn=e7770d86ae1bee92b50ee8ef7ebeb07e#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30gyOzarQfNVLjibuzDkqxKfNVc0diaOXXrDmEUYzjiarSWoaj2IvGJgGpozT2Tj42YhUH5n2ZLic4o8zQ/640?tp=webp&wxfrom=5
+        - type: news
+          title: 读邻廿八荐书（2）爸爸妈妈平常是不是也交配？
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=204191935&idx=1&sn=c03c1a930d6370421043da44133afd50#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30jJYZR5Cn9deGHiapFic3XHqGQ9cv4DPiaHXXIbReJ8pxAqBAou3tzwCENibNjqotj5ThkrqM3j6ARzrg/640?tp=webp&wxfrom=5
+        - type: news
+          title: 读邻廿八荐书（3）一遍又一遍，如痴如醉
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=204193531&idx=1&sn=e092ae7c65386a14da85b608727687e4#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30jJYZR5Cn9deGHiapFic3XHqG7SbHia6je2NjXbQew7QHgjUZ8ictLJN0TiapY4A1Oic9LU7Gkg5EpA7J7A/640?tp=webp&wxfrom=5
+        - type: news
+          title: 读邻廿八荐书（1）台湾：大门口的陌生人
+          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=204124514&idx=1&sn=e7770d86ae1bee92b50ee8ef7ebeb07e#rd
+          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30gyOzarQfNVLjibuzDkqxKfNVc0diaOXXrDmEUYzjiarSWoaj2IvGJgGpozT2Tj42YhUH5n2ZLic4o8zQ/640?tp=webp&wxfrom=5
