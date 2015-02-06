@@ -96,11 +96,6 @@
           title: 张系国其人
           uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000145&itemidx=1&sign=decfab4da9b2e7282a37d7cffc20ef6c#wechat_redirect
           img: http://mmsns.qpic.cn/mmsns/jsFJEErL30h6HqAJxatLY9fqRxJztrRGeHCC9sfzAqQzmDuhAnxztg/0
-    '18':
-        type: news
-        title: 杨早看小说（18）戴维洛奇《天堂消息》
-        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000152&itemidx=1&sign=5d2ca6f99c967197d1b07954ae3b97f4#wechat_redirect
-        img: http://mmsns.qpic.cn/mmsns/jsFJEErL30iavJTaOuOZcrkaib1m42KicG9j8xsiaiapKgETwFAOzoUFYpg/0
     '16':
         type: news
         title: 杨早看小说（16）格拉斯《狗年月》
@@ -111,6 +106,11 @@
         title: 杨早看小说（17）格拉斯《我的世纪》
         uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000156&itemidx=1&sign=992135aecc3e38bb61e8d4f702a09f63#wechat_redirect
         img: http://mmsns.qpic.cn/mmsns/jsFJEErL30iavJTaOuOZcrkaib1m42KicG9zwUibibNpYXz3sgl9rO4qQsA/0
+    '18':
+        type: news
+        title: 杨早看小说（18）戴维洛奇《天堂消息》
+        uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000152&itemidx=1&sign=5d2ca6f99c967197d1b07954ae3b97f4#wechat_redirect
+        img: http://mmsns.qpic.cn/mmsns/jsFJEErL30iavJTaOuOZcrkaib1m42KicG9j8xsiaiapKgETwFAOzoUFYpg/0
     '19':
         type: news
         title: 杨早看小说（19）库斯勒《中午的黑暗》
@@ -224,3 +224,5 @@
         title: 推荐《童年的消逝》
         uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=203200174&idx=1&sn=10ffa7b6130a64000a9666c917f69ee9#rd
         img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30g1G9Th23O6CEBgvxFYYwq1tLyVCZfibvOaiayqmAQTck32BzSvxYA8Rsu2hnmibxQ5kUDIictn64Kwog/0?tp=webp&wxfrom=5
+
+

@@ -17,7 +17,7 @@
 <v t="zoomq.20120723102156.5544" a="E"><vh>@nosent config.py</vh>
 <v t="zoomq.20131226095232.5938"></v>
 <v t="zoomq.20120727213305.14750"><vh>&lt;&lt;declarations&gt;&gt;</vh></v>
-<v t="zoomq.20120710140424.5456" a="E"><vh>&lt;&lt;cfg4Borg&gt;&gt;</vh>
+<v t="zoomq.20120710140424.5456"><vh>&lt;&lt;cfg4Borg&gt;&gt;</vh>
 <v t="zoomq.20130926092950.5432"><vh>环境切换</vh></v>
 <v t="zoomq.20130927104354.5456"><vh>storage</vh></v>
 <v t="zoomq.20130923093950.3647"><vh>KVDB</vh>
@@ -100,7 +100,7 @@
 <v t="zoomq.20150202122015.8"><vh>build-in</vh></v>
 </v>
 <v t="zoomq.20130925103854.5007"><vh>CLI 远程管理&gt;&gt;&gt;</vh>
-<v t="zoomq.20131007093121.5601" a="E"><vh>文章管理</vh>
+<v t="zoomq.20131007093121.5601"><vh>文章管理</vh>
 <v t="zoomq.20150202122015.15"><vh>_load_news(,, multi=False)</vh></v>
 <v t="zoomq.20130929203117.3712" a="E"><vh>POST push/p</vh>
 <v t="zoomq.20150202122015.19"><vh>&lt;&lt;reset_old&gt;&gt;</vh></v>
@@ -120,6 +120,10 @@
 </v>
 <v t="zoomq.20150202122015.10"><vh>_wx_echo_cnt</vh></v>
 <v t="zoomq.20150202122015.12"><vh>_wx_echo_idx</vh></v>
+<v t="zoomq.20150203153224.13" a="E"><vh>_limit_echo_idx()</vh>
+<v t="zoomq.20150203153224.14"><vh>&lt;&lt;正常&gt;&gt;</vh></v>
+<v t="zoomq.20150203153224.15"><vh>&lt;&lt;压缩&gt;&gt;</vh></v>
+</v>
 <v t="zoomq.20150202122015.11"><vh>_wx_echo_cmd</vh></v>
 <v t="zoomq.20120727213305.13050"><vh>/api/sysincr</vh></v>
 <v t="zoomq.20120727213305.14707"></v>
@@ -2866,25 +2870,9 @@ TPL_ITEM='''&lt;item&gt;
         return WxTextResponse(TPL_IDX_LOST.format( tag_info = CFG.ESSAY_TAG[cmd])
                 , wxreq).as_xml()
     else:
-        _exp = ""
-        for i in all_papers:
-            #print ['%s-&gt;%s'%(i,j['title']) for j in KV.get(i)['news']]
-            _node = KV.get(i)
-            if 1 == len(_node['news']):
-                _exp += u"%s: %s \n"%(_node['code']
-                    , _node['news'][0]['title']
-                    )
-            else:
-                #'\n\t+'.join([j['title'] for j  in _node['news']])
-                _exp += u"%s: %s +另 %s 篇\n"%(_node['code']
-                    , _node['news'][0]['title']
-                    , len(_node['news'])
-                    )
-        #print _exp
-        #return None
-        return WxTextResponse(TPL_IDX_CLASS.format(idx_news = _exp
-                    , tag_info = CFG.ESSAY_TAG[cmd]
-                ), wxreq).as_xml()
+        real_exp = _limit_echo_idx(all_papers, cmd)
+        return WxTextResponse(real_exp, wxreq).as_xml()
+
 
 
 </t>
@@ -2968,7 +2956,9 @@ feed_back['msg'] += "reloaded %s POSTs. \nin CLASS %s"% (count, _tg)
 feed_back['data'].append(KV.get_info())
 
 _append = []
-for i in KV.get(CFG.K4D[_tg]):
+echo_idx = KV.get(CFG.K4D[_tg])
+echo_idx.sort()
+for i in echo_idx:
     #print ['%s-&gt;%s'%(i,j['title']) for j in KV.get(i)['news']]
     _append.append('%s-&gt;%s'%(i
         , ",".join([j['title'] for j in KV.get(i)['news']])
@@ -3150,14 +3140,63 @@ def get_acc(qstr):
     else:
         return "alert quary!-("
     </t>
-<t tx="zoomq.20150203153224.9">TPL_IDX_CLASS = u'''{tag_info}
-请输入文章索引号 (类似 151 的纯数字):
-然后,俺就能告诉您文章链接呢...
+<t tx="zoomq.20150203153224.13">def _limit_echo_idx(all_papers, cmd):
+    '''check all echo TEXT, if &gt; 960, zip them
+    '''
+    _exp = ""
+    &lt;&lt;正常&gt;&gt;
+    real_exp = TPL_IDX_CLASS.format(idx_news = _exp
+            , tag_info = CFG.ESSAY_TAG[cmd]
+            )
+    print "len(real_exp)", len(real_exp)
+    if 960 &lt; len(real_exp):
+        _exp = ""
+        &lt;&lt;压缩&gt;&gt;
+        real_exp = TPL_IDX_CLASS.format(idx_news = _exp
+                , tag_info = CFG.ESSAY_TAG[cmd]
+                )
+        print "ZIP real_exp", len(real_exp)
+        return real_exp
+    else:
+        return real_exp
 
+</t>
+<t tx="zoomq.20150203153224.14">for i in all_papers:
+    #print ['%s-&gt;%s'%(i,j['title']) for j in KV.get(i)['news']]
+    _node = KV.get(i)
+    if 1 == len(_node['news']):
+        _exp += u"%s %s\n"%(_node['code']
+            , _node['news'][0]['title']
+            )
+    else:
+        #'\n\t+'.join([j['title'] for j  in _node['news']])
+        _exp += u"%s %s +另%s篇\n"%(_node['code']
+            , _node['news'][0]['title']
+            , len(_node['news'])
+            )
+</t>
+<t tx="zoomq.20150203153224.15">for i in all_papers:
+    #print ['%s-&gt;%s'%(i,j['title']) for j in KV.get(i)['news']]
+    _node = KV.get(i)
+    if 1 == len(_node['news']):
+        _exp += u"%s %s..\n"%(_node['code']
+            , _node['news'][0]['title'][:10]
+            )
+    else:
+        #'\n\t+'.join([j['title'] for j  in _node['news']])
+        _exp += u"%s %s..+另%s篇\n"%(_node['code']
+            , _node['news'][0]['title'][:10]
+            , len(_node['news'])
+            )
+</t>
+<t tx="zoomq.20150203153224.9">TPL_IDX_CLASS = u'''{tag_info}
 {idx_news}
 
-更多细节,请惯性地输入 h 继续吧 :)
+输入索引号可获文章链接
+(上述前缀 1446 样的纯数字)
 '''
+#更多细节,请惯性地输入 h 继续吧 :)
+
 TPL_IDX_LOST = u'''{tag_info}
 但是...
 历史文章还未整理好

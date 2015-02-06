@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 TPL_IDX_CLASS = u'''{tag_info}
-请输入文章索引号 (类似 151 的纯数字):
-然后,俺就能告诉您文章链接呢...
-
 {idx_news}
 
-更多细节,请惯性地输入 h 继续吧 :)
+输入索引号可获文章链接
+(上述前缀 1446 样的纯数字)
 '''
+#更多细节,请惯性地输入 h 继续吧 :)
+
 TPL_IDX_LOST = u'''{tag_info}
 但是...
 历史文章还未整理好
@@ -151,7 +151,9 @@ def push_papers(qstr):
         feed_back['data'].append(KV.get_info())
 
         _append = []
-        for i in KV.get(CFG.K4D[_tg]):
+        echo_idx = KV.get(CFG.K4D[_tg])
+        echo_idx.sort()
+        for i in echo_idx:
             #print ['%s->%s'%(i,j['title']) for j in KV.get(i)['news']]
             _append.append('%s->%s'%(i
                 , ",".join([j['title'] for j in KV.get(i)['news']])
@@ -348,26 +350,54 @@ def _wx_echo_idx(wxreq, cmd):
         return WxTextResponse(TPL_IDX_LOST.format( tag_info = CFG.ESSAY_TAG[cmd])
                 , wxreq).as_xml()
     else:
+        real_exp = _limit_echo_idx(all_papers, cmd)
+        return WxTextResponse(real_exp, wxreq).as_xml()
+
+
+
+def _limit_echo_idx(all_papers, cmd):
+    '''check all echo TEXT, if > 960, zip them
+    '''
+    _exp = ""
+    for i in all_papers:
+        #print ['%s->%s'%(i,j['title']) for j in KV.get(i)['news']]
+        _node = KV.get(i)
+        if 1 == len(_node['news']):
+            _exp += u"%s %s\n"%(_node['code']
+                , _node['news'][0]['title']
+                )
+        else:
+            #'\n\t+'.join([j['title'] for j  in _node['news']])
+            _exp += u"%s %s +另%s篇\n"%(_node['code']
+                , _node['news'][0]['title']
+                , len(_node['news'])
+                )
+    real_exp = TPL_IDX_CLASS.format(idx_news = _exp
+            , tag_info = CFG.ESSAY_TAG[cmd]
+            )
+    print "len(real_exp)", len(real_exp)
+    if 960 < len(real_exp):
         _exp = ""
         for i in all_papers:
             #print ['%s->%s'%(i,j['title']) for j in KV.get(i)['news']]
             _node = KV.get(i)
             if 1 == len(_node['news']):
-                _exp += u"%s: %s \n"%(_node['code']
-                    , _node['news'][0]['title']
+                _exp += u"%s %s..\n"%(_node['code']
+                    , _node['news'][0]['title'][:10]
                     )
             else:
                 #'\n\t+'.join([j['title'] for j  in _node['news']])
-                _exp += u"%s: %s +另 %s 篇\n"%(_node['code']
-                    , _node['news'][0]['title']
+                _exp += u"%s %s..+另%s篇\n"%(_node['code']
+                    , _node['news'][0]['title'][:10]
                     , len(_node['news'])
                     )
-        #print _exp
-        #return None
-        return WxTextResponse(TPL_IDX_CLASS.format(idx_news = _exp
-                    , tag_info = CFG.ESSAY_TAG[cmd]
-                ), wxreq).as_xml()
-
+        real_exp = TPL_IDX_CLASS.format(idx_news = _exp
+                , tag_info = CFG.ESSAY_TAG[cmd]
+                )
+        print "ZIP real_exp", len(real_exp)
+        return real_exp
+    else:
+        return real_exp
 
 def _wx_echo_cmd(wxreq, cmd):
     for k in CFG.CMD_TPLS.keys():
