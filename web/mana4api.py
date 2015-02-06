@@ -352,8 +352,15 @@ def _wx_echo_idx(wxreq, cmd):
         for i in all_papers:
             #print ['%s->%s'%(i,j['title']) for j in KV.get(i)['news']]
             _node = KV.get(i)
-            _exp += "%s: %s \n"%(_node['code']
-                    , '\n\t+'.join([j['title'] for j  in _node['news']])
+            if 1 == len(_node['news']):
+                _exp += u"%s: %s \n"%(_node['code']
+                    , _node['news'][0]['title']
+                    )
+            else:
+                #'\n\t+'.join([j['title'] for j  in _node['news']])
+                _exp += u"%s: %s +另 %s 篇\n"%(_node['code']
+                    , _node['news'][0]['title']
+                    , len(_node['news'])
                     )
         #print _exp
         #return None

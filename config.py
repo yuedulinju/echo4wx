@@ -26,7 +26,7 @@ class Borg():
     def __init__(self):
         self.__dict__ = self.__collective_mind
     
-    VERSION = "echo4wx v15.2.4.2323"
+    VERSION = "echo4wx v15.2.6.1012"
     
     #管理员邮箱列表
     ADMIN_EMAIL_LIST = ['zoomquiet+gdg@gmail.com']
@@ -188,6 +188,7 @@ class Borg():
     - 版本:%s
 
     Changelog:
+    - 150206 修订返回文字,精减以免超时
     - 150204 进一步 精减为 杨早公众号使用 
     - 150125 开始为 蠎中国 精减/定制 
     - 130928 启用Storage 服务,数据可备份/下载/恢复

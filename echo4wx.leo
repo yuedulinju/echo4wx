@@ -14,24 +14,24 @@
 <v t="zoomq.20120710140424.5454"><vh>@nosent config.yaml</vh></v>
 <v t="zoomq.20120710140424.5455"><vh>@nosent index.wsgi</vh></v>
 <v t="zoomq.20131226095232.5938"><vh>&lt;&lt;VERSION&gt;&gt;</vh></v>
-<v t="zoomq.20120723102156.5544"><vh>@nosent config.py</vh>
+<v t="zoomq.20120723102156.5544" a="E"><vh>@nosent config.py</vh>
 <v t="zoomq.20131226095232.5938"></v>
 <v t="zoomq.20120727213305.14750"><vh>&lt;&lt;declarations&gt;&gt;</vh></v>
-<v t="zoomq.20120710140424.5456"><vh>&lt;&lt;cfg4Borg&gt;&gt;</vh>
+<v t="zoomq.20120710140424.5456" a="E"><vh>&lt;&lt;cfg4Borg&gt;&gt;</vh>
 <v t="zoomq.20130926092950.5432"><vh>环境切换</vh></v>
 <v t="zoomq.20130927104354.5456"><vh>storage</vh></v>
-<v t="zoomq.20130923093950.3647" a="E"><vh>KVDB</vh>
+<v t="zoomq.20130923093950.3647"><vh>KVDB</vh>
 <v t="zoomq.20150202122015.13"><vh>&lt;&lt;UUID&gt;&gt;</vh></v>
 <v t="zoomq.20130923093950.5395"><vh>&lt;&lt;CONTENT&gt;&gt;</vh></v>
 <v t="zoomq.20130923093950.5396"><vh>&lt;&lt;HISTORIC&gt;&gt;</vh></v>
 </v>
-<v t="zoomq.20130918155053.7084" a="E"><vh>4wechat</vh>
+<v t="zoomq.20130918155053.7084"><vh>4wechat</vh>
 <v t="zoomq.20150123094404.30"><vh>&lt;&lt;XML模板&gt;&gt;</vh></v>
 <v t="zoomq.20130923093950.8818"><vh>&lt;&lt;ALIAS&gt;&gt;</vh></v>
 <v t="zoomq.20130925103854.6455"><vh>帮助.系统</vh></v>
 <v t="zoomq.20130925103854.6458"><vh>文章查询</vh></v>
 </v>
-<v t="zoomq.20130925103854.4951" a="E"><vh>RESTful</vh>
+<v t="zoomq.20130925103854.4951"><vh>RESTful</vh>
 <v t="zoomq.20131226095232.5937"><vh>&lt;&lt;CLI4wx&gt;&gt;</vh></v>
 <v t="zoomq.20131226095232.5936"><vh>&lt;&lt;CLI4sys&gt;&gt;</vh></v>
 <v t="zoomq.20131226095232.5935"><vh>&lt;&lt;CLI4pub&gt;&gt;</vh></v>
@@ -39,7 +39,7 @@
 </v>
 </v>
 </v>
-<v t="zoomq.20130925103854.4957" a="E"><vh>@nosent CLI.py</vh>
+<v t="zoomq.20130925103854.4957"><vh>@nosent CLI.py</vh>
 <v t="zoomq.20130925103854.4958"><vh>&lt;&lt;docopt&gt;&gt;</vh></v>
 <v t="zoomq.20130925103854.4959"><vh>&lt;&lt;declarations&gt;&gt;</vh></v>
 <v t="zoomq.20131223160728.4902"><vh>_https_get()</vh></v>
@@ -113,7 +113,7 @@
 <v t="zoomq.20150203153224.10"><vh>GET get/acc</vh></v>
 </v>
 <v t="zoomq.20130918155053.5760"><vh>GET  /echo</vh></v>
-<v t="zoomq.20130918155053.7083" a="E"><vh>POST /echo 认证接口</vh>
+<v t="zoomq.20130918155053.7083"><vh>POST /echo 认证接口</vh>
 <v t="zoomq.20150202122015.23"><vh>&lt;&lt;echo CLICK&gt;&gt;</vh></v>
 <v t="zoomq.20150202122015.22"><vh>&lt;&lt;echo event&gt;&gt;</vh></v>
 <v t="zoomq.20150202122015.7"><vh>&lt;&lt;echo TEXT&gt;&gt;</vh></v>
@@ -2046,6 +2046,7 @@ else:
 - 版本:%s
 
 Changelog:
+- 150206 修订返回文字,精减以免超时
 - 150204 进一步 精减为 杨早公众号使用 
 - 150125 开始为 蠎中国 精减/定制 
 - 130928 启用Storage 服务,数据可备份/下载/恢复
@@ -2783,7 +2784,7 @@ conn = httplib.HTTPSConnection(host='www.site.com', port=443, cert_file=_certfil
 , "fw/aa":  "PUT"     # 转复 订户 消息
 
 </t>
-<t tx="zoomq.20131226095232.5938">VERSION = "echo4wx v15.2.4.2323"</t>
+<t tx="zoomq.20131226095232.5938">VERSION = "echo4wx v15.2.6.1012"</t>
 <t tx="zoomq.20150123094404.30">TPL_SUBS='''&lt;xml&gt;
 &lt;ToUserName&gt;&lt;![CDATA[%(toUser)s]]&gt;&lt;/ToUserName&gt;
 &lt;FromUserName&gt;&lt;![CDATA[%(fromUser)s]]&gt;&lt;/FromUserName&gt;
@@ -2869,8 +2870,15 @@ TPL_ITEM='''&lt;item&gt;
         for i in all_papers:
             #print ['%s-&gt;%s'%(i,j['title']) for j in KV.get(i)['news']]
             _node = KV.get(i)
-            _exp += "%s: %s \n"%(_node['code']
-                    , '\n\t+'.join([j['title'] for j  in _node['news']])
+            if 1 == len(_node['news']):
+                _exp += u"%s: %s \n"%(_node['code']
+                    , _node['news'][0]['title']
+                    )
+            else:
+                #'\n\t+'.join([j['title'] for j  in _node['news']])
+                _exp += u"%s: %s +另 %s 篇\n"%(_node['code']
+                    , _node['news'][0]['title']
+                    , len(_node['news'])
                     )
         #print _exp
         #return None
