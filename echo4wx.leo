@@ -120,7 +120,7 @@
 </v>
 <v t="zoomq.20150202122015.10"><vh>_wx_echo_cnt</vh></v>
 <v t="zoomq.20150202122015.12"><vh>_wx_echo_idx</vh></v>
-<v t="zoomq.20150203153224.13" a="E"><vh>_limit_echo_idx()</vh>
+<v t="zoomq.20150203153224.13"><vh>_limit_echo_idx()</vh>
 <v t="zoomq.20150203153224.14"><vh>&lt;&lt;正常&gt;&gt;</vh></v>
 <v t="zoomq.20150203153224.15"><vh>&lt;&lt;压缩&gt;&gt;</vh></v>
 </v>
