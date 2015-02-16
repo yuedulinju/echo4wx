@@ -17,7 +17,7 @@
 <v t="zoomq.20120723102156.5544" a="E"><vh>@nosent config.py</vh>
 <v t="zoomq.20131226095232.5938"></v>
 <v t="zoomq.20120727213305.14750"><vh>&lt;&lt;declarations&gt;&gt;</vh></v>
-<v t="zoomq.20120710140424.5456"><vh>&lt;&lt;cfg4Borg&gt;&gt;</vh>
+<v t="zoomq.20120710140424.5456" a="E"><vh>&lt;&lt;cfg4Borg&gt;&gt;</vh>
 <v t="zoomq.20130926092950.5432"><vh>环境切换</vh></v>
 <v t="zoomq.20130927104354.5456"><vh>storage</vh></v>
 <v t="zoomq.20130923093950.3647"><vh>KVDB</vh>
@@ -25,7 +25,7 @@
 <v t="zoomq.20130923093950.5395"><vh>&lt;&lt;CONTENT&gt;&gt;</vh></v>
 <v t="zoomq.20130923093950.5396"><vh>&lt;&lt;HISTORIC&gt;&gt;</vh></v>
 </v>
-<v t="zoomq.20130918155053.7084"><vh>4wechat</vh>
+<v t="zoomq.20130918155053.7084" a="E"><vh>4wechat</vh>
 <v t="zoomq.20150123094404.30"><vh>&lt;&lt;XML模板&gt;&gt;</vh></v>
 <v t="zoomq.20130923093950.8818"><vh>&lt;&lt;ALIAS&gt;&gt;</vh></v>
 <v t="zoomq.20130925103854.6455"><vh>帮助.系统</vh></v>
@@ -39,7 +39,7 @@
 </v>
 </v>
 </v>
-<v t="zoomq.20130925103854.4957"><vh>@nosent CLI.py</vh>
+<v t="zoomq.20130925103854.4957" a="E"><vh>@nosent CLI.py</vh>
 <v t="zoomq.20130925103854.4958"><vh>&lt;&lt;docopt&gt;&gt;</vh></v>
 <v t="zoomq.20130925103854.4959"><vh>&lt;&lt;declarations&gt;&gt;</vh></v>
 <v t="zoomq.20131223160728.4902"><vh>_https_get()</vh></v>
@@ -1371,6 +1371,7 @@ K4D = {'incr':"SYS_TOT"     # int
     ,'32':"SYS_32_ALL"     # [] 有效栏目文章 (不含已经 del 的)
     ,'33':"SYS_33_ALL"     # [] 有效栏目文章 (不含已经 del 的)
     ,'34':"SYS_34_ALL"     # [] 有效栏目文章 (不含已经 del 的)
+    ,'35':"SYS_35_ALL"     # [] 有效栏目文章 (不含已经 del 的)
     #,'e':"SYS_eves_ALL"     # [] 所有 活动 (包含已经 del 的)
     ,'his':"SYS_node_HIS"   # [] 所有 节点的K索引 (包含已经 del/覆盖 的)
 }
@@ -2050,6 +2051,7 @@ else:
 - 版本:%s
 
 Changelog:
+- 150207 追加子菜单 互推
 - 150206 修订返回文字,精减以免超时
 - 150204 进一步 精减为 杨早公众号使用 
 - 150125 开始为 蠎中国 精减/定制 
@@ -2788,7 +2790,7 @@ conn = httplib.HTTPSConnection(host='www.site.com', port=443, cert_file=_certfil
 , "fw/aa":  "PUT"     # 转复 订户 消息
 
 </t>
-<t tx="zoomq.20131226095232.5938">VERSION = "echo4wx v15.2.6.1012"</t>
+<t tx="zoomq.20131226095232.5938">VERSION = "echo4wx v15.2.13.21"</t>
 <t tx="zoomq.20150123094404.30">TPL_SUBS='''&lt;xml&gt;
 &lt;ToUserName&gt;&lt;![CDATA[%(toUser)s]]&gt;&lt;/ToUserName&gt;
 &lt;FromUserName&gt;&lt;![CDATA[%(fromUser)s]]&gt;&lt;/FromUserName&gt;
@@ -2929,10 +2931,14 @@ ESSAY_TAG = {'11':u''' 介读 ~
     洞见 ~ 
         读易洞是阅读邻居的大本营,要开会要议事,就在群里吆喝一声"洞见",将来我们把各种讨论描述赞美吐槽编印成书,也会叫"洞见"
         '''% _PRE30
+    , '35':u'''%s 
+    互推 ~ 
+        阅读邻居 作为知名读书品牌活动, 自然少不了帮忙相互推荐有关社区/活动/公众号 的有关文章/活动了.
+        '''% _PRE30
     }
 ESSAY_TAG_KEYS = ['11','12', '13', '14', '15',  
     '21', '22', '23', '24', 
-    '31', '32', '33', '34'
+    '31', '32', '33', '34','35'
     ]
 
 

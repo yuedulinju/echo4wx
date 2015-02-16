@@ -75,6 +75,11 @@
                "type":"click",
                "name":"洞见",
                "key":"34"
+            },
+            {
+               "type":"click",
+               "name":"互推",
+               "key":"35"
             }]
        }]
  }
