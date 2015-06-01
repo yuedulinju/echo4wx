@@ -6,7 +6,7 @@
         img: http://mmsns.qpic.cn/mmsns/jsFJEErL30iaf5ZAE1gE97Ttvtz8iaFtwoZVEcdwFIFXOvT7hM7WZIEA/0
     '2':
         - type: news
-          title: 早说电影（2）烂片时代
+          title: 早说电影(2)烂片时代
           uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000099&itemidx=1&sign=d79a7513cce9989bf0f3383ba19b26ff#wechat_redirect
           img: http://mmsns.qpic.cn/mmsns/jsFJEErL30hb6aWgicmJ5wpI0OYY6COdOhWepGsEFBTzchAb8XLp5Kg/0
         - type: news
@@ -15,7 +15,7 @@
           img: http://mmsns.qpic.cn/mmsns/jsFJEErL30ghiaqm3iapLahhMWZ9pd4O4ibsaqzP89bUMDAPTyA8bLbXA/0
     '3':
         type: news
-        title: 早答问题（3）《侨杂志》问民国
+        title: 早答问题(3)"侨杂志"问民国
         uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000286&itemidx=1&sign=ac990997eee1e90e2226c188320303e0#wechat_redirect
         img: http://mmsns.qpic.cn/mmsns/jsFJEErL30ia5IZlF2oxVKiac5snxH7UlFLljjFibQ8mCPpw4DLywFiaeQ/0
     '4':
@@ -25,7 +25,7 @@
         img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30iaiccmAHuP9wpnsZqgyV4zBvJfKxAjlmVPIeFJmx7KufCOeh3fXRWusALzxajuZhWHagdiboeqZUoWA/0?tp=webp&wxfrom=5
     '5':
         - type: news
-          title: 评点《最牛婆婆给媳妇的一封信》
+          title: 评点"最牛婆婆给媳妇的一封信"
           uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=200076204&idx=1&sn=d4d6381d7856a86696ca7446b094f2ae#rd
           img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30hANOEZYOGHHIYeaIrTura3VtvxicrZkX5WlRx7gYXICnoWHEPBq4PaN8IBnNOPHldrQhc7LGNCyBw/0?tp=webp&wxfrom=5
         - type: news
@@ -34,7 +34,7 @@
           img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30jaH8PNR3tfNeVvcmpRbUFKgOic3hibr6hn6h69nyq6t22oDLExiaXo1JneqJoiaG1b1rCftoekX7a29g/0?tp=webp&wxfrom=5
     '6':
         type: news
-        title: 关于视频自媒体，填了一份问卷
+        title: 关于视频自媒体,填了一份问卷
         uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=10013766&idx=1&sn=a9266cdb5b90907f886ed35a7fa7d19b#rd
         img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30iauCiaPZG7vfqgDak3pknPTHKrAGPwFkRV9BWNL9JlxUcnNdzldqQibrtHEv0tSBj22AxaI2nwmZejQ/0?tp=webp&wxfrom=5
     '7':
@@ -48,7 +48,7 @@
           img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30hdzNpEqjJGZaVYiafEwwuQRTWp1OpbDbBN6A1icFSrLSIiccxYCjeu7iac9r5ZToiaic38ibR2SdGQUVwAw/0?tp=webp&wxfrom=5
     '8':
         type: news
-        title: 产业有自己的逻辑，我也有
+        title: 产业有自己的逻辑,我也有
         uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=200153106&idx=1&sn=0284d5c0e0d8da6dfc50b7fe06470d9a#rd
         img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30iaxtkEichUdElZ8h7OMyiceBmIdUZCpxKn10quOnOJymabS6p0TvLE0ibQwcM2YmNurFjABSsZib2K91Q/0?tp=webp&wxfrom=5
     '9':
@@ -66,12 +66,12 @@
           uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10013498&itemidx=1&sign=aff29a0dcc74cb22cc55f3b35ceb78a0#wechat_redirect
           img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30j9Giby5Ru5U0yIXMfU7YKu79giciaLqrIlGS0cmv3u1zicib7SGZMjtu9BzwUyQtGuQiadiczicHycftXFjA/0?tp=webp&wxfrom=5
         - type: news
-          title: 报纸不死，只是变形
+          title: 报纸不死,只是变形
           uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10013574&itemidx=1&sign=7393179d1bfc5b7042230b0150dfbaa8#wechat_redirect
           img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30iaiasTwBPav7ia4z3bfCFx41iaUwhNyxkoJiaLNPapmpw903yHsiaVPmD9Utib6n8cNawo1HBLwdBBqSxpw/0?tp=webp&wxfrom=5
     '11':
         type: news
-        title: （转）中国辩护人
+        title: (转)中国辩护人
         uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=200980527&idx=1&sn=1c11814788c801f4c69032848d4e153a#rd
         img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30ia7ybFgCibKibBicB2d7qwQwhrGVBGCX8UR7Rq2zcXp3yicB2uUficQBbBibye2p2eY19h5vz6tC1XcEuYA/0?tp=webp&wxfrom=5
     '12':
@@ -81,58 +81,54 @@
         img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30goJmMtUKWah1iaNUMNuJs31vyTUSpkTeiaquyLG5LlhjLWKkUibmPKU6YP5ZiaNia3jYXJoubeRTvZz7Q/0?tp=webp&wxfrom=5
     '13':
         - type: news
-          title: 书评：如何让孩子认知恐怖主义
+          title: 书评:如何让孩子认知恐怖主义
           uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=200260555&idx=1&sn=200a327370bc9c246cedbe824ce037ee#rd
           img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30iahqN4IP5gZiceduLEnIsHARMgIRWkwF20gCo81icsUeTZxp4MRicn3Rkbduw5FxEQF640CHvcDPHWlQ/0?tp=webp&wxfrom=5
         - type: news
-          title: 关于《如何让孩子认知恐怖主义》的回复
+          title: 关于"如何让孩子认知恐怖主义"的回复
           uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=200296045&idx=2&sn=8c3d6649ba3d462370b49b8fe2d8a4bb#rd
           img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30jxvicYytH5znjce8M3sy9scGuW7HKGhosxUQ0xw4jxlhOHlhNwAG4ZDqsok3LNwxzkPXd78PIsiauQ/0?tp=webp&wxfrom=5
     '14':
         type: news
-        title: 将性格悲剧拍成命运悲剧——从《陆犯焉识》到《归来》
+        title: 将性格悲剧拍成命运悲剧---从"陆犯焉识"到"归来"
         uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=201133023&idx=1&sn=57f0f16dd84bb639c87ac5c829cf66fc#rd
         img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30j6uPPp5qgOv3K5TichQ1qwg1aYN73bX8m4iaklsedxOMv5ZKLNJtuP7Jbg77Dp5pWWRnh7HBUl9xTw/0?tp=webp&wxfrom=5
     '15':
         type: news
-        title: 用立法者思维看“单独重考”
+        title: 用立法者思维看"单独重考"
         uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=201394361&idx=1&sn=873ff39142598f66d392a9d52f587947#rd
         img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30hG7W5LxZUH2WoOicOZWbIr60Q2icqBrARErYI5FbKeTyeibnCo0ocibNGxibEvagRBQCRxoJB2hgnWFzg/0?tp=webp&wxfrom=5
     '16':
         type: news
-        title: 王明是谁？
+        title: 王明是谁?
         uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=201730482&idx=1&sn=bcf6c6cd5ef930651e283e49994296b6#rd
         img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30goJmMtUKWah1iaNUMNuJs31uf4dRRlEyTM2ualu8HthoAyqAwmsaO4KoyzKbyN1htdZSmWEOZylFA/0?tp=webp&wxfrom=5
     '17':
         - type: news
-          title: “像祖父一样。没有那么好的父亲”——萧红与鲁迅
+          title: 像祖父一样.没有那么好的父亲---萧红与鲁迅
           uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=202898757&idx=1&sn=c450350a894965a16a49a76a4cb176aa#rd
           img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30hN15Tbkt8NUpwHUntp1CMZicUpbxpgYKI5bbTxOglpcoqYSnyEzD2CicvWqCRm37FHRBy2ntmjMBkg/0?tp=webp&wxfrom=5
         - type: news
-          title: 《黄金时代》：一篇被史料压垮了的论文
+          title: 黄金时代~一篇被史料压垮了的论文
           uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=202899763&idx=1&sn=1921fc936b1ad5edbc3b5bec38c0ac0e#rd
           img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30hN15Tbkt8NUpwHUntp1CMZ3Rjj5rOI6ibamuJ1vlqWf04huM6xopdoJf2DXNnTibyKeunXJJLjEBRQ/0?tp=webp&wxfrom=5
         - type: news
           title: 何人绘得萧红影
           uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=202900107&idx=1&sn=af149c1c371c932f14fa8adc5a857a9e#rd
           img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30hN15Tbkt8NUpwHUntp1CMZhWeicZG7a8yricHZichRPdpVHBPeVm18EU4wHMyibKibAE7ZC2vViceo0JSw/0?tp=webp&wxfrom=5
-        - type: news
-          title: “像祖父一样。没有那么好的父亲”——萧红与鲁迅
-          uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=202898757&idx=1&sn=c450350a894965a16a49a76a4cb176aa#rd
-          img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30hN15Tbkt8NUpwHUntp1CMZicUpbxpgYKI5bbTxOglpcoqYSnyEzD2CicvWqCRm37FHRBy2ntmjMBkg/0?tp=webp&wxfrom=5
     '18':
         type: news
-        title: 王明是谁？
+        title: 王明是谁?
         uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=201730482&idx=1&sn=bcf6c6cd5ef930651e283e49994296b6#rd
         img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30goJmMtUKWah1iaNUMNuJs31uf4dRRlEyTM2ualu8HthoAyqAwmsaO4KoyzKbyN1htdZSmWEOZylFA/0?tp=webp&wxfrom=5
     '19':
         type: news
-        title: 南南北北搞什么东西——《一步之遥》《智取威虎山》合观
+        title: 南南北北搞什么东西---"一步之遥""智取威虎山"合观
         uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=205488188&idx=1&sn=31a06e546e348f81c452aa2113971895#rd
         img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30goDKPtsJAHdkTm9GVEcg1IVicNEZlGLqRHm0fwfRaXjtfibdxeKTwIDmUIfXcPWIPEJibnYrZ5dnG8g/0?tp=webp&wxfrom=5
     '20':
         type: news
-        title: 死亡面前什么才是“无比正确”？
+        title: 死亡面前什么才是"无比正确"?
         uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=206046800&idx=1&sn=901075ce17c877947b826dc5ef45817d#rd
         img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30goDKPtsJAHdkTm9GVEcg1IzckzibkWmOBCC0grEZiaFcfVhwZQw9fEuIpj9Ev431icJfS80YCQlw51A/0?tp=webp&wxfrom=5
     '21':
@@ -142,11 +138,11 @@
         img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30jZdtof0XTh7IKmcNCVye9rMrYfdQjRkIPhibjmJyFTByQCj345eOIjLyDc2xfCWicEdlSxtLTfh89g/0?tp=webp&wxfrom=5
     '22':
         type: news
-        title: 从余秀华开始，学习复杂
+        title: 从余秀华开始,学习复杂
         uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=206531554&idx=1&sn=d5fd632f415570e92a0ca2daebb674eb#rd
         img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30gzAT1DNPibuiasYS1ODFO65FCE9xmjdzTSLhcxtZ5gQf1k20auPYT3Qdlwr1mFuEsF5snLfFBY2aZg/0?tp=webp&wxfrom=5
     '23':
         type: news
-        title: 生或不生，不是一个辩题
+        title: 生或不生,不是一个辩题
         uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=206712207&idx=1&sn=4d7d6d6663faa6a748f9f340ea7f0ef7#rd
         img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30gpj80icbt92ibCXx8X2OP8BBDHASWLXylMzNI7seYbtQfoH3xnMFPMMsG0rh20t8Cpec2pDDyfSbqA/0?tp=webp&wxfrom=5

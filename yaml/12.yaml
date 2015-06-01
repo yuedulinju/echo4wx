@@ -1,7 +1,7 @@
 '12':
     '1':
         - type: news
-          title: 早选文章（1）郭德纲一直在前进
+          title: 1)郭德纲一直在前进
           uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000171&itemidx=1&sign=1e43e1f5f5f8772561aa43ba206ec644#wechat_redirect
           img: http://mmsns.qpic.cn/mmsns/jsFJEErL30j7Qb9IdicKpAyk583wMenT4jTOuZ6PvicbjKV2FQHIgtLw/0
         - type: news
@@ -10,111 +10,111 @@
           img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30iaYBwLAsicpWSjKrDVhcEGcb7JyU979kIZuIerdcqmkGTMmRqOIcicdtG5zZqeDq9Mou525hXiaG9BGA/0?tp=webp
     '2':
         type: news
-        title: 早说过了（2）为了怀旧的网恋
+        title: 2)为了怀旧的网恋
         uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000197&itemidx=1&sign=4a357a9c8ebb611ecf86859a825c3f21#wechat_redirect
         img: http://mmsns.qpic.cn/mmsns/jsFJEErL30iaL84DnmW6iaHqoXpqanricLQVIdDAfambm5rOPOgAhWD6Q/0
     '3':
         type: news
-        title: 早说过了（3）你没有理由不疯
+        title: 3)你没有理由不疯
         uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000216&itemidx=1&sign=56da289d7d41d1a5edd075397df39985#wechat_redirect
         img: http://mmsns.qpic.cn/mmsns/jsFJEErL30iaL84DnmW6iaHqoXpqanricLQMmzgeU04icatEpgPvGmFzVQ/0
     '4':
         type: news
-        title: 早说过了（4）假如五四有了网络
+        title: 4)假如五四有了网络
         uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000231&itemidx=1&sign=4531d1f48250a2b8e176eff2a9d738e0#wechat_redirect
         img: http://mmsns.qpic.cn/mmsns/jsFJEErL30iaJadKCFicKCM3zL0eibp8JVM3RtWlc3ecP50bfIuMnLSnA/0
     '5':
         type: news
-        title: 早说过了（5）他们说年华并不花样
+        title: 5)他们说年华并不花样
         uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000251&itemidx=1&sign=ed4b5413e2b776411d03a67c8e335d0a#wechat_redirect
         img: http://mmsns.qpic.cn/mmsns/jsFJEErL30iaxQiastBQEkeygp0kUIibeq89LCONabFFrL3ypjBrjLvPQ/0
     '6':
         type: news
-        title: 早说过了（6）知识竞赛结硕果
+        title: 6)知识竞赛结硕果
         uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000266&itemidx=1&sign=4b9619ed3800309bb38d6d3893460b9d#wechat_redirect
         img: http://mmsns.qpic.cn/mmsns/jsFJEErL30jhDMPJvFphnRrWibzUpTGT9iciaHHm8UaHr19Hic9SGLneiaw/0
     '7':
         type: news
-        title: 早说过了（7）网络时代的教育
+        title: 7)网络时代的教育
         uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000281&itemidx=1&sign=bfdfb6600ffdae05e9021c881e2023c7#wechat_redirect
         img: http://mmsns.qpic.cn/mmsns/jsFJEErL30jicqLykSW6766H2xqewjpmNaasuXWH3ibib9ic4W8S4ksKaA/0
     '8':
         type: news
-        title: 早说过了（8）替汤姆刷墙
+        title: 8)替汤姆刷墙
         uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000293&itemidx=1&sign=1d086b5a359077118b48e0b3fce0e677#wechat_redirect
         img: http://mmsns.qpic.cn/mmsns/jsFJEErL30iaFeuJ3UiaZgGvcb5sqicSibpHXpP7KOGHOv0g5TJXFfF9Fw/0
     '9':
         type: news
-        title: 早说过了（9）该死一闭眼
+        title: 9)该死一闭眼
         uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000306&itemidx=1&sign=80fe3ea24a5b037b69e88e3a88591cb5#wechat_redirect
         img: http://mmsns.qpic.cn/mmsns/jsFJEErL30iaHEibzLbcKngA4TdBU4iabMRq8TQBoPUnemVdfIY7qaCaw/0
     '10':
         type: news
-        title: 早说过了（10）才子卖肉与博士做鸭
+        title: 10)才子卖肉与博士做鸭
         uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000323&itemidx=1&sign=13a2d7aa726662220e781d982ece3fd7#wechat_redirect
         img: http://mmsns.qpic.cn/mmsns/jsFJEErL30jrYibickJLFwjxaibdHLjOEpMu5RhjvvN7W1BicRTvO0RgEA/0
     '11':
         type: news
-        title: 早说过了（11）太阳之下无新词
+        title: 11)太阳之下无新词
         uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000339&itemidx=1&sign=2441189097aee30844307de28af55581#wechat_redirect
         img: http://mmsns.qpic.cn/mmsns/jsFJEErL30jeyhJqXibkjPDhKyNIq4ny94BeohYiaYzvEniaeSga1IFYA/0
     '12':
         type: news
-        title: 早说过了（12）才子加流氓
+        title: 12)才子加流氓
         uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000357&itemidx=1&sign=aadd0eca2b3da68b3cf62c822e2bbb56#wechat_redirect
         img: http://mmsns.qpic.cn/mmsns/jsFJEErL30iam0ltgZD9A7PJQ0kE4XUWWIsjz76y4R4iboJBhxB00jgw/0
     '13':
         type: news
-        title: 早说过了（13）外惭清议，内疚神明
+        title: 13)外惭清议,内疚神明
         uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000375&itemidx=1&sign=a7651455edacffb8272d98002084e1a6#wechat_redirect
         img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30gYicFdkib1KkAqXib8zmOS6nHtfeenhNzJv2ZEFQ4JAhykiadSBib3FqBR7Gszqy8trKDDbJAicLLSIpOQ/0?tp=webp
     '14':
         type: news
-        title: 早说过了（14）强扭的瓜不甜
+        title: 14)强扭的瓜不甜
         uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000375&itemidx=1&sign=a7651455edacffb8272d98002084e1a6#wechat_redirect
         img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30gYicFdkib1KkAqXib8zmOS6nHtfeenhNzJv2ZEFQ4JAhykiadSBib3FqBR7Gszqy8trKDDbJAicLLSIpOQ/0?tp=webp
     '15':
         type: news
-        title: 早说过了（15）安全就是一个套
+        title: 15)安全就是一个套
         uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10000403&itemidx=1&sign=2f2560d86d6a0bf68a0d9f754533cb45#wechat_redirect
         img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30goer0dmibbfpwoMM3DRes7Bdw2VKtCV5GSlrLPtZ57mrib7DkWrxoEPJ8adVPtNmJezu6BrNwzIHgA/0?tp=webp
     '16':
         type: news
-        title: 早说过了（16）这个时代谁在反智？
+        title: 16)这个时代谁在反智?
         uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10001396&itemidx=1&sign=d5c6fa2a7a0b79c5cc4da563a5051629#wechat_redirect
         img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30iafFicoJBQXTjvKJ31JhEbEXyNThVcWBlticZXBsVXOx1TYPX8eqR0BePl50XXx8rR7bqvicjSAHlWaw/0?tp=webp
     '17':
         type: news
-        title: 早说过了（17）斜眼看女博
+        title: 17)斜眼看女博
         uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10001410&itemidx=1&sign=28c678ce050ed5e6d7544fe9c59be225#wechat_redirect
         img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30hNBjOQZqHdZACTQRRGksviaxXyfm3S0YUyEVHicibgibgmRMVfmyeoQHlWTfPoG6vbGlhzSLldF9ybhQ/0?tp=webp&wxfrom=5
     '18':
         type: news
-        title: 早说过了（18）黄钟毁弃，瓦釜雷鸣
+        title: 18)黄钟毁弃,瓦釜雷鸣
         uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10012698&itemidx=1&sign=8f8e12be43108cf6c7845c5a382e96c8#wechat_redirect
         img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30hNBjOQZqHdZACTQRRGksviahQQCP1zmfQ3pDia8HECgoKXjKyRFRhYjAWYvEbDxjYjFH8rCGcD5qgA/0?tp=webp&wxfrom=5
     '19':
         type: news
-        title: 早说过了（19）读圣贤书，所为何事
+        title: 19)读圣贤书,所为何事
         uri: http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5MzAxMzY4MQ==&appmsgid=10012878&itemidx=1&sign=a6f8cc1deae666e5a0d997a6e212734d#wechat_redirect
         img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30ia1IcLAzVy6B6J4jw46MTia485c5eV0LC91HpUuxaDbmNvtOcLoURJjtEh3icd1QajuHRMia8X1ArVhw/0?tp=webp&wxfrom=5
     '20':
         type: news
-        title: 早说过了（20）因哈根达斯想到的二三事
+        title: 20)因哈根达斯想到的二三事
         uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=201181603&idx=1&sn=5582b769ff74bbcd8a5e1500390e2a06#rd
         img: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=201160281&idx=1&sn=d66430bd219bb6c5702f1dc9d3172126#rd
     '21':
         type: news
-        title: 早说过了（21）伪士当去，迷信可存
+        title: 21)伪士当去,迷信可存
         uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=201403266&idx=1&sn=7d5547f33b551f1ba0c0d0783cf1cc22#rd
         img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30jq1PxYceqMUb1XRwM2TbJuNvcfcTIoWeLRO1wYttOWdGlYJd2H3eQjnx5V3amcCRLCvvQFI3AKsw/0?tp=webp&wxfrom=5
     '22':
         type: news
-        title: 早说过了（22）浪漫：一种定式？
+        title: 22)浪漫:一种定式?
         uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=200117215&idx=1&sn=d144bac8f6d3e7ab3e88330bd899002a#rd
         img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30hdeTMYk3deSyZqf8ufbQBjSeyDIWg5yHBGKzaKD2NIk4v2VE8C49bEXusBIZIBdG64AVxhHiaDvicQ/0?tp=webp&wxfrom=5
     '23':
         type: news
-        title: 早说过了（23）大梦谁先觉
+        title: 23)大梦谁先觉
         uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=203697772&idx=2&sn=48cb7abea9d7808a9ebea25c631d160b#rd
         img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30ia2tFv99sQ8KFCR7ZicicDna4ZNFQgibf9pm3GMnFxYjfPdLNCuylNu2V9wECCFcoicGwFWkIU9OfiaTGw/0?tp=webp&wxfrom=5
