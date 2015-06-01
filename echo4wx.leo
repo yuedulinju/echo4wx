@@ -39,7 +39,7 @@
 </v>
 </v>
 </v>
-<v t="zoomq.20130925103854.4957" a="E"><vh>@nosent CLI.py</vh>
+<v t="zoomq.20130925103854.4957"><vh>@nosent CLI.py</vh>
 <v t="zoomq.20130925103854.4958"><vh>&lt;&lt;docopt&gt;&gt;</vh></v>
 <v t="zoomq.20130925103854.4959"><vh>&lt;&lt;declarations&gt;&gt;</vh></v>
 <v t="zoomq.20131223160728.4902"><vh>_https_get()</vh></v>
@@ -100,9 +100,9 @@
 <v t="zoomq.20150202122015.8"><vh>build-in</vh></v>
 </v>
 <v t="zoomq.20130925103854.5007"><vh>CLI 远程管理&gt;&gt;&gt;</vh>
-<v t="zoomq.20131007093121.5601"><vh>文章管理</vh>
+<v t="zoomq.20131007093121.5601" a="E"><vh>文章管理</vh>
 <v t="zoomq.20150202122015.15"><vh>_load_news(,, multi=False)</vh></v>
-<v t="zoomq.20130929203117.3712" a="E"><vh>POST push/p</vh>
+<v t="zoomq.20130929203117.3712"><vh>POST push/p</vh>
 <v t="zoomq.20150202122015.19"><vh>&lt;&lt;reset_old&gt;&gt;</vh></v>
 <v t="zoomq.20150202122015.14"><vh>&lt;&lt;flush_in&gt;&gt;</vh></v>
 </v>
@@ -113,7 +113,7 @@
 <v t="zoomq.20150203153224.10"><vh>GET get/acc</vh></v>
 </v>
 <v t="zoomq.20130918155053.5760"><vh>GET  /echo</vh></v>
-<v t="zoomq.20130918155053.7083"><vh>POST /echo 认证接口</vh>
+<v t="zoomq.20130918155053.7083" a="E"><vh>POST /echo 认证接口</vh>
 <v t="zoomq.20150202122015.23"><vh>&lt;&lt;echo CLICK&gt;&gt;</vh></v>
 <v t="zoomq.20150202122015.22"><vh>&lt;&lt;echo event&gt;&gt;</vh></v>
 <v t="zoomq.20150202122015.7"><vh>&lt;&lt;echo TEXT&gt;&gt;</vh></v>
@@ -1338,11 +1338,11 @@ def wechat_post():
 
 </t>
 <t tx="zoomq.20130918155053.7084">&lt;&lt;ALIAS&gt;&gt;
+# for CLI local usage
+&lt;&lt;XML模板&gt;&gt;
 
 @others
 
-# for CLI local usage
-&lt;&lt;XML模板&gt;&gt;
 
 
 </t>
@@ -1613,14 +1613,11 @@ import os
 import base64
 from subprocess import Popen
 from time import time, gmtime, strftime, localtime
-
 import httplib, urllib
 import urllib2
 # 打开urllib2的debug开关
 urllib2.install_opener(urllib2.build_opener(urllib2.HTTPSHandler(1)))
-
 import json
-
 from docopt import docopt
 
 from config import CFG
@@ -3085,7 +3082,8 @@ else:
     if cmd in CFG.CMD_ALIAS:
         return _wx_echo_cmd(wxreq, cmd)
     else:
-        return WxTextResponse(CFG.TXT_HELP, wxreq).as_xml()
+        return None
+        #WxTextResponse(CFG.TXT_HELP, wxreq).as_xml()
         #print cmd
 
     #if 8 &gt; len(crt_usr['msg']):

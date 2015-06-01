@@ -188,6 +188,50 @@ class Borg():
         #, 'st', 'stat'                  # 系统状态
         #, 'nn'                          # 牛妞日记
         )
+    # for CLI local usage
+    TPL_SUBS='''<xml>
+    <ToUserName><![CDATA[%(toUser)s]]></ToUserName>
+    <FromUserName><![CDATA[%(fromUser)s]]></FromUserName>
+    <CreateTime>%(tStamp)s</CreateTime>
+    <MsgType><![CDATA[event]]></MsgType>
+    <Event><![CDATA[%(content)s]]></Event>
+    </xml>'''
+    TPL_CLICK='''<xml>
+    <ToUserName><![CDATA[%(toUser)s]]></ToUserName>
+    <FromUserName><![CDATA[%(fromUser)s]]></FromUserName>
+    <CreateTime>%(tStamp)s</CreateTime>
+    <MsgType><![CDATA[CLICK]]></MsgType>
+    <Event><![CDATA[%(content)s]]></Event>
+    </xml>'''
+    TPL_TEXT='''<xml>
+    <ToUserName><![CDATA[%(toUser)s]]></ToUserName>
+    <FromUserName><![CDATA[%(fromUser)s]]></FromUserName>
+    <CreateTime>%(tStamp)s</CreateTime>
+    <MsgType><![CDATA[text]]></MsgType>
+    <Content><![CDATA[%(content)s]]></Content>
+    </xml>'''
+
+    TPL_URIS='''<xml>
+    <ToUserName><![CDATA[%(toUser)s]]></ToUserName>
+    <FromUserName><![CDATA[%(fromUser)s]]></FromUserName>
+    <CreateTime>%(tStamp)s</CreateTime>
+    <MsgType><![CDATA[news]]></MsgType>
+    <ArticleCount>%(item_count)d</ArticleCount>
+    <Articles>
+    %(items)s
+    </Articles>
+    </xml> 
+    '''
+
+    TPL_ITEM='''<item>
+    <Title><![CDATA[%(title)s]]></Title> 
+    <Description><![CDATA[%(description)s]]></Description>
+    <PicUrl><![CDATA[%(picurl)s]]></PicUrl>
+    <Url><![CDATA[%(url)s]]></Url>
+    </item>
+    '''
+
+
 
     TXT_VER = u'''阅读邻居(杨早) 公众号服务系统:
     - 版本:%s
@@ -273,50 +317,6 @@ class Borg():
     更多细节,请惯性地输入 h 继续吧 :)
     '''
 
-
-
-    # for CLI local usage
-    TPL_SUBS='''<xml>
-    <ToUserName><![CDATA[%(toUser)s]]></ToUserName>
-    <FromUserName><![CDATA[%(fromUser)s]]></FromUserName>
-    <CreateTime>%(tStamp)s</CreateTime>
-    <MsgType><![CDATA[event]]></MsgType>
-    <Event><![CDATA[%(content)s]]></Event>
-    </xml>'''
-    TPL_CLICK='''<xml>
-    <ToUserName><![CDATA[%(toUser)s]]></ToUserName>
-    <FromUserName><![CDATA[%(fromUser)s]]></FromUserName>
-    <CreateTime>%(tStamp)s</CreateTime>
-    <MsgType><![CDATA[CLICK]]></MsgType>
-    <Event><![CDATA[%(content)s]]></Event>
-    </xml>'''
-    TPL_TEXT='''<xml>
-    <ToUserName><![CDATA[%(toUser)s]]></ToUserName>
-    <FromUserName><![CDATA[%(fromUser)s]]></FromUserName>
-    <CreateTime>%(tStamp)s</CreateTime>
-    <MsgType><![CDATA[text]]></MsgType>
-    <Content><![CDATA[%(content)s]]></Content>
-    </xml>'''
-
-    TPL_URIS='''<xml>
-    <ToUserName><![CDATA[%(toUser)s]]></ToUserName>
-    <FromUserName><![CDATA[%(fromUser)s]]></FromUserName>
-    <CreateTime>%(tStamp)s</CreateTime>
-    <MsgType><![CDATA[news]]></MsgType>
-    <ArticleCount>%(item_count)d</ArticleCount>
-    <Articles>
-    %(items)s
-    </Articles>
-    </xml> 
-    '''
-
-    TPL_ITEM='''<item>
-    <Title><![CDATA[%(title)s]]></Title> 
-    <Description><![CDATA[%(description)s]]></Description>
-    <PicUrl><![CDATA[%(picurl)s]]></PicUrl>
-    <Url><![CDATA[%(url)s]]></Url>
-    </item>
-    '''
 
 
 

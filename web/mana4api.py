@@ -292,7 +292,8 @@ def wechat_post():
             if cmd in CFG.CMD_ALIAS:
                 return _wx_echo_cmd(wxreq, cmd)
             else:
-                return WxTextResponse(CFG.TXT_HELP, wxreq).as_xml()
+                return None
+                #WxTextResponse(CFG.TXT_HELP, wxreq).as_xml()
                 #print cmd
 
             #if 8 > len(crt_usr['msg']):
