@@ -2,10 +2,15 @@
 
 - 仓库: [readerneighbor/echo4wx - GitCafe](https://gitcafe.com/readerneighbor/echo4wx)
 - 应用: http://sayeahoo.sinaapp.com
+- 参考: [42分钟乱入 wechat 手册!-) — chaos2wechat 1.1.131010 documentation](http://chaos2.qiniudn.com/wechat/build/html/)
 
 ## 功能
 
-命令驱动式应答
+- 应答 wechat 后台认证请求,完成开发者模式的开启
+- 基于 SAE 完成自制菜单的响应,将 KVDB 中的数据,变成微信文本返回读者
+  + 通过索引号,返回过往公众号文章链接
+  + 从而突破微信后台自定关键词响应的 300 个限制
+- 基干远程 CLI 的数据维护
 
 ### 150204 部署
 
