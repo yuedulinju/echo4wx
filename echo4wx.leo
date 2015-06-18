@@ -25,7 +25,7 @@
 <v t="zoomq.20130923093950.5395"><vh>&lt;&lt;CONTENT&gt;&gt;</vh></v>
 <v t="zoomq.20130923093950.5396"><vh>&lt;&lt;HISTORIC&gt;&gt;</vh></v>
 </v>
-<v t="zoomq.20130918155053.7084" a="E"><vh>4wechat</vh>
+<v t="zoomq.20130918155053.7084"><vh>4wechat</vh>
 <v t="zoomq.20150123094404.30"><vh>&lt;&lt;XML模板&gt;&gt;</vh></v>
 <v t="zoomq.20130923093950.8818"><vh>&lt;&lt;ALIAS&gt;&gt;</vh></v>
 <v t="zoomq.20130925103854.6455"><vh>帮助.系统</vh></v>
@@ -46,7 +46,7 @@
 <v t="zoomq.20131224083725.5909"><vh>_https_post()</vh></v>
 <v t="zoomq.20131224083725.5906"><vh>_wx_token_get()</vh></v>
 <v t="zoomq.20130925103854.4961"><vh>smart_rest()</vh></v>
-<v t="zoomq.20130925103854.4960"><vh>_rest_main()</vh>
+<v t="zoomq.20130925103854.4960" a="E"><vh>_rest_main()</vh>
 <v t="zoomq.20150202122015.18"><vh>&lt;&lt;echo matters&gt;&gt;</vh></v>
 <v t="zoomq.20130925103854.6450"><vh>&lt;&lt;subs matters&gt;&gt;</vh></v>
 <v t="zoomq.20150202122015.17"><vh>&lt;&lt;clic matters&gt;&gt;</vh></v>
@@ -60,7 +60,7 @@
 </v>
 </v>
 </v>
-<v t="zoomq.20120723102156.5541"><vh>module</vh>
+<v t="zoomq.20120723102156.5541" a="E"><vh>module</vh>
 <v t="zoomq.20130925103854.6406"><vh>@nosent __init__.py</vh></v>
 <v t="zoomq.20120820121523.7422"><vh>@nosent auth.py</vh>
 <v t="zoomq.20120820121523.7423"><vh>&lt;&lt;declarations&gt;&gt;</vh></v>
@@ -99,7 +99,7 @@
 <v t="zoomq.20150202122015.9"><vh>&lt;&lt;自制模块&gt;&gt;</vh></v>
 <v t="zoomq.20150202122015.8"><vh>build-in</vh></v>
 </v>
-<v t="zoomq.20130925103854.5007"><vh>CLI 远程管理&gt;&gt;&gt;</vh>
+<v t="zoomq.20130925103854.5007" a="E"><vh>CLI 远程管理&gt;&gt;&gt;</vh>
 <v t="zoomq.20131007093121.5601" a="E"><vh>文章管理</vh>
 <v t="zoomq.20150202122015.15"><vh>_load_news(,, multi=False)</vh></v>
 <v t="zoomq.20130929203117.3712"><vh>POST push/p</vh>
@@ -113,7 +113,7 @@
 <v t="zoomq.20150203153224.10"><vh>GET get/acc</vh></v>
 </v>
 <v t="zoomq.20130918155053.5760"><vh>GET  /echo</vh></v>
-<v t="zoomq.20130918155053.7083" a="E"><vh>POST /echo 认证接口</vh>
+<v t="zoomq.20130918155053.7083"><vh>POST /echo 认证接口</vh>
 <v t="zoomq.20150202122015.23"><vh>&lt;&lt;echo CLICK&gt;&gt;</vh></v>
 <v t="zoomq.20150202122015.22"><vh>&lt;&lt;echo event&gt;&gt;</vh></v>
 <v t="zoomq.20150202122015.7"><vh>&lt;&lt;echo TEXT&gt;&gt;</vh></v>
@@ -3051,7 +3051,7 @@ return WxTextResponse(_TAG_PAPERS%( 'tag'
         ,'LIST' )
     , wxreq).as_xml()
 
-        </t>
+</t>
 <t tx="zoomq.20150202122015.5">#   150201 usage sub-class from jeff
 from wechat.official import WxApplication
 from wechat.official import WxRequest, WxTextResponse

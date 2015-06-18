@@ -318,7 +318,6 @@ def wechat_post():
                 ,'LIST' )
             , wxreq).as_xml()
 
-                
     return None
     
 
