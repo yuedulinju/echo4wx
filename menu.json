@@ -5,11 +5,6 @@
            "sub_button":[
             {
                "type":"click",
-               "name":"介读",
-               "key":"11"
-            },
-            {
-               "type":"click",
                "name":"论世",
                "key":"12"
             },
@@ -22,6 +17,20 @@
                "type":"click",
                "name":"记事",
                "key":"14"
+            }]
+       },
+      {
+           "name":"早看",
+           "sub_button":[
+            {
+               "type":"click",
+               "name":"介读",
+               "key":"11"
+            },
+            {
+               "type":"click",
+               "name":"观影",
+               "key":"25"
             },
             {
                "type":"click",
@@ -30,56 +39,22 @@
             }]
        },
       {
-           "name":"话题",
+           "name":"早会",
            "sub_button":[
-            {
-               "type":"click",
-               "name":"综述",
-               "key":"21"
-            },
-            {
-               "type":"click",
-               "name":"文化",
-               "key":"22"
-            },
-            {
-               "type":"click",
-               "name":"教育",
-               "key":"23"
-            },
-            {
-               "type":"click",
-               "name":"社会",
-               "key":"24"
-            }]
-       },
-      {
-           "name":"读邻",
-           "sub_button":[
-            {
-               "type":"click",
-               "name":"荐书",
-               "key":"31"
-            },
-            {
-               "type":"click",
-               "name":"主题",
-               "key":"32"
-            },
-            {
-               "type":"click",
-               "name":"DIAO",
-               "key":"33"
-            },
-            {
-               "type":"click",
-               "name":"洞见",
-               "key":"34"
-            },
             {
                "type":"click",
                "name":"互推",
                "key":"35"
+            },
+            {
+               "type":"click",
+               "name":"来瞧",
+               "key":"36"
+            },
+            {
+               "type":"click",
+               "name":"征稿",
+               "key":"37"
             }]
        }]
  }
