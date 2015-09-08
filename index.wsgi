@@ -2,6 +2,11 @@
 import sae
 #import config
 #from bottle import run
+import sys
+import os.path
+app_root = os.path.dirname(__file__)
+sys.path.insert(0, app_root)
+
 from web import APP
 
 application = sae.create_wsgi_app(APP)

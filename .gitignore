@@ -3,6 +3,7 @@ xsettings.py
 
 .python-version
 
+*.pex
 *.py[cod]
 
 # C extensions

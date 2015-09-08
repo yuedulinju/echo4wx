@@ -120,26 +120,31 @@
         img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30ia2tFv99sQ8KFCR7ZicicDna4ZNFQgibf9pm3GMnFxYjfPdLNCuylNu2V9wECCFcoicGwFWkIU9OfiaTGw/0?tp=webp&wxfrom=5
     '24':
         type: news
-        title: 论世| 以不同的方式追忆青春——致我的同龄人
+        title: 不同的方式追忆青春——致我的同龄人
         uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=210257977&idx=1&sn=d139d662adf68e81322e7891b9ba40fe#rd
         img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30iaiauETH6ySePRtRYIjgicg3NxW2H98tv5LY7mcy1SJU6fJgYowQ73lyqAVULPrFc9lTnwv6t7DWZxg/640?wx_fmt=jpeg&wxfrom=5
     '25':
         type: news
-        title: 论世| 怎样对待“裤裆藏雷”这样的低俗文化
+        title: 怎样对待“裤裆藏雷”这样的低俗文化
         uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=211492987&idx=1&sn=2416bea5ad42a783b33e4271d9a6c01c#rd
         img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30gibYCfLykl0qc6GvmHky9ibwIZ3E6N2fHqh85RgXywwJqg3UaJOVTj68DL2vlo9g9pZZkP9vUbV7aw/640?wx_fmt=jpeg&wxfrom=5
     '26':
         type: news
-        title: 论世| 屁股是一个粗鲁的词吗
+        title: 屁股是一个粗鲁的词吗
         uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=212003661&idx=1&sn=4f16691c9a6fd14aee3b0b1b0d9e910f#rd
         img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30j1dAKgZfZ8Lxaayo1ibnMVgk7XBkZFPpCIiaw0k8uwYQQMgbrCOVmPP1bytn57iaWoYYt72OVar2Jpw/640?wx_fmt=jpeg&wxfrom=5
     '27':
         type: news
-        title: 论世 | 母校搞不好，关我什么事
+        title: 母校搞不好，关我什么事
         uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=212493609&idx=1&sn=6e6afadd2a5902ccb3b36b96c33f3191#rd
         img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30iaxCg1oNGnARadt1oCm6KK6mWSTOicAZbicQW8gKtJl7xLN4nwx9n7HRdwd1npqqFlw6zWFCCF6gcQQ/640?wx_fmt=jpeg&wxfrom=5
     '28':
         type: news
-        title: 论世 | 中文系怎样才能让人看得起？
+        title: 中文系怎样才能让人看得起？
         uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=213702878&idx=1&sn=44c8550e1de0fa41bd9c888726e9640d#rd
         img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30jTmNeyorXclBhyXkKicSEOicJX72as4uaNWMeR5aUkT23pxedeKVHxzaEaV5u9pwdPU70wv5qClJsA/640?wx_fmt=jpeg&wxfrom=5
+    '29':
+        type: news
+        title: 2015，又一个2008
+        uri: http://mp.weixin.qq.com/s?__biz=MjM5MzAxMzY4MQ==&mid=217089847&idx=1&sn=44acfc4a9a9b80b0878e8424759fdf3b#rd
+        img: http://mmbiz.qpic.cn/mmbiz/jsFJEErL30gfI9DZ2vJuWSZDib6qhHa2WW9OUuMtF4xEXFWR2zldnvwPGlX0oKZkd8xnsMjZ61G6eib7icI7fP79g/640?wx_fmt=jpeg&wxfrom=5

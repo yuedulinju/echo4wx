@@ -38,6 +38,7 @@ import urllib2
 # 打开urllib2的debug开关
 urllib2.install_opener(urllib2.build_opener(urllib2.HTTPSHandler(1)))
 import json
+
 from docopt import docopt
 
 from config import CFG

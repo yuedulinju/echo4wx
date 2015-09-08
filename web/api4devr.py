@@ -277,6 +277,7 @@ def wechat_post():
     else:
         print "Debugging localhost..."
     ## 注意! 从公众号来的消息和订阅号完全不同的,需要另外解析!
+    print "request.forms.keys()\t\n", request.forms.keys()
     print "request.forms.keys()[0]\t\n", request.forms.keys()[0]
     wxreq = WxRequest(request.forms.keys()[0])
     if 'text' == wxreq.MsgType:
@@ -320,6 +321,38 @@ def wechat_post():
 
     return None
     
+
+
+
+def _wx_echo_cnt(wxreq, cmd):
+    print "_wx_echo_cnt", cmd
+    _items = KV.get(str(cmd))
+    #print _items
+    #return None
+    resp = WxNewsResponse(
+            [WxArticle(p['title']
+                ,Description=""
+                ,Url=p['uri']
+                ,PicUrl=p['pic']) for p in _items['news']]
+            , wxreq).as_xml()
+
+    return resp
+    #return WxTextResponse(CFG.TXT_HELP, wxreq).as_xml()
+def _wx_echo_idx(wxreq, cmd):
+    print "_wx_echo_idx", cmd
+    all_papers = KV.get(CFG.K4D[cmd])
+    #print 
+    all_papers.sort()
+    #print len(all_papers)
+    #print CFG.ESSAY_TAG[cmd]
+    if 0 == len(all_papers):
+        #_exp = TPL_IDX_LOST.format( tag_info = CFG.ESSAY_TAG[cmd])
+        #u"但是...历史文章还未整理索引起来,敬请期待 눈_눈"
+        return WxTextResponse(TPL_IDX_LOST.format( tag_info = CFG.ESSAY_TAG[cmd])
+                , wxreq).as_xml()
+    else:
+        real_exp = _limit_echo_idx(all_papers, cmd)
+        return WxTextResponse(real_exp, wxreq).as_xml()
 
 
 
@@ -367,26 +400,6 @@ def _limit_echo_idx(all_papers, cmd):
     else:
         return real_exp
 
-def _wx_echo_idx(wxreq, cmd):
-    print "_wx_echo_idx", cmd
-    all_papers = KV.get(CFG.K4D[cmd])
-    #print 
-    all_papers.sort()
-    #print len(all_papers)
-    #print CFG.ESSAY_TAG[cmd]
-    if 0 == len(all_papers):
-        #_exp = TPL_IDX_LOST.format( tag_info = CFG.ESSAY_TAG[cmd])
-        #u"但是...历史文章还未整理索引起来,敬请期待 눈_눈"
-        return WxTextResponse(TPL_IDX_LOST.format( tag_info = CFG.ESSAY_TAG[cmd])
-                , wxreq).as_xml()
-    else:
-        all_papers.sort(key=lambda x: int(x))
-        print all_papers
-        real_exp = _limit_echo_idx(all_papers, cmd)
-        return WxTextResponse(real_exp, wxreq).as_xml()
-
-
-
 def _wx_echo_cmd(wxreq, cmd):
     for k in CFG.CMD_TPLS.keys():
         if cmd in k:
@@ -397,20 +410,9 @@ def _wx_echo_cmd(wxreq, cmd):
             return WxTextResponse(_TPL, wxreq).as_xml()
     #return None
     return WxTextResponse(CFG.TXT_HELP, wxreq).as_xml()
-def _wx_echo_cnt(wxreq, cmd):
-    print "_wx_echo_cnt", cmd
-    _items = KV.get(str(cmd))
-    #print _items
-    #return None
-    resp = WxNewsResponse(
-            [WxArticle(p['title']
-                ,Description=""
-                ,Url=p['uri']
-                ,PicUrl=p['pic']) for p in _items['news']]
-            , wxreq).as_xml()
 
-    return resp
-    #return WxTextResponse(CFG.TXT_HELP, wxreq).as_xml()
+
+
 @APP.route('/sysincr')
 #@APP.route('/<ddd>/sysincr')
 def sysincr():

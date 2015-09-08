@@ -25,7 +25,7 @@
 <v t="zoomq.20130923093950.5395"><vh>&lt;&lt;CONTENT&gt;&gt;</vh></v>
 <v t="zoomq.20130923093950.5396"><vh>&lt;&lt;HISTORIC&gt;&gt;</vh></v>
 </v>
-<v t="zoomq.20130918155053.7084"><vh>4wechat</vh>
+<v t="zoomq.20130918155053.7084" a="E"><vh>4wechat</vh>
 <v t="zoomq.20150123094404.30"><vh>&lt;&lt;XML模板&gt;&gt;</vh></v>
 <v t="zoomq.20130923093950.8818"><vh>&lt;&lt;ALIAS&gt;&gt;</vh></v>
 <v t="zoomq.20130925103854.6455"><vh>帮助.系统</vh></v>
@@ -46,7 +46,7 @@
 <v t="zoomq.20131224083725.5909"><vh>_https_post()</vh></v>
 <v t="zoomq.20131224083725.5906"><vh>_wx_token_get()</vh></v>
 <v t="zoomq.20130925103854.4961"><vh>smart_rest()</vh></v>
-<v t="zoomq.20130925103854.4960" a="E"><vh>_rest_main()</vh>
+<v t="zoomq.20130925103854.4960"><vh>_rest_main()</vh>
 <v t="zoomq.20150202122015.18"><vh>&lt;&lt;echo matters&gt;&gt;</vh></v>
 <v t="zoomq.20130925103854.6450"><vh>&lt;&lt;subs matters&gt;&gt;</vh></v>
 <v t="zoomq.20150202122015.17"><vh>&lt;&lt;clic matters&gt;&gt;</vh></v>
@@ -87,7 +87,7 @@
 <v t="zoomq.20120727213305.14699"><vh>INCR4KV()</vh></v>
 </v>
 </v>
-<v t="zoomq.20120723102156.5543"><vh>web</vh>
+<v t="zoomq.20120723102156.5543" a="E"><vh>web</vh>
 <v t="zoomq.20120723102156.5545"><vh>@nosent __init__.py</vh>
 <v t="zoomq.20120723102156.5546"><vh>&lt;&lt;declarations&gt;&gt;</vh></v>
 <v t="zoomq.20120723102156.5548"><vh>/</vh></v>
@@ -102,7 +102,7 @@
 <v t="zoomq.20130925103854.5007" a="E"><vh>CLI 远程管理&gt;&gt;&gt;</vh>
 <v t="zoomq.20131007093121.5601" a="E"><vh>文章管理</vh>
 <v t="zoomq.20150202122015.15"><vh>_load_news(,, multi=False)</vh></v>
-<v t="zoomq.20130929203117.3712"><vh>POST push/p</vh>
+<v t="zoomq.20130929203117.3712" a="E"><vh>POST push/p</vh>
 <v t="zoomq.20150202122015.19"><vh>&lt;&lt;reset_old&gt;&gt;</vh></v>
 <v t="zoomq.20150202122015.14"><vh>&lt;&lt;flush_in&gt;&gt;</vh></v>
 </v>
@@ -113,20 +113,55 @@
 <v t="zoomq.20150203153224.10"><vh>GET get/acc</vh></v>
 </v>
 <v t="zoomq.20130918155053.5760"><vh>GET  /echo</vh></v>
-<v t="zoomq.20130918155053.7083"><vh>POST /echo 认证接口</vh>
+<v t="zoomq.20130918155053.7083" a="E"><vh>POST /echo 认证接口</vh>
 <v t="zoomq.20150202122015.23"><vh>&lt;&lt;echo CLICK&gt;&gt;</vh></v>
 <v t="zoomq.20150202122015.22"><vh>&lt;&lt;echo event&gt;&gt;</vh></v>
 <v t="zoomq.20150202122015.7"><vh>&lt;&lt;echo TEXT&gt;&gt;</vh></v>
 </v>
-<v t="zoomq.20150202122015.10"><vh>_wx_echo_cnt</vh></v>
-<v t="zoomq.20150202122015.12"><vh>_wx_echo_idx</vh></v>
 <v t="zoomq.20150203153224.13"><vh>_limit_echo_idx()</vh>
 <v t="zoomq.20150203153224.14"><vh>&lt;&lt;正常&gt;&gt;</vh></v>
 <v t="zoomq.20150203153224.15"><vh>&lt;&lt;压缩&gt;&gt;</vh></v>
 </v>
+<v t="zoomq.20150202122015.12"><vh>_wx_echo_idx</vh></v>
 <v t="zoomq.20150202122015.11"><vh>_wx_echo_cmd</vh></v>
+<v t="zoomq.20150202122015.10"><vh>_wx_echo_cnt</vh></v>
 <v t="zoomq.20120727213305.13050"><vh>/api/sysincr</vh></v>
 <v t="zoomq.20120727213305.14707"></v>
+</v>
+<v t="zoomq.20150708235240.7"><vh>@nosent api4devr.py</vh>
+<v t="zoomq.20150708235240.8"><vh>&lt;&lt;declarations&gt;&gt;</vh>
+<v t="zoomq.20150708235240.9"><vh>输出模板</vh></v>
+<v t="zoomq.20150708235240.10"><vh>&lt;&lt;自制模块&gt;&gt;</vh></v>
+<v t="zoomq.20150708235240.11"><vh>build-in</vh></v>
+</v>
+<v t="zoomq.20150708235240.12"><vh>CLI 远程管理&gt;&gt;&gt;</vh>
+<v t="zoomq.20150708235240.13"><vh>文章管理</vh>
+<v t="zoomq.20150708235240.14"><vh>_load_news(,, multi=False)</vh></v>
+<v t="zoomq.20150708235240.15"><vh>POST push/p</vh>
+<v t="zoomq.20150708235240.16"><vh>&lt;&lt;reset_old&gt;&gt;</vh></v>
+<v t="zoomq.20150708235240.17"><vh>&lt;&lt;flush_in&gt;&gt;</vh></v>
+</v>
+<v t="zoomq.20150708235240.18"><vh>GET sum/p/:TAG</vh></v>
+</v>
+<v t="zoomq.20150708235240.19"><vh>GET info/:UUID</vh></v>
+<v t="zoomq.20150708235240.20"><vh>GET st/kv</vh></v>
+<v t="zoomq.20150708235240.21"><vh>GET get/acc</vh></v>
+</v>
+<v t="zoomq.20150708235240.22"><vh>GET  /echo</vh></v>
+<v t="zoomq.20150708235240.23"><vh>POST /echo 认证接口</vh>
+<v t="zoomq.20150708235240.26"><vh>&lt;&lt;echo TEXT&gt;&gt;</vh></v>
+<v t="zoomq.20150708235240.24"><vh>&lt;&lt;echo CLICK&gt;&gt;</vh></v>
+<v t="zoomq.20150708235240.25"><vh>&lt;&lt;echo event&gt;&gt;</vh></v>
+</v>
+<v t="zoomq.20150708235240.27"><vh>_wx_echo_cnt</vh></v>
+<v t="zoomq.20150708235240.28"><vh>_wx_echo_idx</vh></v>
+<v t="zoomq.20150708235240.29"><vh>_limit_echo_idx()</vh>
+<v t="zoomq.20150708235240.30"><vh>&lt;&lt;正常&gt;&gt;</vh></v>
+<v t="zoomq.20150708235240.31"><vh>&lt;&lt;压缩&gt;&gt;</vh></v>
+</v>
+<v t="zoomq.20150708235240.32"><vh>_wx_echo_cmd</vh></v>
+<v t="zoomq.20150708235240.33"><vh>/api/sysincr</vh></v>
+<v t="zoomq.20150708235240.34"><vh>404+各种默认处理</vh></v>
 </v>
 </v>
 <v t="zoomq.20120717112543.5493"><vh>__chaos</vh>
@@ -343,6 +378,11 @@ version: 2
 import sae
 #import config
 #from bottle import run
+import sys
+import os.path
+app_root = os.path.dirname(__file__)
+sys.path.insert(0, app_root)
+
 from web import APP
 
 application = sae.create_wsgi_app(APP)
@@ -505,6 +545,7 @@ APP = Bottle()
 
 #APP.mount('/up', __import__('mana4up').APP)
 APP.mount('/api', __import__('mana4api').APP)
+APP.mount('/wx1', __import__('api4devr').APP)
 #APP.mount('/mana', __import__('mana4sys').APP)
 
 
@@ -1323,7 +1364,7 @@ def wechat_post():
     else:
         print "Debugging localhost..."
     ## 注意! 从公众号来的消息和订阅号完全不同的,需要另外解析!
-    #print "request.forms.keys()[0]\t\n", request.forms.keys()[0]
+    print "request.forms.keys()[0]\t\n", request.forms.keys()[0]
     wxreq = WxRequest(request.forms.keys()[0])
     if 'text' == wxreq.MsgType:
         &lt;&lt;echo TEXT&gt;&gt;
@@ -1621,6 +1662,7 @@ import urllib2
 # 打开urllib2的debug开关
 urllib2.install_opener(urllib2.build_opener(urllib2.HTTPSHandler(1)))
 import json
+
 from docopt import docopt
 
 from config import CFG
@@ -2790,7 +2832,7 @@ conn = httplib.HTTPSConnection(host='www.site.com', port=443, cert_file=_certfil
 , "fw/aa":  "PUT"     # 转复 订户 消息
 
 </t>
-<t tx="zoomq.20131226095232.5938">VERSION = "echo4wx v15.2.13.21"</t>
+<t tx="zoomq.20131226095232.5938">VERSION = "echo4wx v15.7.9.2111"</t>
 <t tx="zoomq.20150123094404.30">TPL_SUBS='''&lt;xml&gt;
 &lt;ToUserName&gt;&lt;![CDATA[%(toUser)s]]&gt;&lt;/ToUserName&gt;
 &lt;FromUserName&gt;&lt;![CDATA[%(fromUser)s]]&gt;&lt;/FromUserName&gt;
@@ -2872,6 +2914,8 @@ TPL_ITEM='''&lt;item&gt;
         return WxTextResponse(TPL_IDX_LOST.format( tag_info = CFG.ESSAY_TAG[cmd])
                 , wxreq).as_xml()
     else:
+        all_papers.sort(key=lambda x: int(x))
+        print all_papers
         real_exp = _limit_echo_idx(all_papers, cmd)
         return WxTextResponse(real_exp, wxreq).as_xml()
 
@@ -2885,6 +2929,11 @@ TPL_ITEM='''&lt;item&gt;
     ,'menu':'{menu}_{timestamp}_PUB{tot}'
     #,'fw':'fw_%(timestamp)s_PUB%(tot)d'
     }
+ESSAY_TAG_KEYS = ['11','12', '13', '14', '15',  
+    '21', '22', '23', '24', '25', 
+    '31', '32', '33', '34','35','36','37'
+    ]
+
 # for show in wx echo
 _PRE20 = u'''杨早编"话题"已有十年,回头看,往前看,好多文章值得一看,再看'''
 _PRE30 = u'''"阅读邻居"是绿茶,邱小石,杨早创办的读书会,一年十期'''
@@ -2947,10 +2996,6 @@ ESSAY_TAG = {'11':u''' 介读 ~
         向关注者征集稿件.
         '''% _PRE30
     }
-ESSAY_TAG_KEYS = ['11','12', '13', '14', '15',  
-    '21', '22', '23', '24', '25', 
-    '31', '32', '33', '34','35','36','37'
-    ]
 
 
 
@@ -3208,6 +3253,516 @@ def get_acc(qstr):
             )
 </t>
 <t tx="zoomq.20150203153224.9">TPL_IDX_CLASS = u'''{tag_info}
+{idx_news}
+
+输入索引号可获文章链接
+(上述前缀 1446 样的纯数字)
+'''
+#更多细节,请惯性地输入 h 继续吧 :)
+
+TPL_IDX_LOST = u'''{tag_info}
+但是...
+历史文章还未整理好
+傻z 受命折腾中,敬请期待 눈_눈
+
+更多细节,请惯性地输入 h 继续吧 :)
+'''
+</t>
+<t tx="zoomq.20150708235240.10">from auth import _query2dict, _chkQueryArgs
+
+from utility import INCR4KV as __incr
+from utility import TSTAMP, GENID, USRID, DAMAID
+from utility import ADD4SYS
+from utility import PUT2SS
+
+from utility import WxApp
+</t>
+<t tx="zoomq.20150708235240.11">import os
+#关闭fetchurl，让httplib直接使用socket服务来连接
+os.environ['disable_fetchurl'] = "1" 
+import sys   
+import time #import time, gmtime, strftime, localtime
+from datetime import datetime
+import traceback
+import httplib
+import urllib 
+import urllib2
+# 打开urllib2的debug开关
+urllib2.install_opener(urllib2.build_opener(urllib2.HTTPSHandler(1)))
+
+import hashlib
+import json
+import string
+import base64
+import cPickle
+#import ConfigParser
+from os.path import splitext as os_splitext
+from os.path import exists as os_exists
+
+from copy import deepcopy
+import xml.etree.ElementTree as etree
+
+</t>
+<t tx="zoomq.20150708235240.12"># echo for RESTful remote actions
+'''
+- 全部基于: `/api/cli` 前缀
+    - 版本区隔为: `/api/v2/cli` 前缀
+- 签名检验
+- 时间检验(4.2秒以内, 并发不得超过 `N` 次)
+'''
+
+</t>
+<t tx="zoomq.20150708235240.13"># collection wechat papers mana. matters
+'''
+'''
+</t>
+<t tx="zoomq.20150708235240.14">def _load_news(crt_tag, crt_key, crt_var, multi=False):
+    uuid = GENID(crt_tag, name='menu')
+    #print uuid
+    #return None
+    new_paper = deepcopy(CFG.K4WD)
+    new_paper['uuid'] = uuid # 对象创建时, 变更时间戳同 UUID
+    new_paper['his_id'] = uuid
+    new_paper['lasttm'] = time.time()
+    new_paper['tag'] = crt_tag
+    new_paper['code'] = crt_tag+crt_key
+    #CFG.ESSAY_TAG_ID[crt_tag]+crt_key
+    #print new_paper['code']
+    if multi:
+        # mulit news
+        #print crt_var
+        new_paper['news'] = [{'title':i['title']
+            , 'uri':i['uri']
+            , 'pic':i['img']
+            } for i in crt_var]
+        #print new_paper['news']
+    else:
+        # sinle news
+        #print crt_var
+        new_paper['news'] = [{'title':crt_var['title']
+            , 'uri':crt_var['uri']
+            , 'pic':crt_var['img']
+            }]
+    KV.add(new_paper['code'], new_paper)
+    ADD4SYS(crt_tag, new_paper['code'])
+    return uuid
+
+
+</t>
+<t tx="zoomq.20150708235240.15">@APP.post('/cli/push/p/&lt;qstr&gt;')
+def push_papers(qstr):
+    q_dict = _query2dict(qstr)
+    q_form = request.forms
+    q_file = request.files.get('yaml')
+
+    if _chkQueryArgs("/cli/push/p", q_dict, "POST"):
+        feed_back = {'data':[], 'msg':''}
+        _yaml = q_file.file.read()
+        set_var = yaml.load(_yaml) #q_file.file.read()
+        _tg = set_var.keys()[0]        
+        &lt;&lt;reset_old&gt;&gt;
+        #return None
+        &lt;&lt;flush_in&gt;&gt;
+        return feed_back
+    else:
+        return "alert quary!-("
+
+
+
+</t>
+<t tx="zoomq.20150708235240.16">for i in KV.get(CFG.K4D[_tg]):
+    #print 
+    KV.delete(i)
+
+KV.set(CFG.K4D[_tg],[])
+
+</t>
+<t tx="zoomq.20150708235240.17">#f_name, f_ext = os_splitext(q_file.filename)
+count = 0
+for k in set_var[_tg].keys():
+    count += 1
+    if isinstance(set_var[_tg][k], dict):
+        # single news
+        _load_news(_tg, k, set_var[_tg][k])
+        
+    elif isinstance(set_var[_tg][k], list):
+        # mulit-news
+        _load_news(_tg, k, set_var[_tg][k], multi = True)
+        #data.append(KV.get_info())
+    else:
+        pass
+feed_back['msg'] += "reloaded %s POSTs. \nin CLASS %s"% (count, _tg)
+feed_back['data'].append(KV.get_info())
+
+_append = []
+echo_idx = KV.get(CFG.K4D[_tg])
+echo_idx.sort()
+for i in echo_idx:
+    #print ['%s-&gt;%s'%(i,j['title']) for j in KV.get(i)['news']]
+    _append.append('%s-&gt;%s'%(i
+        , ",".join([j['title'] for j in KV.get(i)['news']])
+        ))
+
+feed_back['data'] = _append
+
+
+
+</t>
+<t tx="zoomq.20150708235240.18">@APP.get('/cli/sum/p/&lt;tag&gt;/&lt;qstr&gt;')
+def st_p_tag(tag, qstr):
+    q_dict = _query2dict(qstr)
+    if _chkQueryArgs("/cli/sum/p/%s"% tag, q_dict, "GET"):
+        feed_back = {'data':[]}
+        #print tag
+        all_papers = KV.get(CFG.K4D[tag])
+        #print all_papers
+        for i in all_papers:
+            #print ['%s-&gt;%s'%(i,j['title']) for j in KV.get(i)['news']]
+            _node = KV.get(i)
+            _info = '''%s &gt; %s: [%s]
+                '''%(i
+                    , _node['code']
+                    , ','.join([j['title'] for j  in _node['news']])
+                    )
+                
+            feed_back['data'].append(_info)
+        return feed_back
+        
+    else:
+        return "alert quary !-("
+
+</t>
+<t tx="zoomq.20150708235240.19">@APP.get('/cli/info/&lt;uuid&gt;/&lt;qstr&gt;')
+def info_kv(uuid, qstr):
+    '''查询 UUID 的信息
+    '''
+    q_dict = _query2dict(qstr)
+    if _chkQueryArgs("/cli/info/%s"% uuid, q_dict, "GET"):
+        feed_back = {'data':[]}
+        print "info_kv()&gt;&gt;&gt; ",uuid
+        print KV.get(uuid)
+        #return KV.get(uuid)
+        feed_back['msg'] = "safe quary;-)"
+        feed_back['data'] = KV.get(uuid)
+        return feed_back
+    else:
+        return "alert quary!-("
+
+</t>
+<t tx="zoomq.20150708235240.20">@APP.get('/cli/st/kv/&lt;qstr&gt;')
+def st_kv(qstr):
+    '''查询 KVDB 整体现状
+    '''
+    q_dict = _query2dict(qstr)
+    if _chkQueryArgs("/cli/st/kv", q_dict, "GET"):
+        feed_back = {'data':[]}
+        #data.append(KV.get_info())
+        return KV.get_info()
+        feed_back['msg'] = "safe quary;-)"
+        feed_back['data'] = KV.get_info()
+        return feed_back
+    else:
+        return "alert quary!-("
+
+</t>
+<t tx="zoomq.20150708235240.21">@APP.get('/cli/get/acc/&lt;qstr&gt;')
+def get_acc(qstr):
+    '''定期获得 access_token
+    '''
+    q_dict = _query2dict(qstr)
+    if _chkQueryArgs("/cli/get/acc", q_dict, "GET"):
+        print XCFG.access
+        import requests
+        r = requests.get(XCFG.access)
+        _json = json.loads(r.text)
+        _acc = {}
+        _acc['access_token'] = _json['access_token']
+        _acc['expires_in'] = time.time()+int(_json['expires_in'])
+        KV.set(CFG.K4D['acc'],_acc)
+        return KV.get(CFG.K4D['acc'])
+    else:
+        return "alert quary!-("
+    </t>
+<t tx="zoomq.20150708235240.22">@APP.get('/echo')
+@APP.get('/echo/')
+def echo_wechat():
+    '''wechat app token echo
+    '''
+    #print request.query.keys()
+    #print request.query.echostr
+    #print request.query_string
+    #print dir(BaseRequest.query_string)
+    return request.query.echostr
+    #return app = WxApplication.process(request.query, None)
+    
+
+'''
+def wechat(request):
+    app = EchoApp()
+    result = app.process(request.GET, request.body, token='your token')
+    return HttpResponse(result)
+'''
+
+</t>
+<t tx="zoomq.20150708235240.23">@APP.post('/echo/')
+@APP.post('/echo')
+def wechat_post():
+    # usage jeff SDK for wechat...
+    #print request.query
+    #print request.query_string
+    #print request.forms
+    if CFG.AS_SAE:
+        #wxa = WxApplication.process(request.GET, request.body)
+        wxa = WxApplication(token=XCFG.TOKEN)
+        chkwx = wxa.is_valid_params(request.query)
+        if not chkwx:
+            return None
+    else:
+        print "Debugging localhost..."
+    ## 注意! 从公众号来的消息和订阅号完全不同的,需要另外解析!
+    print "request.forms.keys()\t\n", request.forms.keys()
+    print "request.forms.keys()[0]\t\n", request.forms.keys()[0]
+    wxreq = WxRequest(request.forms.keys()[0])
+    if 'text' == wxreq.MsgType:
+        &lt;&lt;echo TEXT&gt;&gt;
+    elif 'event' == wxreq.MsgType:
+        &lt;&lt;echo event&gt;&gt;
+    elif 'CLICK' == wxreq.MsgType:
+        &lt;&lt;echo CLICK&gt;&gt;
+    return None
+    
+
+
+
+</t>
+<t tx="zoomq.20150708235240.24">_TAG_PAPERS = '''%s :
+%s
+'''
+return WxTextResponse(_TAG_PAPERS%( 'tag'
+        ,'LIST' )
+    , wxreq).as_xml()
+
+</t>
+<t tx="zoomq.20150708235240.25">#print wxreq.Event
+print wxreq.EventKey
+
+return _wx_echo_idx(wxreq, wxreq.EventKey)
+
+#return None
+#WxTextResponse(CFG.TXT_HELP, wxreq).as_xml()
+
+
+</t>
+<t tx="zoomq.20150708235240.26">cmd = wxreq.Content
+if cmd.isdigit():
+    #print cmd
+    if cmd in CFG.ESSAY_TAG_KEYS:
+        #print "ESSAY_TAG_KEYS", cmd
+        return _wx_echo_idx(wxreq, cmd)
+    else:
+        return _wx_echo_cnt(wxreq, cmd)
+else:
+    if cmd in CFG.CMD_ALIAS:
+        return _wx_echo_cmd(wxreq, cmd)
+    else:
+        return None
+        #WxTextResponse(CFG.TXT_HELP, wxreq).as_xml()
+        #print cmd
+
+    #if 8 &gt; len(crt_usr['msg']):
+    #print cmd
+
+
+</t>
+<t tx="zoomq.20150708235240.27">def _wx_echo_cnt(wxreq, cmd):
+    print "_wx_echo_cnt", cmd
+    _items = KV.get(str(cmd))
+    #print _items
+    #return None
+    resp = WxNewsResponse(
+            [WxArticle(p['title']
+                ,Description=""
+                ,Url=p['uri']
+                ,PicUrl=p['pic']) for p in _items['news']]
+            , wxreq).as_xml()
+
+    return resp
+    #return WxTextResponse(CFG.TXT_HELP, wxreq).as_xml()</t>
+<t tx="zoomq.20150708235240.28">def _wx_echo_idx(wxreq, cmd):
+    print "_wx_echo_idx", cmd
+    all_papers = KV.get(CFG.K4D[cmd])
+    #print 
+    all_papers.sort()
+    #print len(all_papers)
+    #print CFG.ESSAY_TAG[cmd]
+    if 0 == len(all_papers):
+        #_exp = TPL_IDX_LOST.format( tag_info = CFG.ESSAY_TAG[cmd])
+        #u"但是...历史文章还未整理索引起来,敬请期待 눈_눈"
+        return WxTextResponse(TPL_IDX_LOST.format( tag_info = CFG.ESSAY_TAG[cmd])
+                , wxreq).as_xml()
+    else:
+        real_exp = _limit_echo_idx(all_papers, cmd)
+        return WxTextResponse(real_exp, wxreq).as_xml()
+
+
+
+</t>
+<t tx="zoomq.20150708235240.29">def _limit_echo_idx(all_papers, cmd):
+    '''check all echo TEXT, if &gt; 960, zip them
+    '''
+    _exp = ""
+    &lt;&lt;正常&gt;&gt;
+    real_exp = TPL_IDX_CLASS.format(idx_news = _exp
+            , tag_info = CFG.ESSAY_TAG[cmd]
+            )
+    print "len(real_exp)", len(real_exp)
+    if 960 &lt; len(real_exp):
+        _exp = ""
+        &lt;&lt;压缩&gt;&gt;
+        real_exp = TPL_IDX_CLASS.format(idx_news = _exp
+                , tag_info = CFG.ESSAY_TAG[cmd]
+                )
+        print "ZIP real_exp", len(real_exp)
+        return real_exp
+    else:
+        return real_exp
+
+</t>
+<t tx="zoomq.20150708235240.30">for i in all_papers:
+    #print ['%s-&gt;%s'%(i,j['title']) for j in KV.get(i)['news']]
+    _node = KV.get(i)
+    if 1 == len(_node['news']):
+        _exp += u"%s %s\n"%(_node['code']
+            , _node['news'][0]['title']
+            )
+    else:
+        #'\n\t+'.join([j['title'] for j  in _node['news']])
+        _exp += u"%s %s +另%s篇\n"%(_node['code']
+            , _node['news'][0]['title']
+            , len(_node['news'])
+            )
+</t>
+<t tx="zoomq.20150708235240.31">for i in all_papers:
+    #print ['%s-&gt;%s'%(i,j['title']) for j in KV.get(i)['news']]
+    _node = KV.get(i)
+    if 1 == len(_node['news']):
+        _exp += u"%s %s..\n"%(_node['code']
+            , _node['news'][0]['title'][:10]
+            )
+    else:
+        #'\n\t+'.join([j['title'] for j  in _node['news']])
+        _exp += u"%s %s..+另%s篇\n"%(_node['code']
+            , _node['news'][0]['title'][:10]
+            , len(_node['news'])
+            )
+</t>
+<t tx="zoomq.20150708235240.32">def _wx_echo_cmd(wxreq, cmd):
+    for k in CFG.CMD_TPLS.keys():
+        if cmd in k:
+            print CFG.CMD_TPLS[k]
+            _TPL = eval('CFG.%s'% CFG.CMD_TPLS[k])
+            #print type(_TPL)
+            #print type(CFG.TXT_HELP)
+            return WxTextResponse(_TPL, wxreq).as_xml()
+    #return None
+    return WxTextResponse(CFG.TXT_HELP, wxreq).as_xml()
+
+
+
+</t>
+<t tx="zoomq.20150708235240.33">@APP.route('/sysincr')
+#@APP.route('/&lt;ddd&gt;/sysincr')
+def sysincr():
+    from utility import INCR4KV as __incr
+    #kv = sae.kvdb.KVClient()
+    #print  kv.get_info()
+    return str(__incr())
+
+
+
+
+</t>
+<t tx="zoomq.20150708235240.34">#@view('404.html')
+@APP.error(404)
+def error404(error):
+    return '''
+
+
+\          SORRY            /
+ \                         /
+  \    This page does     /
+   ]   not exist yet.    [    ,'|
+   ]                     [   /  |
+   ]___               ___[ ,'   |
+   ]  ]\             /[  [ |:   |
+   ]  ] \           / [  [ |:   |
+   ]  ]  ]         [  [  [ |:   |
+   ]  ]  ]__     __[  [  [ |:   |
+   ]  ]  ] ]\ _ /[ [  [  [ |:   |
+   ]  ]  ] ] (#) [ [  [  [ :===='
+   ]  ]  ]_].nHn.[_[  [  [
+   ]  ]  ]  HHHHH. [  [  [
+   ]  ] /   `HH("N  \ [  [
+   ]__]/     HHH  "  \[__[
+   ]         NNN         [
+   ]         N/"         [
+   ]         N H         [
+  /          N            \
+
+/                           \
+
+roaring zoomquiet+404@gmail.com
+'''
+#    return template('404.html')
+
+@APP.route('/favicon.ico')
+def favicon():
+    abort(204)
+    
+@APP.route('/static/&lt;filename&gt;')
+def server_static(filename):
+    return static_file(filename, root='static')
+    </t>
+<t tx="zoomq.20150708235240.7">@language py
+# -*- coding: utf-8 -*-
+&lt;&lt;declarations&gt;&gt;
+#print sys.path
+from config import CFG
+from xsettings import XCFG
+KV = CFG.KV #sae.kvdb.KVClient(debug=1)
+BK = CFG.BK
+debug(True)
+
+APP = Bottle()
+
+@others
+
+
+
+
+
+
+</t>
+<t tx="zoomq.20150708235240.8">@others
+
+&lt;&lt;自制模块&gt;&gt;
+import yaml
+
+import pyfsm
+from pyfsm import state, transition
+
+#from wechat.official import WxApplication, WxRequest, WxTextResponse, WxNewsResponse, WxArticle
+from wechat.official import WxApplication
+from wechat.official import WxRequest, WxTextResponse
+from wechat.official import WxNewsResponse, WxArticle
+
+from bottle import *
+from bottle import __version__ as bottleVer
+#from bottle import jinja2_template as template
+
+
+</t>
+<t tx="zoomq.20150708235240.9">TPL_IDX_CLASS = u'''{tag_info}
 {idx_news}
 
 输入索引号可获文章链接

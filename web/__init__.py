@@ -15,6 +15,7 @@ APP = Bottle()
 
 #APP.mount('/up', __import__('mana4up').APP)
 APP.mount('/api', __import__('mana4api').APP)
+APP.mount('/wx1', __import__('api4devr').APP)
 #APP.mount('/mana', __import__('mana4sys').APP)
 
 

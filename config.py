@@ -26,7 +26,7 @@ class Borg():
     def __init__(self):
         self.__dict__ = self.__collective_mind
     
-    VERSION = "echo4wx v15.2.13.21"
+    VERSION = "echo4wx v15.7.9.2111"
     
     #管理员邮箱列表
     ADMIN_EMAIL_LIST = ['zoomquiet+gdg@gmail.com']
@@ -76,6 +76,11 @@ class Borg():
         ,'menu':'{menu}_{timestamp}_PUB{tot}'
         #,'fw':'fw_%(timestamp)s_PUB%(tot)d'
         }
+    ESSAY_TAG_KEYS = ['11','12', '13', '14', '15',  
+        '21', '22', '23', '24', '25', 
+        '31', '32', '33', '34','35','36','37'
+        ]
+
     # for show in wx echo
     _PRE20 = u'''杨早编"话题"已有十年,回头看,往前看,好多文章值得一看,再看'''
     _PRE30 = u'''"阅读邻居"是绿茶,邱小石,杨早创办的读书会,一年十期'''
@@ -138,10 +143,6 @@ class Borg():
             向关注者征集稿件.
             '''% _PRE30
         }
-    ESSAY_TAG_KEYS = ['11','12', '13', '14', '15',  
-        '21', '22', '23', '24', '25', 
-        '31', '32', '33', '34','35','36','37'
-        ]
 
 
 
