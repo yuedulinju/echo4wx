@@ -7,7 +7,7 @@ TPL_IDX_CLASS = u'''{tag_info}
 '''
 #更多细节,请惯性地输入 h 继续吧 :)
 
-TPL_IDX_LOST = u'''{tag_info}
+TPL_IDX_LOST = u'''文章索引号: {tag_info}
 但是...
 历史文章还未整理好
 傻z 受命折腾中,敬请期待 눈_눈
@@ -152,16 +152,22 @@ def push_papers(qstr):
 
         _append = []
         echo_idx = KV.get(CFG.K4D[_tg])
-        echo_idx.sort()
-        for i in echo_idx:
-            #print ['%s->%s'%(i,j['title']) for j in KV.get(i)['news']]
-            _append.append('%s->%s'%(i
-                , ",".join([j['title'] for j in KV.get(i)['news']])
-                ))
-
+        echo_idx.sort(key=lambda x: int(x))
+        print "_tg", _tg
+        if "00" == _tg:
+            for i in echo_idx:
+                #print ['%s->%s'%(i,j['title']) for j in KV.get(i)['news']]
+                _append.append('%s->%s'%(i[2:]
+                    , ",".join([j['title'] for j in KV.get(i)['news']])
+                    ))
+        else:
+            for i in echo_idx:
+                #print ['%s->%s'%(i,j['title']) for j in KV.get(i)['news']]
+                _append.append('%s->%s'%(i
+                    , ",".join([j['title'] for j in KV.get(i)['news']])
+                    ))
+            
         feed_back['data'] = _append
-
-
 
         return feed_back
     else:
@@ -370,8 +376,7 @@ def _limit_echo_idx(all_papers, cmd):
 def _wx_echo_idx(wxreq, cmd):
     print "_wx_echo_idx", cmd
     all_papers = KV.get(CFG.K4D[cmd])
-    #print 
-    all_papers.sort()
+    all_papers.sort(key=lambda x: int(x))
     #print len(all_papers)
     #print CFG.ESSAY_TAG[cmd]
     if 0 == len(all_papers):
@@ -380,8 +385,7 @@ def _wx_echo_idx(wxreq, cmd):
         return WxTextResponse(TPL_IDX_LOST.format( tag_info = CFG.ESSAY_TAG[cmd])
                 , wxreq).as_xml()
     else:
-        all_papers.sort(key=lambda x: int(x))
-        print all_papers
+        #print all_papers
         real_exp = _limit_echo_idx(all_papers, cmd)
         return WxTextResponse(real_exp, wxreq).as_xml()
 
@@ -400,15 +404,28 @@ def _wx_echo_cmd(wxreq, cmd):
 def _wx_echo_cnt(wxreq, cmd):
     print "_wx_echo_cnt", cmd
     _items = KV.get(str(cmd))
-    #print _items
-    #return None
-    resp = WxNewsResponse(
-            [WxArticle(p['title']
-                ,Description=""
-                ,Url=p['uri']
-                ,PicUrl=p['pic']) for p in _items['news']]
-            , wxreq).as_xml()
-
+    if _items:
+        resp = WxNewsResponse(
+                [WxArticle(p['title']
+                    ,Description=""
+                    ,Url=p['uri']
+                    ,PicUrl=p['pic']) for p in _items['news']]
+                , wxreq).as_xml()
+    else:
+        #print "cmd: ",cmd
+        _items = KV.get("00{}".format(cmd))
+        #print _items
+        if _items:
+            resp = WxNewsResponse(
+                    [WxArticle(p['title']
+                        ,Description=""
+                        ,Url=p['uri']
+                        ,PicUrl=p['pic']) for p in _items['news']]
+                    , wxreq).as_xml()
+        else:
+            return WxTextResponse(TPL_IDX_LOST.format( tag_info = cmd)
+                        , wxreq).as_xml()
+    
     return resp
     #return WxTextResponse(CFG.TXT_HELP, wxreq).as_xml()
 @APP.route('/sysincr')

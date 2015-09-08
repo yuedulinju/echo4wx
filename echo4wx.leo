@@ -20,7 +20,7 @@
 <v t="zoomq.20120710140424.5456" a="E"><vh>&lt;&lt;cfg4Borg&gt;&gt;</vh>
 <v t="zoomq.20130926092950.5432"><vh>环境切换</vh></v>
 <v t="zoomq.20130927104354.5456"><vh>storage</vh></v>
-<v t="zoomq.20130923093950.3647" a="E"><vh>KVDB</vh>
+<v t="zoomq.20130923093950.3647"><vh>KVDB</vh>
 <v t="zoomq.20150202122015.13"><vh>&lt;&lt;UUID&gt;&gt;</vh></v>
 <v t="zoomq.20130923093950.5395"><vh>&lt;&lt;CONTENT&gt;&gt;</vh></v>
 <v t="zoomq.20130923093950.5396"><vh>&lt;&lt;HISTORIC&gt;&gt;</vh></v>
@@ -99,8 +99,8 @@
 <v t="zoomq.20150202122015.9"><vh>&lt;&lt;自制模块&gt;&gt;</vh></v>
 <v t="zoomq.20150202122015.8"><vh>build-in</vh></v>
 </v>
-<v t="zoomq.20130925103854.5007" a="E"><vh>CLI 远程管理&gt;&gt;&gt;</vh>
-<v t="zoomq.20131007093121.5601" a="E"><vh>文章管理</vh>
+<v t="zoomq.20130925103854.5007"><vh>CLI 远程管理&gt;&gt;&gt;</vh>
+<v t="zoomq.20131007093121.5601"><vh>文章管理</vh>
 <v t="zoomq.20150202122015.15"><vh>_load_news(,, multi=False)</vh></v>
 <v t="zoomq.20130929203117.3712" a="E"><vh>POST push/p</vh>
 <v t="zoomq.20150202122015.19"><vh>&lt;&lt;reset_old&gt;&gt;</vh></v>
@@ -113,7 +113,7 @@
 <v t="zoomq.20150203153224.10"><vh>GET get/acc</vh></v>
 </v>
 <v t="zoomq.20130918155053.5760"><vh>GET  /echo</vh></v>
-<v t="zoomq.20130918155053.7083" a="E"><vh>POST /echo 认证接口</vh>
+<v t="zoomq.20130918155053.7083"><vh>POST /echo 认证接口</vh>
 <v t="zoomq.20150202122015.23"><vh>&lt;&lt;echo CLICK&gt;&gt;</vh></v>
 <v t="zoomq.20150202122015.22"><vh>&lt;&lt;echo event&gt;&gt;</vh></v>
 <v t="zoomq.20150202122015.7"><vh>&lt;&lt;echo TEXT&gt;&gt;</vh></v>
@@ -124,7 +124,9 @@
 </v>
 <v t="zoomq.20150202122015.12"><vh>_wx_echo_idx</vh></v>
 <v t="zoomq.20150202122015.11"><vh>_wx_echo_cmd</vh></v>
-<v t="zoomq.20150202122015.10"><vh>_wx_echo_cnt</vh></v>
+<v t="zoomq.20150202122015.10" a="E"><vh>_wx_echo_cnt</vh>
+<v t="zoomq.20150907174247.42"><vh>尝试自由索引</vh></v>
+</v>
 <v t="zoomq.20120727213305.13050"><vh>/api/sysincr</vh></v>
 <v t="zoomq.20120727213305.14707"></v>
 </v>
@@ -1399,6 +1401,7 @@ K4D = {'incr':"SYS_TOT"     # int
     ,'acc':"SYS_wx_token"   # {"access_token":"ACCESS_TOKEN"
                             #  ,"expires_in":time.time()+有效时间 }
     #,'p':"SYS_pubs_ALL"    # [] 所有 文章 (包含已经 del 的)
+    ,'00':"SYS_00_ALL"     # 特殊含义索引定义
     ,'11':"SYS_11_ALL"     # [] 有效栏目文章 (不含已经 del 的)
     ,'12':"SYS_12_ALL"     # [] 有效栏目文章 (不含已经 del 的)
     ,'13':"SYS_13_ALL"     # [] 有效栏目文章 (不含已经 del 的)
@@ -1553,6 +1556,7 @@ CMD_ALIAS=('h', 'H', 'help', '?'    # 帮助
     #, 'st', 'stat'                  # 系统状态
     #, 'nn'                          # 牛妞日记
     )
+
 </t>
 <t tx="zoomq.20130925103854.4951">APIPRE = "/cli" #% _API_ROOT
 STLIMI = 4.2    # 请求安全时限(秒)
@@ -2832,7 +2836,7 @@ conn = httplib.HTTPSConnection(host='www.site.com', port=443, cert_file=_certfil
 , "fw/aa":  "PUT"     # 转复 订户 消息
 
 </t>
-<t tx="zoomq.20131226095232.5938">VERSION = "echo4wx v15.7.9.2111"</t>
+<t tx="zoomq.20131226095232.5938">VERSION = "echo4wx v15.9.8.2222"</t>
 <t tx="zoomq.20150123094404.30">TPL_SUBS='''&lt;xml&gt;
 &lt;ToUserName&gt;&lt;![CDATA[%(toUser)s]]&gt;&lt;/ToUserName&gt;
 &lt;FromUserName&gt;&lt;![CDATA[%(fromUser)s]]&gt;&lt;/FromUserName&gt;
@@ -2880,15 +2884,16 @@ TPL_ITEM='''&lt;item&gt;
 <t tx="zoomq.20150202122015.10">def _wx_echo_cnt(wxreq, cmd):
     print "_wx_echo_cnt", cmd
     _items = KV.get(str(cmd))
-    #print _items
-    #return None
-    resp = WxNewsResponse(
-            [WxArticle(p['title']
-                ,Description=""
-                ,Url=p['uri']
-                ,PicUrl=p['pic']) for p in _items['news']]
-            , wxreq).as_xml()
-
+    if _items:
+        resp = WxNewsResponse(
+                [WxArticle(p['title']
+                    ,Description=""
+                    ,Url=p['uri']
+                    ,PicUrl=p['pic']) for p in _items['news']]
+                , wxreq).as_xml()
+    else:
+        @others
+    
     return resp
     #return WxTextResponse(CFG.TXT_HELP, wxreq).as_xml()</t>
 <t tx="zoomq.20150202122015.11">def _wx_echo_cmd(wxreq, cmd):
@@ -2904,8 +2909,7 @@ TPL_ITEM='''&lt;item&gt;
 <t tx="zoomq.20150202122015.12">def _wx_echo_idx(wxreq, cmd):
     print "_wx_echo_idx", cmd
     all_papers = KV.get(CFG.K4D[cmd])
-    #print 
-    all_papers.sort()
+    all_papers.sort(key=lambda x: int(x))
     #print len(all_papers)
     #print CFG.ESSAY_TAG[cmd]
     if 0 == len(all_papers):
@@ -2914,8 +2918,7 @@ TPL_ITEM='''&lt;item&gt;
         return WxTextResponse(TPL_IDX_LOST.format( tag_info = CFG.ESSAY_TAG[cmd])
                 , wxreq).as_xml()
     else:
-        all_papers.sort(key=lambda x: int(x))
-        print all_papers
+        #print all_papers
         real_exp = _limit_echo_idx(all_papers, cmd)
         return WxTextResponse(real_exp, wxreq).as_xml()
 
@@ -3019,16 +3022,22 @@ feed_back['data'].append(KV.get_info())
 
 _append = []
 echo_idx = KV.get(CFG.K4D[_tg])
-echo_idx.sort()
-for i in echo_idx:
-    #print ['%s-&gt;%s'%(i,j['title']) for j in KV.get(i)['news']]
-    _append.append('%s-&gt;%s'%(i
-        , ",".join([j['title'] for j in KV.get(i)['news']])
-        ))
-
+echo_idx.sort(key=lambda x: int(x))
+print "_tg", _tg
+if "00" == _tg:
+    for i in echo_idx:
+        #print ['%s-&gt;%s'%(i,j['title']) for j in KV.get(i)['news']]
+        _append.append('%s-&gt;%s'%(i[2:]
+            , ",".join([j['title'] for j in KV.get(i)['news']])
+            ))
+else:
+    for i in echo_idx:
+        #print ['%s-&gt;%s'%(i,j['title']) for j in KV.get(i)['news']]
+        _append.append('%s-&gt;%s'%(i
+            , ",".join([j['title'] for j in KV.get(i)['news']])
+            ))
+    
 feed_back['data'] = _append
-
-
 
 </t>
 <t tx="zoomq.20150202122015.15">def _load_news(crt_tag, crt_key, crt_var, multi=False):
@@ -3260,7 +3269,7 @@ def get_acc(qstr):
 '''
 #更多细节,请惯性地输入 h 继续吧 :)
 
-TPL_IDX_LOST = u'''{tag_info}
+TPL_IDX_LOST = u'''文章索引号: {tag_info}
 但是...
 历史文章还未整理好
 傻z 受命折腾中,敬请期待 눈_눈
@@ -3777,6 +3786,20 @@ TPL_IDX_LOST = u'''{tag_info}
 
 更多细节,请惯性地输入 h 继续吧 :)
 '''
+</t>
+<t tx="zoomq.20150907174247.42">#print "cmd: ",cmd
+_items = KV.get("00{}".format(cmd))
+#print _items
+if _items:
+    resp = WxNewsResponse(
+            [WxArticle(p['title']
+                ,Description=""
+                ,Url=p['uri']
+                ,PicUrl=p['pic']) for p in _items['news']]
+            , wxreq).as_xml()
+else:
+    return WxTextResponse(TPL_IDX_LOST.format( tag_info = cmd)
+                , wxreq).as_xml()
 </t>
 </tnodes>
 </leo_file>

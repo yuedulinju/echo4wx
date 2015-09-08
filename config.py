@@ -26,7 +26,7 @@ class Borg():
     def __init__(self):
         self.__dict__ = self.__collective_mind
     
-    VERSION = "echo4wx v15.7.9.2111"
+    VERSION = "echo4wx v15.9.8.2222"
     
     #管理员邮箱列表
     ADMIN_EMAIL_LIST = ['zoomquiet+gdg@gmail.com']
@@ -48,6 +48,7 @@ class Borg():
         ,'acc':"SYS_wx_token"   # {"access_token":"ACCESS_TOKEN"
                                 #  ,"expires_in":time.time()+有效时间 }
         #,'p':"SYS_pubs_ALL"    # [] 所有 文章 (包含已经 del 的)
+        ,'00':"SYS_00_ALL"     # 特殊含义索引定义
         ,'11':"SYS_11_ALL"     # [] 有效栏目文章 (不含已经 del 的)
         ,'12':"SYS_12_ALL"     # [] 有效栏目文章 (不含已经 del 的)
         ,'13':"SYS_13_ALL"     # [] 有效栏目文章 (不含已经 del 的)
@@ -203,6 +204,7 @@ class Borg():
         #, 'st', 'stat'                  # 系统状态
         #, 'nn'                          # 牛妞日记
         )
+
     # for CLI local usage
     TPL_SUBS='''<xml>
     <ToUserName><![CDATA[%(toUser)s]]></ToUserName>
