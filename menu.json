@@ -43,7 +43,7 @@
            "sub_button":[
             {
                "type":"click",
-               "name":"互推",
+               "name":"早选",
                "key":"35"
             },
             {
@@ -53,7 +53,7 @@
             },
             {
                "type":"click",
-               "name":"征稿",
+               "name":"答问",
                "key":"37"
             }]
        }]
