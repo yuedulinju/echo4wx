@@ -39,7 +39,7 @@
 </v>
 </v>
 </v>
-<v t="zoomq.20130925103854.4957"><vh>@nosent CLI.py</vh>
+<v t="zoomq.20130925103854.4957" a="E"><vh>@nosent CLI.py</vh>
 <v t="zoomq.20130925103854.4958"><vh>&lt;&lt;docopt&gt;&gt;</vh></v>
 <v t="zoomq.20130925103854.4959"><vh>&lt;&lt;declarations&gt;&gt;</vh></v>
 <v t="zoomq.20131223160728.4902"><vh>_https_get()</vh></v>
@@ -93,7 +93,7 @@
 <v t="zoomq.20120723102156.5548"><vh>/</vh></v>
 <v t="zoomq.20120727213305.14707"><vh>404+各种默认处理</vh></v>
 </v>
-<v t="zoomq.20120723102156.5561" a="E"><vh>@nosent mana4api.py</vh>
+<v t="zoomq.20120723102156.5561"><vh>@nosent mana4api.py</vh>
 <v t="zoomq.20120723102156.5562"><vh>&lt;&lt;declarations&gt;&gt;</vh>
 <v t="zoomq.20150203153224.9"><vh>输出模板</vh></v>
 <v t="zoomq.20150202122015.9"><vh>&lt;&lt;自制模块&gt;&gt;</vh></v>
@@ -124,7 +124,7 @@
 </v>
 <v t="zoomq.20150202122015.12"><vh>_wx_echo_idx</vh></v>
 <v t="zoomq.20150202122015.11"><vh>_wx_echo_cmd</vh></v>
-<v t="zoomq.20150202122015.10" a="E"><vh>_wx_echo_cnt</vh>
+<v t="zoomq.20150202122015.10"><vh>_wx_echo_cnt</vh>
 <v t="zoomq.20150907174247.42"><vh>尝试自由索引</vh></v>
 </v>
 <v t="zoomq.20120727213305.13050"><vh>/api/sysincr</vh></v>

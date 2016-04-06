@@ -3,6 +3,7 @@
 - 仓库: [readerneighbor/echo4wx - GitCafe](https://gitcafe.com/readerneighbor/echo4wx)
 - 应用: http://sayeahoo.sinaapp.com
 - 参考: [42分钟乱入 wechat 手册!-) — chaos2wechat 1.1.131010 documentation](http://chaos2.qiniudn.com/wechat/build/html/)
+- 支持: 珠海GDG 的公众号 `GDG-Zhuhai`
 
 ## 功能
 
